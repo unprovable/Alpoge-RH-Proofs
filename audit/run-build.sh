@@ -6,6 +6,11 @@
 #   bash audit/run-build.sh audit      # only the audit (after a successful build)
 #   bash audit/run-build.sh check      # independent kernel re-check with leanchecker (long, single-threaded)
 #   JOBS=16 bash audit/run-build.sh    # cap parallel Lean processes (use this if you hit out-of-memory)
+#   VERBOSE=1 bash audit/run-build.sh  # also stream every built module to the terminal
+#
+# A progress line (modules done, rough time remaining, RAM in use) is printed every 5 minutes
+# (PROGRESS_EVERY=<seconds> to change). To watch a run from another terminal:
+#   tail -f audit-results/*/build.log
 #
 # The build is incremental: re-running resumes where it stopped.
 # Results land in audit-results/<UTC timestamp>/ (small text files, safe to commit and push).
@@ -44,6 +49,24 @@ JOBS="${JOBS:-$(nproc)}"
 export LEAN_NUM_THREADS="$JOBS"   # caps how many Lean processes Lake runs at once (tested on v4.33.1)
 
 # --- build ---------------------------------------------------------------------------------
+hm() { printf '%dh%02dm' $(($1 / 3600)) $(($1 % 3600 / 60)); }
+
+# Every PROGRESS_EVERY seconds: Lake's latest [done/total] counter, a rough time remaining
+# (from the average rate so far), and RAM in use.
+progress_monitor() {
+  local start n total el eta last ram
+  start=$(date +%s)
+  while sleep "${PROGRESS_EVERY:-300}"; do
+    last=$(tail -n 300 "$OUT/build.log" 2>/dev/null | grep -oE '\[[0-9]+/[0-9]+\]' | tail -1 | tr -d '[]')
+    [ -z "$last" ] && continue
+    n=${last%/*}; total=${last#*/}
+    el=$(( $(date +%s) - start ))
+    eta="?"; [ "$n" -gt 0 ] && eta=$(hm $(( el * (total - n) / n )))
+    ram=$(free -g | awk '/^Mem:/ {print $3 "/" $2 " GB"}')
+    log "progress $n/$total ($(( 100 * n / total ))%), elapsed $(hm "$el"), ~$eta remaining (rough), RAM $ram"
+  done
+}
+
 run_build() {
   log "fetching Mathlib's prebuilt cache"
   lake exe cache get 2>&1 | tee "$OUT/cache-get.log" | tail -3
@@ -61,11 +84,20 @@ run_build() {
   ) > "$OUT/mem-samples.tsv" &
   SAMPLER=$!
 
+  touch "$OUT/build.log"
+  progress_monitor &
+  PROGRESS=$!
+
   log "lake build with $JOBS parallel jobs"
   if [ -x /usr/bin/time ]; then TIMER=(/usr/bin/time -v -o "$OUT/build-time.txt"); else TIMER=(); fi
-  "${TIMER[@]}" lake build -v 2>&1 | grep --line-buffered -v '^trace: ' > "$OUT/build.log"
-  BUILD_RC=${PIPESTATUS[0]}
-  kill "$SAMPLER" 2>/dev/null
+  if [ "${VERBOSE:-0}" = 1 ]; then
+    "${TIMER[@]}" lake build -v 2>&1 | grep --line-buffered -v '^trace: ' | tee "$OUT/build.log"
+    BUILD_RC=${PIPESTATUS[0]}
+  else
+    "${TIMER[@]}" lake build -v 2>&1 | grep --line-buffered -v '^trace: ' > "$OUT/build.log"
+    BUILD_RC=${PIPESTATUS[0]}
+  fi
+  kill "$SAMPLER" "$PROGRESS" 2>/dev/null
   echo "$BUILD_RC" > "$OUT/build-exit-code.txt"
   log "lake build exited with code $BUILD_RC"
   summarize
