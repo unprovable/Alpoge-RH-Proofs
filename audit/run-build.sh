@@ -51,19 +51,24 @@ export LEAN_NUM_THREADS="$JOBS"   # caps how many Lean processes Lake runs at on
 # --- build ---------------------------------------------------------------------------------
 hm() { printf '%dh%02dm' $(($1 / 3600)) $(($1 % 3600 / 60)); }
 
-# Every PROGRESS_EVERY seconds: Lake's latest [done/total] counter, a rough time remaining
-# (from the average rate so far), and RAM in use.
+# Every PROGRESS_EVERY seconds: project files finished (counted as .olean files, so it also covers
+# earlier runs), a rough time remaining from this run's rate, RAM in use, and Lake's own counter.
+# Lake's [n/N] total is not usable for progress: on this project it grows as Lake discovers modules.
+count_oleans() { find "$REPO/lean/.lake/build/lib/lean" -name '*.olean' 2>/dev/null | wc -l | tr -d ' '; }
+
 progress_monitor() {
-  local start n total el eta last ram
+  local start total base nbuilt el eta last ram
   start=$(date +%s)
+  total=$(find "$REPO/lean/src" -name '*.lean' | wc -l | tr -d ' ')
+  base=$(count_oleans)
   while sleep "${PROGRESS_EVERY:-300}"; do
-    last=$(tail -n 300 "$OUT/build.log" 2>/dev/null | grep -oE '\[[0-9]+/[0-9]+\]' | tail -1 | tr -d '[]')
-    [ -z "$last" ] && continue
-    n=${last%/*}; total=${last#*/}
+    nbuilt=$(count_oleans)
     el=$(( $(date +%s) - start ))
-    eta="?"; [ "$n" -gt 0 ] && eta=$(hm $(( el * (total - n) / n )))
+    eta="?"
+    [ "$nbuilt" -gt "$base" ] && eta=$(hm $(( el * (total - nbuilt) / (nbuilt - base) )))
+    last=$(tail -n 300 "$OUT/build.log" 2>/dev/null | grep -oE '\[[0-9]+/[0-9]+\]' | tail -1)
     ram=$(free -g | awk '/^Mem:/ {print $3 "/" $2 " GB"}')
-    log "progress $n/$total ($(( 100 * n / total ))%), elapsed $(hm "$el"), ~$eta remaining (rough), RAM $ram"
+    log "built $nbuilt/$total project files ($(( 100 * nbuilt / total ))%), elapsed $(hm "$el"), ~$eta remaining (rough), RAM $ram, lake $last"
   done
 }
 
