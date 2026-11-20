@@ -3,3 +3,4 @@ lean/.lake/
 # Split archive: same files as lean/ (delete this line to commit it too)
 lean.tar.gz.part*
 .DS_Store
+the-music-of-the-primes.pdf
