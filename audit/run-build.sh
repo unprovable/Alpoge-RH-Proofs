@@ -89,6 +89,17 @@ run_build() {
   ) > "$OUT/mem-samples.tsv" &
   SAMPLER=$!
 
+  # Lake writes a <module>.setup.json listing every transitive import by absolute path. Here most
+  # files import all of Mathlib, so each is ~7 MB and together they reach ~1.2 TB. Lean reads the
+  # file only when the module starts compiling, and deleting it does not trigger a rebuild (tested
+  # on v4.33.1), so remove any older than an hour, every 10 minutes.
+  log "freeing space from finished modules' .setup.json files"
+  find "$REPO/lean/.lake/build" -name '*.setup.json' -delete 2>/dev/null
+  ( while sleep 600; do
+      find "$REPO/lean/.lake/build" -name '*.setup.json' -mmin +60 -delete 2>/dev/null
+    done ) &
+  CLEANER=$!
+
   touch "$OUT/build.log"
   progress_monitor &
   PROGRESS=$!
@@ -102,7 +113,8 @@ run_build() {
     "${TIMER[@]}" lake build -v 2>&1 | grep --line-buffered -v '^trace: ' > "$OUT/build.log"
     BUILD_RC=${PIPESTATUS[0]}
   fi
-  kill "$SAMPLER" "$PROGRESS" 2>/dev/null
+  kill "$SAMPLER" "$PROGRESS" "$CLEANER" 2>/dev/null
+  find "$REPO/lean/.lake/build" -name '*.setup.json' -delete 2>/dev/null
   echo "$BUILD_RC" > "$OUT/build-exit-code.txt"
   log "lake build exited with code $BUILD_RC"
   summarize
