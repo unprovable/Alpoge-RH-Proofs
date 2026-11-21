@@ -1,0 +1,4 @@
+[22:37:36] leanchecker --fresh Main: replays every declaration (Mathlib + project) through the kernel
+[22:43:24] leanchecker exited with code 143
+[22:43:24] done (exit 143). Results: /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261121T223735Z-check
+[22:43:24] To publish: git add audit-results && git commit -m 'Audit results 20261121T223735Z-check' && git push

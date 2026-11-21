@@ -1,0 +1,71 @@
+[audit] 21:31:50 (+0h0m0s) environment loaded: 186200 modules, 2701132 imported constants
+[audit] 21:31:53 (+0h0m3s) located crux names; unresolved: #[]
+[audit] 21:31:54 (+0h0m3s) stage 1/4: axioms of the main theorems and every crux lemma match
+[audit] 21:31:55 (+0h0m4s) wrote axioms.json; riemannHypothesis: {"axioms":["propext","Classical.choice","Quot.sound"],"found":true,"module":"Main","name":"riemannHypothesis","nonStandardAxioms":[]}
+[audit] 21:31:56 (+0h0m6s) stage 2/4: wrote crux.json; pretty-printing statements (up to 8 matches per crux name)
+[audit] 21:31:57 (+0h0m6s)   printing 1/63: UpperTheory.EveryCharacter
+[audit] 21:31:57 (+0h0m7s)   printing 2/63: UpperTheory.Top.VWin
+[audit] 21:31:58 (+0h0m7s)   printing 3/63: UpperTheory.Top.VWinAt
+[audit] 21:31:58 (+0h0m7s)   printing 4/63: UpperTheory.Top.VVle
+[audit] 21:31:59 (+0h0m8s)   printing 5/63: UpperTheory.Top.VAt
+[audit] 21:31:59 (+0h0m8s)   printing 6/63: UpperTheory.Top.TopG
+[audit] 21:31:59 (+0h0m9s)   printing 7/63: Formalism.HC.Level.Gm
+[audit] 21:32:00 (+0h0m9s)   printing 8/63: Formalism.HC.EAtH
+[audit] 21:32:00 (+0h0m10s)   printing 9/63: Formalism.HC.Level.FormBAt
+[audit] 21:32:01 (+0h0m10s)   printing 10/63: Formalism.MainNotions.ChainTied
+[audit] 21:32:01 (+0h0m10s)   printing 11/63: Formalism.BasicNotions.SizeData₂
+[audit] 21:32:02 (+0h0m11s)   printing 12/63: Formalism.CohomologicalDescent.LogSmallConstantBounds.SizeData₂
+[audit] 21:32:02 (+0h0m11s)   printing 13/63: Formalism.LFunctionChainParameters.DeficitSplitLemmas.SizeData₂
+[audit] 21:32:02 (+0h0m12s)   printing 14/63: Formalism.LFunctionChainParameters.LChain.SizeData₂
+[audit] 21:32:03 (+0h0m12s)   printing 15/63: Formalism.LFunctionChainParameters.LErr.ErrWindows
+[audit] 21:32:03 (+0h0m12s)   printing 16/63: Formalism.LFunctionChainParameters.LChain.RestSize
+[audit] 21:32:04 (+0h0m13s)   printing 17/63: Formalism.MainNotions.TestSideCounting.RestSize
+[audit] 21:32:04 (+0h0m13s)   printing 18/63: Formalism.MainNotions.LinkDIV_at
+[audit] 21:32:04 (+0h0m14s)   printing 19/63: Formalism.MainNotions.LinkG_at
+[audit] 21:32:05 (+0h0m14s)   printing 20/63: Formalism.MainNotions.LinkN_at
+[audit] 21:32:05 (+0h0m15s)   printing 21/63: Formalism.MainNotions.LinkS
+[audit] 21:32:06 (+0h0m15s)   printing 22/63: GlobalTheory.EX.HostGood
+[audit] 21:32:06 (+0h0m15s)   printing 23/63: GlobalTheory.EX.ThinOK
+[audit] 21:32:06 (+0h0m16s)   printing 24/63: GlobalTheory.EX.BoxH
+[audit] 21:32:07 (+0h0m16s)   printing 25/63: GlobalTheory.EX.HostExW
+[audit] 21:32:07 (+0h0m17s)   printing 26/63: UpperTheory.Top.GChi
+[audit] 21:32:08 (+0h0m17s)   printing 27/63: UpperTheory.Top.HypV
+[audit] 21:32:08 (+0h0m17s)   printing 28/63: Formalism.FourierDecayAlt.P.MAx3.K.HypV
+[audit] 21:32:09 (+0h0m18s)   printing 29/63: UpperTheory.Top.FamilyClassConnected
+[audit] 21:32:09 (+0h0m18s)   printing 30/63: UpperTheory.GalStar.Row0b
+[audit] 21:32:09 (+0h0m19s)   printing 31/63: UpperTheory.Zero.LLC.IsRecT
+[audit] 21:32:10 (+0h0m19s)   printing 32/63: Formalism.GaloisCohomology.shaLen
+[audit] 21:32:10 (+0h0m19s)   printing 33/63: Formalism.GaloisCohomology.LData
+[audit] 21:32:11 (+0h0m20s)   printing 34/63: UpperTheory.FinalTheorems.everyCharacter
+[audit] 21:32:11 (+0h0m20s)   printing 35/63: UpperTheory.Top.zeroFreeAll_of_topG
+[audit] 21:32:11 (+0h0m21s)   printing 36/63: UpperTheory.Top.supplyChi
+[audit] 21:32:12 (+0h0m21s)   printing 37/63: UpperTheory.Top.shapeWin
+[audit] 21:32:12 (+0h0m21s)   printing 38/63: UpperTheory.Top.every_character_of_green_v_win
+[audit] 21:32:13 (+0h0m22s)   printing 39/63: UpperTheory.Lit.every_character_of_theta_integrals_local_matching
+[audit] 21:32:13 (+0h0m22s)   printing 40/63: UpperTheory.One.vwin_of_row
+[audit] 21:32:13 (+0h0m23s)   printing 41/63: UpperTheory.Zero.LLC.recTExists
+[audit] 21:32:14 (+0h0m23s)   printing 42/63: UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+[audit] 21:32:14 (+0h0m24s)   printing 43/63: Formalism.HC.zeroFreeOn_of_tiedWin_cyc
+[audit] 21:32:15 (+0h0m24s)   printing 44/63: UpperTheory.Comparison₂.formB
+[audit] 21:32:15 (+0h0m24s)   printing 45/63: Formalism.CohomologicalDescent.LR.formB
+[audit] 21:32:15 (+0h0m25s)   printing 46/63: GlobalTheory.CompanionTheory.NonEll.formB
+[audit] 21:32:16 (+0h0m25s)   printing 47/63: ReciprocityTheory.ChartRestriction.DS.formB
+[audit] 21:32:16 (+0h0m26s)   printing 48/63: UpperTheory.Gal.W2.formB
+[audit] 21:32:17 (+0h0m26s)   printing 49/63: Formalism.MainNotions.FormalGroupSystem.Pf.formB
+[audit] 21:32:17 (+0h0m26s)   printing 50/63: GlobalTheory.CompanionTheory.SW.HermSd.formB
+[audit] 21:32:18 (+0h0m27s)   printing 51/63: GlobalTheory.CompanionTheory.SW.WittE.formB
+[audit] 21:32:18 (+0h0m27s)   printing 52/63: UpperTheory.Comparison₂.level_gm_le_on_family_scales
+[audit] 21:32:18 (+0h0m28s)   printing 53/63: UpperTheory.Comparison₂.core_gm
+[audit] 21:32:19 (+0h0m28s)   printing 54/63: Deduction.ch_top
+[audit] 21:32:19 (+0h0m28s)   printing 55/63: GlobalTheory.ThFamRead.ch_top
+[audit] 21:32:20 (+0h0m29s)   printing 56/63: Deduction.ch_balance
+[audit] 21:32:20 (+0h0m29s)   printing 57/63: Deduction.ch_core
+[audit] 21:32:20 (+0h0m30s)   printing 58/63: Deduction.landau_window
+[audit] 21:32:21 (+0h0m30s)   printing 59/63: UpperTheory.Top.boundedTw
+[audit] 21:32:21 (+0h0m30s)   printing 60/63: UpperTheory.Top.hostOfField
+[audit] 21:32:22 (+0h0m31s)   printing 61/63: UpperTheory.Top.divinN_of_hypV
+[audit] 21:32:22 (+0h0m31s)   printing 62/63: GlobalTheory.Top.link_gl
+[audit] 21:32:22 (+0h0m32s)   printing 63/63: UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift
+[audit] 21:32:23 (+0h0m32s) wrote statements.txt
+[audit] 21:32:23 (+0h0m33s) stage 3/4: walking every proof term riemannHypothesis depends on
+[audit] 21:33:33 (+0h1m42s)   walking: level 25, batch 6514/8192 of 62397 declarations, 1239132 constants found so far

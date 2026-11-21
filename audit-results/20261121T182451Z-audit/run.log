@@ -1,1 +1,12 @@
 [18:24:51] running audit/Audit.lean; follow it with: tail -f /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261121T182451Z-audit/progress.log
+[21:04:21] audit exited with code 143
+[audit] 18:25:45 (+0h0m0s) environment loaded: 186200 modules, 2701132 imported constants
+[audit] 18:25:48 (+0h0m3s) located crux names; unresolved: #[]
+[audit] 18:25:49 (+0h0m3s) stage 1/4: axioms of the main theorems and every crux lemma match
+[audit] 18:25:50 (+0h0m4s) wrote axioms.json; riemannHypothesis: {"axioms":["propext","Classical.choice","Quot.sound"],"found":true,"module":"Main","name":"riemannHypothesis","nonStandardAxioms":[]}
+[audit] 18:25:51 (+0h0m6s) stage 2/4: wrote crux.json; pretty-printing statements (up to 8 matches per crux name)
+[audit] 18:25:53 (+0h0m8s) wrote statements.txt
+[audit] 18:25:54 (+0h0m8s) stage 3/4: walking every proof term riemannHypothesis depends on
+[audit] 18:26:58 (+0h1m13s)   walking: level 24, 1196343 constants found, 62397 to expand next
+[21:04:21] done (exit 143). Results: /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261121T182451Z-audit
+[21:04:21] To publish: git add audit-results && git commit -m 'Audit results 20261121T182451Z-audit' && git push

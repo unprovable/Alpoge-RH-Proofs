@@ -1,0 +1,4 @@
+[21:05:13] running audit/Audit.lean; follow it with: tail -f /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261121T210513Z-audit/progress.log
+[21:05:53] audit exited with code 130
+[21:05:53] done (exit 130). Results: /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261121T210513Z-audit
+[21:05:53] To publish: git add audit-results && git commit -m 'Audit results 20261121T210513Z-audit' && git push
