@@ -165,11 +165,12 @@ PY
 
 # --- audit ---------------------------------------------------------------------------------
 run_audit() {
-  log "running audit/Audit.lean (loads the whole project; needs ~20-40 GB RAM)"
-  RH_AUDIT_OUT="$OUT" lake env lean "$REPO/audit/Audit.lean" > "$OUT/audit.log" 2>&1
+  log "running audit/Audit.lean; follow it with: tail -f $OUT/progress.log"
+  if [ -x /usr/bin/time ]; then TIMER=(/usr/bin/time -v -o "$OUT/audit-time.txt"); else TIMER=(); fi
+  RH_AUDIT_OUT="$OUT" "${TIMER[@]}" lake env lean "$REPO/audit/Audit.lean" > "$OUT/audit.log" 2>&1
   local rc=$?
   log "audit exited with code $rc"
-  grep -h '^\[audit\]' "$OUT/audit.log" | tee -a "$OUT/run.log"
+  cat "$OUT/progress.log" 2>/dev/null | tee -a "$OUT/run.log"
   return $rc
 }
 
