@@ -3,25 +3,26 @@ Audit for the RH Lean project. Run it only after `lake build` has succeeded, fro
 
     RH_AUDIT_OUT=/path/to/outdir lake env lean ../audit/Audit.lean
 
-On this project one pass over a top-level proof's dependencies is expensive, so the stages run
-from most to least valuable. Each stage writes its file as soon as it finishes, so the process
-can be stopped at any point without losing earlier results. Progress, with timestamps:
+Stages run from quickest to slowest, and each writes its files as soon as it finishes, so the
+process can be stopped at any point without losing earlier results. Progress, with timestamps:
 
     tail -f $RH_AUDIT_OUT/progress.log
 
 Outputs in $RH_AUDIT_OUT (default ./audit-out):
-  1 axioms.json        axioms behind `riemannHypothesis` (Lean's `collectAxioms`, as `#print axioms`)
-  2 deps.json          how much of the project that proof uses, by library, plus every axiom in it
+  1 axioms.json        axioms behind each main theorem and each crux lemma (Lean's `collectAxioms`, the
+                       function behind `#print axioms`). In Lean 4.33 this reads per-module records
+                       written at build time; `leanchecker` is the independent re-check.
+  2 crux.json          where each crux name resolves
+    statements.txt     the crux definitions and lemmas, fully pretty-printed (fully qualified names)
+  3 deps.json          how much of the project `riemannHypothesis` uses, by library, and every axiom
+                       reached by walking its proof terms (independent of the build-time records)
     module-usage.tsv   for every project module, how many of its declarations that proof uses
-  3 crux.json          where each crux name resolves, and whether `riemannHypothesis` depends on it
-                       (an axiom check per crux lemma is unnecessary: whatever the main proof uses
-                       inherits its axioms, which stage 1 already lists)
-  4 statements.txt     the crux definitions and lemmas, fully pretty-printed (fully qualified names)
-  5 axioms.json        extended with the other main theorems
-  6 crux-weight.json   size of each crux lemma's own dependency closure, within a time budget
+    crux.json          rewritten with, for each match, whether `riemannHypothesis` depends on it
+  4 crux-weight.json   size of each crux lemma's own dependency closure, within a time budget
 
+The dependency walks (stages 3 and 4) run in parallel on all cores (`LEAN_NUM_THREADS`).
 Environment knobs: RH_AUDIT_MAX_MATCHES (statements printed per crux name, default 8),
-RH_AUDIT_WEIGHT_MINUTES (time budget for stage 6, default 60; 0 skips it).
+RH_AUDIT_WEIGHT_MINUTES (time budget for stage 4, default 60; 0 skips it).
 -/
 import Main
 import Lean
@@ -84,26 +85,55 @@ def nameEndsWith : Name → Name → Bool
   | .num p a, .num q b => a == b && nameEndsWith p q
   | _, _ => false
 
-/-- Every constant reachable from `roots` through types, values, constructors and recursors. -/
-def closure (env : Environment) (roots : Array Name) : Std.HashSet Name := Id.run do
-  let mut seen : Std.HashSet Name := {}
-  let mut stack := roots
-  while !stack.isEmpty do
-    let n := stack.back!
-    stack := stack.pop
-    if seen.contains n then continue
-    seen := seen.insert n
-    let some ci := env.find? n | continue
-    let mut refs := ci.type.getUsedConstants
-    if let some v := ci.value? (allowOpaque := true) then
-      refs := refs ++ v.getUsedConstants
+/-- Constants a declaration refers to directly: through its type, its value, and for inductive
+types, constructors and recursors, the declarations they belong with. -/
+def refsOf (env : Environment) (n : Name) : Array Name :=
+  match env.find? n with
+  | none => #[]
+  | some ci =>
+    let refs := ci.type.getUsedConstants
+    let refs := match ci.value? (allowOpaque := true) with
+      | some v => refs ++ v.getUsedConstants
+      | none => refs
     match ci with
-    | .inductInfo i => refs := refs ++ i.ctors.toArray
-    | .ctorInfo c => refs := refs.push c.induct
-    | .recInfo r => refs := refs ++ r.all.toArray
-    | _ => pure ()
-    for r in refs do
-      unless seen.contains r do stack := stack.push r
+    | .inductInfo i => refs ++ i.ctors.toArray
+    | .ctorInfo c => refs.push c.induct
+    | .recInfo r => refs ++ r.all.toArray
+    | _ => refs
+
+/-- Every constant reachable from `roots`. Breadth-first; each level's declarations are walked in
+parallel tasks (walking the proof terms is nearly all of the cost). Reports progress at most
+once a minute through `say`. -/
+def closure (env : Environment) (roots : Array Name) (say : String → IO Unit) :
+    IO (Std.HashSet Name) := do
+  let mut seen : Std.HashSet Name := {}
+  let mut frontier : Array Name := #[]
+  for r in roots do
+    unless seen.contains r do
+      seen := seen.insert r
+      frontier := frontier.push r
+  let mut level := 0
+  let mut lastSay ← IO.monoMsNow
+  while !frontier.isEmpty do
+    let size := max 16 ((frontier.size + 255) / 256)
+    let mut tasks : Array (Task (Array (Array Name))) := #[]
+    let mut i := 0
+    while i < frontier.size do
+      let chunk := frontier.extract i (i + size)
+      tasks := tasks.push (Task.spawn fun _ => chunk.map (refsOf env))
+      i := i + size
+    let mut next : Array Name := #[]
+    for t in tasks do
+      for refs in t.get do
+        for r in refs do
+          unless seen.contains r do
+            seen := seen.insert r
+            next := next.push r
+    level := level + 1
+    if (← IO.monoMsNow) - lastSay ≥ 60000 then
+      say s!"  walking: level {level}, {seen.size} constants found, {next.size} to expand next"
+      lastSay ← IO.monoMsNow
+    frontier := next
   return seen
 
 /-- Resolve dotted suffixes such as "Top.VWin" to every matching non-internal constant. -/
@@ -185,6 +215,22 @@ def ppConst (n : Name) : CommandElabM String := do
     out := out ++ s!"ERROR while printing: {← e.toMessageData.toString}\n"
   return out ++ "\n"
 
+/-- One crux name and its matches; `used?` is the headline closure once it is known. -/
+def cruxRow (env : Environment) (used? : Option (Std.HashSet Name)) (role suf : String)
+    (ns : Array Name) : Json :=
+  let usedField (n : Name) : List (String × Json) :=
+    match used? with
+    | some s => [("usedByMain", toJson (s.contains n))]
+    | none => []
+  Json.mkObj <|
+    [("suffix", toJson suf), ("role", toJson role), ("matches", toJson ns.size)] ++
+    (match used? with
+     | some s => [("usedByMain", toJson (ns.filter s.contains).size)]
+     | none => []) ++
+    [("constants", Json.arr <| ns.map fun n => Json.mkObj <|
+      [("name", toJson (toString n)), ("module", toJson (toString (moduleOf env n))),
+       ("kind", toJson ((env.find? n).map kindOf |>.getD "?"))] ++ usedField n)]
+
 def run (mainThms : Array Name) (cruxThms cruxDefs : Array String) : CommandElabM Unit := do
   let dir ← outDir
   let l : Log := { dir, t0 := ← IO.monoMsNow }
@@ -192,15 +238,48 @@ def run (mainThms : Array Name) (cruxThms cruxDefs : Array String) : CommandElab
   l.say s!"environment loaded: {env.header.moduleNames.size} modules, {env.constants.map₁.size} imported constants"
   let some root := mainThms[0]? | l.say "no main theorem configured"; return
 
-  -- 1. Axioms of the headline theorem.
-  l.say s!"stage 1/6: axioms of {root} (collectAxioms, the function behind #print axioms)"
-  let mut axRows : Array Json := #[← axiomsRow root]
-  IO.FS.writeFile (dir / "axioms.json") (Json.arr axRows).pretty
-  l.say s!"wrote axioms.json: {axRows[0]!.compress}"
+  -- Crux names (one pass over all constants).
+  let hits := resolveSuffixes env (cruxThms ++ cruxDefs)
+  let unresolved := hits.filter (·.2.isEmpty) |>.map (·.1)
+  let thmHits := hits.extract 0 cruxThms.size
+  let defHits := hits.extract cruxThms.size hits.size
+  l.say s!"located crux names; unresolved: {unresolved}"
 
-  -- 2. Dependency closure of the headline theorem.
-  l.say s!"stage 2/6: dependency closure of {root}"
-  let s := closure env #[root]
+  -- 1. Axioms (fast: build-time records).
+  l.say "stage 1/4: axioms of the main theorems and every crux lemma match"
+  let mut axRows : Array Json := #[]
+  for n in mainThms ++ thmHits.foldl (init := #[]) (fun acc (_, ns) => acc ++ ns) do
+    axRows := axRows.push (← axiomsRow n)
+  IO.FS.writeFile (dir / "axioms.json") (Json.arr axRows).pretty
+  l.say s!"wrote axioms.json; {root}: {axRows[0]!.compress}"
+
+  -- 2. Crux locations and statements.
+  let writeCrux (used? : Option (Std.HashSet Name)) : IO Unit :=
+    IO.FS.writeFile (dir / "crux.json") <| (Json.mkObj
+      [("root", toJson (toString root)), ("unresolved", toJson unresolved),
+       ("lemmas", Json.arr <| thmHits.map fun (suf, ns) => cruxRow env used? "lemma" suf ns),
+       ("definitions", Json.arr <| defHits.map fun (suf, ns) => cruxRow env used? "definition" suf ns)]).pretty
+  writeCrux none
+  let maxPer ← envNat "RH_AUDIT_MAX_MATCHES" 8
+  l.say s!"stage 2/4: wrote crux.json; pretty-printing statements (up to {maxPer} matches per crux name)"
+  IO.FS.writeFile (dir / "statements.txt") ""
+  let h ← IO.FS.Handle.mk (dir / "statements.txt") .append
+  for n in mainThms do
+    h.putStr (← ppConst n)
+  for (suf, ns) in defHits ++ thmHits do
+    h.putStr s!"################ {suf}  ({ns.size} match(es); showing up to {maxPer})\n\n"
+    for n in ns.extract 0 maxPer do
+      let t ← IO.monoMsNow
+      h.putStr (← ppConst n)
+      h.flush
+      let dt := (← IO.monoMsNow) - t
+      if dt > 60000 then l.say s!"  printing {n} took {dt / 1000}s"
+  h.flush
+  l.say "wrote statements.txt"
+
+  -- 3. Dependency closure of the headline theorem.
+  l.say s!"stage 3/4: walking every proof term {root} depends on"
+  let s ← closure env #[root] l.say
   let byMod := countByModule env s
   let axInClosure := (s.fold (init := #[]) fun acc n =>
     match env.find? n with
@@ -213,69 +292,21 @@ def run (mainThms : Array Name) (cruxThms cruxDefs : Array String) : CommandElab
   for m in env.header.moduleNames do
     if isProjectModule m then tsv := tsv ++ s!"{m}\t{byMod.getD m 0}\n"
   IO.FS.writeFile (dir / "module-usage.tsv") tsv
-  l.say s!"wrote deps.json, module-usage.tsv: {s.size} constants in the closure; axioms among them: {axInClosure}"
+  writeCrux (some s)
+  l.say s!"wrote deps.json, module-usage.tsv, crux.json: {s.size} constants in the closure; axioms reached: {axInClosure}"
 
-  -- 3. Where the crux names resolve, and whether the headline proof uses them.
-  l.say "stage 3/6: locating crux names"
-  let hits := resolveSuffixes env (cruxThms ++ cruxDefs)
-  let unresolved := hits.filter (·.2.isEmpty) |>.map (·.1)
-  -- Matches the headline proof uses come first.
-  let ordered := hits.map fun (suf, ns) => (suf, ns.filter s.contains ++ ns.filter (!s.contains ·))
-  let thmHits := ordered.extract 0 cruxThms.size
-  let defHits := ordered.extract cruxThms.size ordered.size
-  let cruxRow (role : String) (suf : String) (ns : Array Name) : Json :=
-    Json.mkObj [("suffix", toJson suf), ("role", toJson role), ("matches", toJson ns.size),
-      ("usedByMain", toJson (ns.filter s.contains).size),
-      ("constants", Json.arr <| ns.map fun n => Json.mkObj
-        [("name", toJson (toString n)), ("module", toJson (toString (moduleOf env n))),
-         ("kind", toJson ((env.find? n).map kindOf |>.getD "?")),
-         ("usedByMain", toJson (s.contains n))])]
-  IO.FS.writeFile (dir / "crux.json") <| (Json.mkObj
-    [("root", toJson (toString root)), ("unresolved", toJson unresolved),
-     ("lemmas", Json.arr <| thmHits.map fun (suf, ns) => cruxRow "lemma" suf ns),
-     ("definitions", Json.arr <| defHits.map fun (suf, ns) => cruxRow "definition" suf ns)]).pretty
-  l.say s!"wrote crux.json; unresolved: {unresolved}"
-
-  -- 4. Pretty-printed statements, written as they are produced.
-  let maxPer ← envNat "RH_AUDIT_MAX_MATCHES" 8
-  l.say s!"stage 4/6: pretty-printing statements (up to {maxPer} matches per crux name)"
-  IO.FS.writeFile (dir / "statements.txt") ""
-  let h ← IO.FS.Handle.mk (dir / "statements.txt") .append
-  for n in mainThms do
-    h.putStr (← ppConst n)
-  for (suf, ns) in defHits ++ thmHits do
-    h.putStr s!"################ {suf}  ({ns.size} match(es), {(ns.filter s.contains).size} used by {root}; showing up to {maxPer})\n\n"
-    for n in ns.extract 0 maxPer do
-      let t ← IO.monoMsNow
-      h.putStr (← ppConst n)
-      h.flush
-      let dt := (← IO.monoMsNow) - t
-      if dt > 60000 then l.say s!"  printing {n} took {dt / 1000}s"
-  h.flush
-  l.say "wrote statements.txt"
-
-  -- 5. Axioms of the other main theorems (only those outside the headline closure need a pass).
-  for n in mainThms.extract 1 mainThms.size do
-    if s.contains n then
-      axRows := axRows.push <| Json.mkObj [("name", toString n), ("found", true),
-        ("axioms", toJson "subset of the first row: it is in that theorem's dependency closure")]
-    else
-      l.say s!"stage 5/6: axioms of {n}"
-      axRows := axRows.push (← axiomsRow n)
-    IO.FS.writeFile (dir / "axioms.json") (Json.arr axRows).pretty
-  l.say "wrote axioms.json for all main theorems"
-
-  -- 6. Dependency weight of each crux lemma (one match per name), within a time budget.
+  -- 4. Dependency weight of each crux lemma (one match per name, preferring ones the headline
+  --    proof uses), within a time budget.
   let budget := (← envNat "RH_AUDIT_WEIGHT_MINUTES" 60) * 60000
   let tStart ← IO.monoMsNow
   let mut weights : Array Json := #[]
   for (_, ns) in thmHits do
-    let some n := ns[0]? | continue
+    let some n := (ns.filter s.contains ++ ns)[0]? | continue
     if (← IO.monoMsNow) - tStart ≥ budget then
-      l.say "stage 6/6: time budget used up, stopping"
+      l.say "stage 4/4: time budget used up, stopping"
       break
-    l.say s!"stage 6/6: weight of {n}"
-    let w := closure env #[n]
+    l.say s!"stage 4/4: weight of {n}"
+    let w ← closure env #[n] l.say
     let wMod := countByModule env w
     let projMods := wMod.toList.filter (fun (m, _) => isProjectModule m)
     let projConsts := projMods.foldl (init := 0) fun acc (_, k) => acc + k
