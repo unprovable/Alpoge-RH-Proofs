@@ -22,6 +22,7 @@ Outputs in $RH_AUDIT_OUT (default ./audit-out):
 
 The dependency walks (stages 3 and 4) run in parallel on all cores (`LEAN_NUM_THREADS`).
 Environment knobs: RH_AUDIT_MAX_MATCHES (statements printed per crux name, default 8),
+RH_AUDIT_PP_LIMIT (terms with more distinct subterms than this are not printed, default 100000),
 RH_AUDIT_WEIGHT_MINUTES (time budget for stage 4, default 60; 0 skips it).
 -/
 import Main
@@ -123,16 +124,18 @@ def closure (env : Environment) (roots : Array Name) (say : String → IO Unit) 
       tasks := tasks.push (Task.spawn fun _ => chunk.map (refsOf env))
       i := i + size
     let mut next : Array Name := #[]
+    let mut done := 0
+    level := level + 1
     for t in tasks do
       for refs in t.get do
         for r in refs do
           unless seen.contains r do
             seen := seen.insert r
             next := next.push r
-    level := level + 1
-    if (← IO.monoMsNow) - lastSay ≥ 60000 then
-      say s!"  walking: level {level}, {seen.size} constants found, {next.size} to expand next"
-      lastSay ← IO.monoMsNow
+      done := done + 1
+      if (← IO.monoMsNow) - lastSay ≥ 60000 then
+        say s!"  walking: level {level}, chunk {done}/{tasks.size} of {frontier.size} declarations, {seen.size} constants found so far"
+        lastSay ← IO.monoMsNow
     frontier := next
   return seen
 
@@ -194,22 +197,28 @@ def depsSummary (env : Environment) (byMod : Std.HashMap Name Nat) (total : Nat)
      ("byProjectLibrary", Json.mkObj roots),
      ("constantsFromOutsideProject", Json.mkObj (nonProject.toList.map fun (r, k) => (r, toJson k)))]
 
+/-- Pretty-print `e` unless it has more than `limit` distinct subterms (printing is slow on huge terms). -/
+def ppCapped (limit : Nat) (label : String) (e : Expr) : CommandElabM String := do
+  let k ← e.numObjs
+  if k > limit then
+    return s!"{label}: not printed ({k} distinct subterms; raise RH_AUDIT_PP_LIMIT to print it)\n"
+  let f ← liftTermElabM <| ppExpr e
+  return s!"{label}:\n{f.pretty 120}\n"
+
 def ppConst (n : Name) : CommandElabM String := do
   let env ← getEnv
+  let limit ← envNat "RH_AUDIT_PP_LIMIT" 100000
   let some ci := env.find? n | return s!"## {n}\nNOT FOUND\n\n"
   let mut out := s!"## {n}\nkind: {kindOf ci}   module: {moduleOf env n}\n"
   try
-    let ty ← liftTermElabM <| ppExpr ci.type
-    out := out ++ s!"type:\n{ty.pretty 120}\n"
+    out := out ++ (← ppCapped limit "type" ci.type)
     match ci with
     | .defnInfo d =>
-      let v ← liftTermElabM <| ppExpr d.value
-      out := out ++ s!"value:\n{v.pretty 120}\n"
+      out := out ++ (← ppCapped limit "value" d.value)
     | .inductInfo i =>
       for c in i.ctors do
         if let some cc := env.find? c then
-          let ct ← liftTermElabM <| ppExpr cc.type
-          out := out ++ s!"constructor {c}:\n{ct.pretty 120}\n"
+          out := out ++ (← ppCapped limit s!"constructor {c}" cc.type)
     | _ => pure ()
   catch e =>
     out := out ++ s!"ERROR while printing: {← e.toMessageData.toString}\n"
@@ -266,14 +275,18 @@ def run (mainThms : Array Name) (cruxThms cruxDefs : Array String) : CommandElab
   let h ← IO.FS.Handle.mk (dir / "statements.txt") .append
   for n in mainThms do
     h.putStr (← ppConst n)
+  let total := (defHits ++ thmHits).foldl (init := 0) fun acc (_, ns) => acc + min ns.size maxPer
+  let mut k := 0
   for (suf, ns) in defHits ++ thmHits do
     h.putStr s!"################ {suf}  ({ns.size} match(es); showing up to {maxPer})\n\n"
     for n in ns.extract 0 maxPer do
+      k := k + 1
+      l.say s!"  printing {k}/{total}: {n}"
       let t ← IO.monoMsNow
       h.putStr (← ppConst n)
       h.flush
       let dt := (← IO.monoMsNow) - t
-      if dt > 60000 then l.say s!"  printing {n} took {dt / 1000}s"
+      if dt > 30000 then l.say s!"  (that took {dt / 1000}s)"
   h.flush
   l.say "wrote statements.txt"
 
