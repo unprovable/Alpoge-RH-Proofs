@@ -102,9 +102,10 @@ def refsOf (env : Environment) (n : Name) : Array Name :=
     | .recInfo r => refs ++ r.all.toArray
     | _ => refs
 
-/-- Every constant reachable from `roots`. Breadth-first; each level's declarations are walked in
-parallel tasks (walking the proof terms is nearly all of the cost). Reports progress at most
-once a minute through `say`. -/
+/-- Every constant reachable from `roots`. Breadth-first. Each level's declarations are dealt out
+round-robin into many small batches that run as parallel tasks (walking proof terms is nearly all
+of the cost, and neighbouring declarations tend to be heavy together). Every minute it reports
+progress and names any declaration that has been walked for more than two minutes. -/
 def closure (env : Environment) (roots : Array Name) (say : String → IO Unit) :
     IO (Std.HashSet Name) := do
   let mut seen : Std.HashSet Name := {}
@@ -116,26 +117,46 @@ def closure (env : Environment) (roots : Array Name) (say : String → IO Unit) 
   let mut level := 0
   let mut lastSay ← IO.monoMsNow
   while !frontier.isEmpty do
-    let size := max 16 ((frontier.size + 255) / 256)
-    let mut tasks : Array (Task (Array (Array Name))) := #[]
-    let mut i := 0
-    while i < frontier.size do
-      let chunk := frontier.extract i (i + size)
-      tasks := tasks.push (Task.spawn fun _ => chunk.map (refsOf env))
-      i := i + size
-    let mut next : Array Name := #[]
-    let mut done := 0
     level := level + 1
-    for t in tasks do
-      for refs in t.get do
-        for r in refs do
-          unless seen.contains r do
-            seen := seen.insert r
-            next := next.push r
-      done := done + 1
-      if (← IO.monoMsNow) - lastSay ≥ 60000 then
-        say s!"  walking: level {level}, chunk {done}/{tasks.size} of {frontier.size} declarations, {seen.size} constants found so far"
-        lastSay ← IO.monoMsNow
+    let k := max 1 (min 8192 ((frontier.size + 3) / 4))
+    let mut batches : Array (Array Name) := Array.replicate k #[]
+    for i in [0:frontier.size] do
+      batches := batches.modify (i % k) (·.push frontier[i]!)
+    let mut tasks : Array (Task (Except IO.Error (Array (Array Name)))) := #[]
+    let mut current : Array (IO.Ref (Name × Nat)) := #[]
+    for b in batches do
+      let cur ← IO.mkRef (Name.anonymous, 0)
+      let t ← IO.asTask do
+        let mut out : Array (Array Name) := #[]
+        for n in b do
+          cur.set (n, ← IO.monoMsNow)
+          out := out.push (refsOf env n)
+        cur.set (Name.anonymous, 0)
+        return out
+      tasks := tasks.push t
+      current := current.push cur
+    let mut next : Array Name := #[]
+    for j in [0:tasks.size] do
+      let t := tasks[j]!
+      while !(← IO.hasFinished t) do
+        IO.sleep 20
+        let now ← IO.monoMsNow
+        if now - lastSay ≥ 60000 then
+          let mut slow : Array String := #[]
+          for c in current do
+            let (n, st) ← c.get
+            if st > 0 && now - st ≥ 120000 then
+              slow := slow.push s!"{n} ({(now - st) / 60000} min)"
+          say s!"  walking: level {level}, batch {j}/{tasks.size} of {frontier.size} declarations, {seen.size} constants found so far{if slow.isEmpty then "" else s!"; slow: {slow.toList.take 6}"}"
+          lastSay := now
+      match t.get with
+      | .ok arrs =>
+        for refs in arrs do
+          for r in refs do
+            unless seen.contains r do
+              seen := seen.insert r
+              next := next.push r
+      | .error e => say s!"  error while walking: {e}"
     frontier := next
   return seen
 
