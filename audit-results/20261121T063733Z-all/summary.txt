@@ -1,0 +1,87 @@
+modules built this run: 94481
+last progress counter: 183902/183903
+total CPU-seconds in built modules: 979240
+
+slowest 40 modules:
+      635.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartTiedLevelChain
+      618.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fClassWachPairJumps
+      547.0s  GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.CardCohomologyZeroMackeyRepOfNeTop
+      515.0s  GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseMain
+      441.0s  Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr
+      424.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeoHalfUpd
+      398.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRecGOfIsLocalFamily
+      379.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharacterisationTransferMovedReadings
+      352.0s  Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelGroupReferenceTuple
+      340.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnChoiceTwistedChainsFormsClasses
+      337.0s  Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LevGBaseOfBWit
+      317.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsRe
+      316.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealDatumPrerequisitesUpdateModels
+      310.0s  Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ValTransOfEq
+      292.0s  GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenLevel
+      289.0s  GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseLevel
+      287.0s  GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenTau
+      279.0s  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateLiftUniqueAndBaseDatum
+      272.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZgFormula
+      272.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RestrictJumps
+      269.0s  Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinTypRepCast
+      260.0s  Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVin
+      239.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinEquivApply
+      228.0s  Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ModelLPfD
+      224.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBcrisTensorLatticeToDeRhamMap
+      221.0s  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SepOfHausdorff
+      215.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChainComparisonTransferOtherLaterStages
+      213.0s  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateLiftOfCharacterisationClauses
+      212.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnParamsInstanceData
+      210.0s  Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RealDataOfWitness
+      208.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesAtOfExpRelation
+      208.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteNonzeroIndexPlacesReferenceTuple
+      200.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReadingInMovedRowData
+      196.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CongrFunHeq
+      195.0s  Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.InGeoGeoScalIff
+      194.0s  GroundTheory.ProfiniteCohomology.RestrictedRamification.BijectiveGsLocalInvRootsOfPlaces
+      192.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartWiden
+      190.0s  Formalism.WachLatticeTwists.SplitClassesAll.SplitClassesProofs.SrcNO
+      190.0s  Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReFacePrim
+      187.0s  Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertValuesIffInertLabelsCarriedEigensystems
+
+largest peak memory (sampled every 20s), top 40:
+    55.95 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean
+    53.06 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TemperedProductOfSquareIntegrable.lean
+    52.98 GB  Supplements/Kernels/MainTheorems.lean
+    52.90 GB  Supplements/Kernels/MainTheoremsAll.lean
+    50.31 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean
+    48.17 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean
+    34.87 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean
+    34.34 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean
+    32.92 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean
+    30.13 GB  Development/AbelianVarietyTheory/Proofs/DivisorProofs/NonemptyHypsOfPublishedUE.lean
+    29.70 GB  Main.lean
+    27.31 GB  Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean
+    25.30 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnEndsTop.lean
+    24.51 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsBaseLatticeOfPrime.lean
+    24.50 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean
+    24.35 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean
+    24.20 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftHypothesesOfNonvanishing.lean
+    24.04 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlEHolds.lean
+    23.99 GB  Development/WeilBound/CoreStatements/NefModelVolumes/TopCovolSlim2.lean
+    23.92 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KeepNumU.lean
+    23.86 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FourierCoefficientFitOfJoin.lean
+    23.65 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HidaLevelX.lean
+    23.34 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FittedFunctionAtZeroClose.lean
+    23.11 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ModNOf.lean
+    23.11 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BrAutNew.lean
+    23.00 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VWinNumN.lean
+    22.63 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean
+    22.40 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BirthTop.lean
+    22.39 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/LocalConditionCharacters/AutNewformAOfEx.lean
+    22.38 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SVROrdIrr.lean
+    22.36 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AutNewform2A.lean
+    22.34 GB  Development/AbelianVarietyTheory/Proofs/DivisorProofs/OpenFirstParametersOfPublishedUE.lean
+    22.32 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AutNewformAOfEx.lean
+    22.31 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AutomorphyOfHyp.lean
+    22.31 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WEGCore.lean
+    22.17 GB  Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FiniteLevelAndSecond.lean
+    22.17 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/BirthMix.lean
+    22.17 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PartU.lean
+    22.13 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AutEnd3Alt.lean
+    22.06 GB  Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/JPTRow.lean

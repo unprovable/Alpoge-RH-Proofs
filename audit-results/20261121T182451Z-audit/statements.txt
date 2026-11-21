@@ -1,0 +1,1214 @@
+## riemannHypothesis
+kind: theorem   module: Main
+type:
+RiemannHypothesis
+
+## riemannZeta_eq_zero_re
+kind: theorem   module: Main
+type:
+RiemannZetaZerosOnLine
+
+## LFunction_ne_zero_of_half_lt_re
+kind: theorem   module: Main
+type:
+DirichletLNonvanishingRightOfHalf
+
+## LFunction_eq_zero_re
+kind: theorem   module: Main
+type:
+DirichletLZerosOnLine
+
+## LFunction_eq_zero_re_of_isPrimitive
+kind: theorem   module: Main
+type:
+PrimitiveDirichletLZerosOnLine
+
+## RiemannHypothesis
+kind: def   module: Mathlib.NumberTheory.LSeries.RiemannZeta
+type:
+Prop
+value:
+∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → s ≠ 1 → s.re = 1 / 2
+
+## RiemannZetaZerosOnLine
+kind: def   module: Statements
+type:
+Prop
+value:
+∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → s ≠ 1 → s.re = 1 / 2
+
+## DirichletLNonvanishingRightOfHalf
+kind: def   module: Statements
+type:
+Prop
+value:
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+  1 / 2 < s.re → χ ≠ 1 ∨ s ≠ 1 → DirichletCharacter.LFunction χ s ≠ 0
+
+## DirichletLZerosOnLine
+kind: def   module: Statements
+type:
+Prop
+value:
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+  0 < s.re → s.re < 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2
+
+## PrimitiveDirichletLZerosOnLine
+kind: def   module: Statements
+type:
+Prop
+value:
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+  χ.IsPrimitive → ∀ (s : ℂ), 0 < s.re → s.re < 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2
+
+################ UpperTheory.EveryCharacter  (1 match(es); showing up to 8)
+
+## UpperTheory.EveryCharacter
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
+type:
+Prop
+value:
+∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+  1 / 2 < s.re → χ ≠ 1 ∨ s ≠ 1 → DirichletCharacter.LFunction χ s ≠ 0
+
+################ UpperTheory.Top.VWin  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.VWin
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+type:
+Prop
+value:
+∀ (ψ : Formalism.HC.PChar), UpperTheory.Top.VWinAt ψ 401
+
+################ UpperTheory.Top.VWinAt  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.VWinAt
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+type:
+Formalism.HC.PChar → ℝ → Prop
+value:
+fun ψ Ct =>
+  ∀ (eps : ℝ),
+    0 < eps →
+      eps < 1 / 52 →
+        ∀ (e : ℝ → ℕ),
+          (∀ x ≥ 1, UpperTheory.Top.PageN eps x (e x)) →
+            ∃ J,
+              1 ≤ J ∧
+                ∃ X0,
+                  ∀ X ≥ X0,
+                    ∀ (q d : ℕ),
+                      UpperTheory.Top.WinPair eps (X ^ (1 / J)) q d →
+                        ∃ Y,
+                          X ^ (1 / J) ≤ Y ∧
+                            Y ^ 2 ≤ X ∧ ∀ (x : ℝ), Y ≤ x → x ≤ Y ^ 2 → UpperTheory.Top.VAt ψ eps Ct q d (e x) x
+
+################ UpperTheory.Top.VVle  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.VVle
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+type:
+(E : Type) → [inst : Field E] → [NumberField E] → ℕ → ℝ → Prop
+value:
+fun E [Field E] [NumberField E] t B =>
+  ∀ (Ω : Type) [inst_2 : Field Ω] [inst_3 : Algebra E Ω] [inst_4 : IsAlgClosure E Ω]
+    (ld : (p : ℕ) → [inst_5 : Fact (Nat.Prime p)] → Formalism.GaloisCohomology.LData E Ω p),
+    (∀ (p : ℕ) [inst_5 : Fact (Nat.Prime p)] (e : ℕ), 0 < e → e < t → Formalism.GaloisCohomology.shaLen (ld p) ↑e ≠ ⊤) ∧
+      ∀ (S : Finset Nat.Primes),
+        ∑ l ∈ S, Real.log ↑↑l * ∑ e ∈ Finset.Ico 1 t, ↑(Formalism.GaloisCohomology.shaLen (ld ↑l) ↑e).toNat ≤ B
+
+################ UpperTheory.Top.VAt  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.VAt
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
+type:
+Formalism.HC.PChar → ℝ → ℝ → ℕ → ℕ → ℕ → ℝ → Prop
+value:
+fun ψ eps Ct q d e x =>
+  ∀ (E : Type) [inst : Field E] [inst_1 : NumberField E],
+    UpperTheory.Top.IsChiField ψ e q d E → UpperTheory.Top.VVle E ⌊x ^ Ct⌋₊ √(Real.exp (x ^ eps))
+
+################ UpperTheory.Top.TopG  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.TopG
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG
+type:
+Prop
+value:
+∀ (la : ℝ) (G : UpperTheory.Top.FReq),
+  1 < la →
+    GlobalTheory.EX.HostExW la G.req →
+      (∀ {eps : ℝ} (Fm : Formalism.MainNotions.FamP eps), G.cls la Fm → UpperTheory.Top.HypV Fm.toFamCore) →
+        UpperTheory.Top.FamilyClassConnected fun {eps} => G.cls la
+
+################ Formalism.HC.Level.Gm  (1 match(es); showing up to 8)
+
+## Formalism.HC.Level.Gm
+kind: def   module: Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions
+type:
+Formalism.HC.Level → ℝ → ℝ
+value:
+fun Λ y => Formalism.Gz y + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * (Formalism.HC.An.gChi ψ.χ y).re
+
+################ Formalism.HC.EAtH  (1 match(es); showing up to 8)
+
+## Formalism.HC.EAtH
+kind: inductive   module: Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions
+type:
+Formalism.HC.Level → {φ : Formalism.HC.Frame} → Formalism.HC.HostRaw φ → Finset φ.A → ℝ → ℝ → ℝ → Prop
+constructor Formalism.HC.EAtH.mk:
+∀ {Λ : Formalism.HC.Level} {φ : Formalism.HC.Frame} {H : Formalism.HC.HostRaw φ} {TT : Finset φ.A} {x eps C : ℝ},
+  φ.o = Λ.o →
+    H.KeptInXp Λ.KEPT →
+      H.ExceptionalCharacterKept Λ.KEPT Λ.psK →
+        φ.Shares TT (x ^ (-1 + eps)) →
+          H.BoundedCharsPointwise Λ.KEPT x eps →
+            (∀ θ ∈ H.Bounded Λ.KEPT,
+                ∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+                  H.IsPrimOf θ χ → ‖Formalism.HC.An.logDerivativeAtOne χ‖ ≤ C * Real.log x) →
+              Formalism.HC.EAtH Λ H TT x eps C
+
+################ FormBAt  (1 match(es); showing up to 8)
+
+## Formalism.HC.Level.FormBAt
+kind: def   module: Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Window
+type:
+Formalism.HC.Level → ℝ → Prop
+value:
+fun Λ la => ∀ (θ : ℝ), 0 < θ → θ < 1 → Formalism.HC.HasWindows {x | Λ.Gm x ≤ x ^ θ} la → Λ.ZeroFreeAbove θ
+
+################ ChainTied  (1 match(es); showing up to 8)
+
+## Formalism.MainNotions.ChainTied
+kind: def   module: Formalism.SharpRestriction.GlobalSchurBounds.TieGlobal
+type:
+{eps : ℝ} → Formalism.MainNotions.FamP eps → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → Prop
+value:
+fun {eps} Fm eD eL K cHH eK CL x =>
+  ∃ i0 m f pt av bv Top x_1 Dd C Xpp ell N TT T2 a w eT eP η X' θ,
+    Formalism.MainNotions.TiePts Fm x (Fm.D x i0).R.toFrame m f (Fm.D x i0).host.q (Fm.D x i0).host.d pt av bv ∧
+      Formalism.MainNotions.TieGlobal Fm x pt Dd Xpp η X' ∧
+        Formalism.MainNotions.TieLocal Fm x pt Dd ∧
+          Formalism.MainNotions.TieArith Fm x pt av (Formalism.MainNotions.arithOf (Fm.D x i0).host.toHostRaw) ell TT T2
+              a w ∧
+            Dd.x = x ∧
+              Dd.ε = eps ∧
+                C.eDiv ≤ eD ∧
+                  C.eLoss ≤ eL ∧
+                    C.cHH ≤ cHH ∧
+                      Formalism.LFunctionChainParameters.LChain.Ident Dd
+                          (Formalism.MainNotions.arithOf (Fm.D x i0).host.toHostRaw) N ell TT a w eT eP ∧
+                        Formalism.LFunctionChainParameters.LChain.SizeData₂ Dd C Xpp ∧
+                          Formalism.LFunctionChainParameters.LErr.ErrWindows Dd C Xpp eK K ∧
+                            Formalism.LFunctionChainParameters.LChain.BNBounds Dd T2 ∧
+                              Formalism.LFunctionChainParameters.LChain.GrowthInequalityRemainingHyps
+                                  (Formalism.MainNotions.arithOf (Fm.D x i0).host.toHostRaw) ell N TT T2 a w x eps Dd.b
+                                  Dd.b' η X' θ CL ∧
+                                Formalism.LFunctionChainParameters.LChain.CostWindows x
+                                    (Formalism.LFunctionChainParameters.ThickSetMeanBounds.fPl (Fm.D x i0).R.A) Dd.b η
+                                    θ ∧
+                                  Formalism.LFunctionChainParameters.LChain.RestSize eps x
+                                    (Fintype.card (Fm.D x i0).R.A) TT.card T2.card m Dd.b Dd.k Dd.a
+
+################ SizeData₂  (4 match(es); showing up to 8)
+
+## Formalism.BasicNotions.SizeData₂
+kind: inductive   module: Formalism.LocalRingCardinality.DataParams₂
+type:
+Formalism.BasicNotions.D7 → Type
+constructor Formalism.BasicNotions.SizeData₂.mk:
+{D : Formalism.BasicNotions.D7} →
+  (sc : Formalism.BasicNotions.Scale) →
+    (aT : ↥D.host.TT → ℤ) →
+      (∀ (t : ↥D.host.TT),
+          sc.a ≤ ↑(aT t) ∧ ↑(aT t) ≤ sc.a + sc.a / (↑D.R.k * sc.x ^ (Formalism.BasicNotions.Scale.A / 2))) →
+        (bT : ↥D.host.TT → ℤ) →
+          (∀ (t : ↥D.host.TT), sc.b' ≤ ↑(bT t)) →
+            (∀ (τ : D.what₂.Tau) (t : ↥D.host.TT) (h0 : 0 < D.R.k),
+                ↑(D.eTau τ) = D.R.tau1 ↑t →
+                  ↑((D.hc τ).u ⟨0, h0⟩) = ↑(aT t) + (↑D.R.k - 1) / 2 ∧
+                    ↑((D.hc τ).u ⟨D.R.k - 1, ⋯⟩) = -↑(bT t) - (↑D.R.k - 1) / 2) →
+              (∀ (τ : D.what₂.Tau) (t : ↥D.host.TT) (hm : 0 < D.R.m),
+                  ↑(D.eTau τ) = D.R.tau1 ↑t → ↑((D.hc τ).b ⟨0, hm⟩) - ↑(bT t) > (↑D.R.k - 1) / 2 + 3) →
+                (supp : Finset D.what₂.places.Pl) →
+                  (gain F : ℕ → D.what₂.places.Pl → ℝ) →
+                    (E : D.what₂.Word → ℕ → D.what₂.places.Pl → ℝ) →
+                      (tau io : D.what₂.places.Pl → ℝ) →
+                        (∀ (j : ℕ), ∀ w ∉ supp, gain j w = 0) →
+                          (∀ (j : ℕ), ∀ w ∉ supp, F j w = 0) →
+                            (∀ (u : D.what₂.Word) (j : ℕ), ∀ w ∉ supp, E u j w = 0) →
+                              (∀ w ∉ supp, tau w = 0) →
+                                (∀ w ∉ supp, io w = 0) →
+                                  (∀ (j : ℕ) (w : D.what₂.places.Pl),
+                                      D.what₂.places.resChar w ∈ {D.host.g 0, D.host.g 1} → gain j w = 0) →
+                                    (∀ (τ : D.what₂.Tau) (j : Fin D.R.m), ↑((D.hc τ).b j) ≤ sc.b ^ 2) →
+                                      (∀ (w : D.what₂.places.Pl),
+                                          D.what₂.muAt w = D.what₂.mu0 →
+                                            ∀ (j : ℕ), 1 ≤ j → j ≤ D.R.m → D.what₂.Aj j w = 0 ∧ F j w = 0) →
+                                        (∀ (w : D.what₂.places.Pl),
+                                            D.host.cls (D.what₂.places.resChar w) ≠
+                                                Formalism.BasicNotions.PrimeClass.signal →
+                                              D.host.cls (D.what₂.places.resChar w) ≠
+                                                  Formalism.BasicNotions.PrimeClass.inertClass →
+                                                (∀ (j : ℕ), gain j w = 0) ∧ tau w = 0 ∧ io w = 0) →
+                                          (drop : Set ℕ) →
+                                            (∀ (u : D.what₂.Word), (D.mem u).A.T ∉ drop) →
+                                              (∀ (j : ℕ) (w : D.what₂.places.Pl), F j (D.what₂.places.conj w) = F j w) →
+                                                (∀ (j : ℕ) (w : D.what₂.places.Pl),
+                                                    sc.X'' D.R.n < ↑(D.what₂.places.resChar w) →
+                                                      D.what₂.places.resChar w ∉ {D.host.g 0, D.host.g 1} →
+                                                        D.what₂.places.resChar w ≠ D.host.d → F j w = 0) →
+                                                  (j0 : ℕ) →
+                                                    Real.logb 5 (↑D.R.n * ↑(D.R.N D.R.m) / ↑D.R.m) ≤ ↑j0 →
+                                                      10 * j0 + 20 ≤ D.host.Lw →
+                                                        (logDerivativeAtOne : ℝ) →
+                                                          logDerivativeAtOne = Formalism.BasicNotions.dlogL D 1 →
+                                                            ⌊sc.x ^ (sc.ez / 5)⌋₊ ≤ D.host.splitBound →
+                                                              ↑D.R.o ≤ sc.x ^ (sc.eps / 100) →
+                                                                ↑D.host.QS ≤ 4 * ↑D.R.n * sc.x ^ (sc.eps / 100) →
+                                                                  ((u : D.what₂.Word) →
+                                                                      Submodule (NumberField.RingOfIntegers D.what₂.LL)
+                                                                        (D.div.Nu u).V) →
+                                                                    (de2 : ℝ) →
+                                                                      0 < de2 →
+                                                                        de2 ≤ 1 →
+                                                                          de2 = ↑D.host.T2.card / ↑D.R.n →
+                                                                            ℝ →
+                                                                              (Sc etaSz : ℝ) →
+                                                                                0 < Sc →
+                                                                                  Sc = ↑D.R.k * (4 * ↑D.s.Del) →
+                                                                                    (Cc : ℝ) →
+                                                                                      (∀ (j : ℕ),
+                                                                                          1 ≤ j →
+                                                                                            j ≤ D.R.m →
+                                                                                              ∀ (τ : D.what₂.Tau),
+                                                                                                ↑(D.eTau τ) ∈
+                                                                                                    D.host.thickPlaces →
+                                                                                                  sc.b ≤
+                                                                                                      Formalism.BasicNotions.wj
+                                                                                                        D j τ ∧
+                                                                                                    Formalism.BasicNotions.wj
+                                                                                                        D j τ ≤
+                                                                                                      sc.b + etaSz +
+                                                                                                        1) →
+                                                                                        (∀ (j : ℕ),
+                                                                                            1 ≤ j →
+                                                                                              j ≤ D.R.m →
+                                                                                                ∀ (τ : D.what₂.Tau)
+                                                                                                  (t : ↥D.host.TT),
+                                                                                                  ↑(D.eTau τ) =
+                                                                                                      D.R.tau1 ↑t →
+                                                                                                    ↑(bT t) +
+                                                                                                          sc.b' / sc.x ≤
+                                                                                                        Formalism.BasicNotions.wj
+                                                                                                          D j τ ∧
+                                                                                                      Formalism.BasicNotions.wj
+                                                                                                          D j τ ≤
+                                                                                                        ↑(bT t) +
+                                                                                                            sc.b' /
+                                                                                                              sc.x +
+                                                                                                          etaSz) →
+                                                                                          (∀ (j : ℕ),
+                                                                                              1 ≤ j →
+                                                                                                j ≤ D.R.m →
+                                                                                                  ∀ (τ : D.what₂.Tau),
+                                                                                                    D.host.IsThin
+                                                                                                        ↑(D.eTau τ) →
+                                                                                                      sc.w'' D.R.n ≤
+                                                                                                          Formalism.BasicNotions.wj
+                                                                                                            D j τ ∧
+                                                                                                        Formalism.BasicNotions.wj
+                                                                                                            D j τ ≤
+                                                                                                          sc.w'' D.R.n +
+                                                                                                            etaSz) →
+                                                                                            (∀ (τ : D.what₂.Tau)
+                                                                                                (h0 : 0 < D.R.k - 1),
+                                                                                                ↑(D.eTau τ) ∉
+                                                                                                    D.host.topPlaces →
+                                                                                                  Sc ≤
+                                                                                                      ↑((D.hc τ).u
+                                                                                                            ⟨0, ⋯⟩ -
+                                                                                                          (D.hc τ).v
+                                                                                                            ⟨0, h0⟩) ∧
+                                                                                                    ↑((D.hc τ).u
+                                                                                                            ⟨0, ⋯⟩ -
+                                                                                                          (D.hc τ).v
+                                                                                                            ⟨0, h0⟩) ≤
+                                                                                                      Cc * Sc) →
+                                                                                              (∀ (τ : D.what₂.Tau)
+                                                                                                  (i : Fin (D.R.k - 1)),
+                                                                                                  0 ≤ ↑((D.hc τ).v i) ∧
+                                                                                                    ↑((D.hc τ).v i) ≤
+                                                                                                      Sc) →
+                                                                                                (∀ (u : D.what₂.Word)
+                                                                                                    (τ : D.what₂.Tau)
+                                                                                                    (i : Fin D.R.k),
+                                                                                                    1 ≤ ↑i →
+                                                                                                      ↑i + 1 < D.R.k →
+                                                                                                        0 ≤
+                                                                                                            ↑((D.hcW u
+                                                                                                                    τ).u
+                                                                                                                i) ∧
+                                                                                                          ↑((D.hcW u
+                                                                                                                    τ).u
+                                                                                                                i) ≤
+                                                                                                            Sc) →
+                                                                                                  (∀ (τ : D.what₂.Tau)
+                                                                                                      (i j : Fin D.R.m),
+                                                                                                      |↑((D.hc τ).b i -
+                                                                                                              (D.hc τ).e
+                                                                                                                j)| ≤
+                                                                                                        etaSz) →
+                                                                                                    0 < etaSz →
+                                                                                                      (TTw :
+                                                                                                          D.what₂.places.Pl →
+                                                                                                            Finset
+                                                                                                              ↥D.host.TT) →
+                                                                                                        (∀
+                                                                                                            (w :
+                                                                                                              D.what₂.places.Pl),
+                                                                                                            D.host.cls
+                                                                                                                    (D.what₂.places.resChar
+                                                                                                                      w) =
+                                                                                                                  Formalism.BasicNotions.PrimeClass.signal ∨
+                                                                                                                sc.X' ≤
+                                                                                                                  ↑(D.what₂.places.resChar
+                                                                                                                      w) →
+                                                                                                              TTw w =
+                                                                                                                Finset.univ) →
+                                                                                                          (Ct : ℝ) →
+                                                                                                            1 ≤ ↑D.R.t ∧
+                                                                                                                ↑D.R.t ≤
+                                                                                                                  sc.x ^
+                                                                                                                    Ct →
+                                                                                                              (CGam :
+                                                                                                                  ℝ) →
+                                                                                                                0 <
+                                                                                                                    CGam →
+                                                                                                                  (∀
+                                                                                                                      (u :
+                                                                                                                        D.what₂.Word),
+                                                                                                                      Real.log
+                                                                                                                          (D.mem
+                                                                                                                                u).A.GamP =
+                                                                                                                        CGam *
+                                                                                                                              ↑D.R.m ^
+                                                                                                                                5 *
+                                                                                                                            ↑D.R.f *
+                                                                                                                          sc.L) →
+                                                                                                                    (wPart :
+                                                                                                                        ℕ →
+                                                                                                                          ↥D.host.TT →
+                                                                                                                            ℕ →
+                                                                                                                              ℕ →
+                                                                                                                                ℝ) →
+                                                                                                                      (∀
+                                                                                                                          (j :
+                                                                                                                            ℕ)
+                                                                                                                          (t :
+                                                                                                                            ↥D.host.TT)
+                                                                                                                          (p
+                                                                                                                            i :
+                                                                                                                            ℕ),
+                                                                                                                          1 ≤
+                                                                                                                            wPart
+                                                                                                                              j
+                                                                                                                              t
+                                                                                                                              p
+                                                                                                                              i) →
+                                                                                                                        (D.what₂.Word →
+                                                                                                                            D.what₂.places.Pl →
+                                                                                                                              ℚ) →
+                                                                                                                          Formalism.BasicNotions.SizeData₂
+                                                                                                                            D
+
+## Formalism.CohomologicalDescent.LogSmallConstantBounds.SizeData₂
+kind: inductive   module: Formalism.PieriBlockIdeals.MertensReciprocalElementary
+type:
+Type → Type
+constructor Formalism.CohomologicalDescent.LogSmallConstantBounds.SizeData₂.mk:
+{ι : Type} →
+  Finset ι →
+    Finset ℕ →
+      (ℕ → ℕ) →
+        (ι → ℕ → ℕ) →
+          (ι → ℕ → ℕ) →
+            (ι → ℕ → ℕ) →
+              (ι → ℕ → ℕ) →
+                (ι → ℕ) →
+                  (ι → ℕ) →
+                    (ι → ℤ) →
+                      (ι → ℤ) → (ι → ℤ) → (ι → ℝ) → Formalism.CohomologicalDescent.LogSmallConstantBounds.SizeData₂ ι
+
+## Formalism.LFunctionChainParameters.DeficitSplitLemmas.SizeData₂
+kind: def   module: Formalism.SizeWindowBrackets.SecondKindBucket
+type:
+{κ : Type u_2} →
+  {τ : Type u_3} →
+    Finset κ → Finset τ → (ℕ → Finset τ) → (κ → τ → ℕ → ℝ) → (κ → ℕ → ℝ) → (ℕ → ℝ) → (ℕ → ℝ) → (ℕ → ℝ) → ℕ → Prop
+value:
+fun {κ} {τ} J TT TTp vonMangoldtClassSum gain tau lo fl p =>
+  TTp p ⊆ TT ∧ ∑ j ∈ J, ∑ t ∈ TTp p, (vonMangoldtClassSum j t p - lo p) - ↑J.card * fl p ≤ ∑ j ∈ J, gain j p - tau p
+
+## Formalism.LFunctionChainParameters.LChain.SizeData₂
+kind: def   module: Formalism.SizeWindowBrackets.SChain
+type:
+{U0 : Type} →
+  {W : U0 → Type} →
+    [(u0 : U0) → Fintype (W u0)] →
+      [∀ (u0 : U0), Nonempty (W u0)] →
+        {Top : Type} →
+          [Fintype Top] →
+            {m f : ℕ} →
+              Formalism.RankGapBounds.WeightedMeanData.Data U0 W Top m f →
+                Formalism.RankGapBounds.WeightedMeanData.Consts → ℝ → Prop
+value:
+fun {U0} {W} [(u0 : U0) → Fintype (W u0)] [∀ (u0 : U0), Nonempty (W u0)] {Top} [Fintype Top] {m f} Dd C Xpp =>
+  Dd.HidaSetting C ∧
+    Dd.DIV C ∧
+      Formalism.LFunctionChainParameters.WeightedSlopeBounds.EComp5 Dd C ∧
+        Dd.HComp C ∧
+          Formalism.LFunctionChainParameters.WeightedSlopeBounds.Count5 Dd C ∧
+            Dd.Slopes C ∧
+              Formalism.LFunctionChainParameters.WeightedSlopeBounds.QuotientSlopeBoundsWith Dd C Xpp ∧
+                Formalism.LFunctionChainParameters.WeightedSlopeBounds.LossBounds Dd C ∧
+                  Dd.SlopeIneq ∧ Dd.HHBound C ∧ Dd.FParams
+
+################ ErrWindows  (1 match(es); showing up to 8)
+
+## Formalism.LFunctionChainParameters.LErr.ErrWindows
+kind: def   module: Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
+type:
+{U0 : Type} →
+  {W : U0 → Type} →
+    [(u0 : U0) → Fintype (W u0)] →
+      {Top : Type} →
+        [Fintype Top] →
+          {m f : ℕ} →
+            Formalism.RankGapBounds.WeightedMeanData.Data U0 W Top m f →
+              Formalism.RankGapBounds.WeightedMeanData.Consts → ℝ → ℝ → ℝ → Prop
+value:
+fun {U0} {W} [(u0 : U0) → Fintype (W u0)] {Top} [Fintype Top] {m f} D C Xpp eK K =>
+  Formalism.LFunctionChainParameters.LErr.ErrWindows0 D C Xpp eK K ∧
+    (D.etaBar + 4 * √D.eBar) * (D.x ^ C.cHH * D.b) ≤ K * D.x ^ D.ε * (D.nT * D.a)
+
+################ RestSize  (2 match(es); showing up to 8)
+
+## Formalism.LFunctionChainParameters.LChain.RestSize
+kind: def   module: Formalism.SizeWindowBrackets.SChain
+type:
+ℝ → ℝ → ℕ → ℕ → ℕ → ℕ → ℝ → ℝ → ℝ → Prop
+value:
+fun ε x n nT nT2 m b k aE =>
+  aE ≤ 2 * x * b ∧
+    x ^ (-(ε / 8)) * ↑n / 2 ≤ ↑nT ∧ x ^ (-ε) ≤ ↑nT2 / ↑n ∧ x ^ (1 / 2 - ε) ≤ ↑m ∧ k ≤ ↑n ^ 2 * x ^ (1 / 2 - ε)
+
+## Formalism.MainNotions.TestSideCounting.RestSize
+kind: def   module: Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestCloudBOfThree
+type:
+Prop
+value:
+∃ CK C₁, 0 < CK ∧ 0 < C₁ ∧ ∀ (C : ℝ), C₁ ≤ C → Formalism.MainNotions.TestSideCounting.SizeStep C CK
+
+################ LinkDIV_at  (1 match(es); showing up to 8)
+
+## Formalism.MainNotions.LinkDIV_at
+kind: def   module: Formalism.SharpRestriction.GlobalTheoremInputs
+type:
+{D : Formalism.BasicNotions.D7} → Formalism.BasicNotions.SizeData₂ D → ℝ → ℝ → ℝ → Prop
+value:
+fun {D} L C Cabs CH =>
+  D.div.OneMapIntoCC ∧
+    Formalism.BasicNotions.sFrame D.div.Nu D.div.h + D.div.RR.muMax ≤ L.sc.x ^ CH * L.sc.b ∧
+      L.ZeroAbove ∧
+        Formalism.MainNotions.BesselId D ∧
+          D.RRFull ∧
+            (∀ (u : D.what₂.Word),
+                D.div.Bk u ≠ 0 →
+                  Formalism.HN.htMap (D.div.Nu u).b (D.div.Nu u).X D.div.RR.dualB D.div.RR.dualX (D.div.Bk u) ≤
+                    D.div.h u) ∧
+              (∀ (u : D.what₂.Word),
+                  D.div.RR.muDual + D.div.h u - L.Fo ≤
+                    L.MAIN u + C * ↑D.host.TT.card * L.sc.a * L.La +
+                      C * ↑D.R.m * (L.B0 + L.Nc) * L.sc.x ^ (Cabs * L.sc.eps)) ∧
+                (∀ (u : D.what₂.Word),
+                    ∀ j ∈ Formalism.BasicNotions.SizeData₂.lifts D,
+                      |∑ w ∈ L.supp, Formalism.BasicNotions.SizeData₂.sz w (L.E u j w) -
+                            (∑ t, ↑(L.aT t)) * Real.log (↑(D.host.g 0) * ↑(D.host.g 1))| ≤
+                        C * L.B0) ∧
+                  ∀ (u u' : D.what₂.Word),
+                    |D.div.h u + (∑ t, ↑(L.aT t)) * Real.log ↑(D.mem u).A.T -
+                          (D.div.h u' + (∑ t, ↑(L.aT t)) * Real.log ↑(D.mem u').A.T)| ≤
+                      C * (↑D.host.TT.card * L.sc.a * L.La + ↑D.R.m * L.B0)
+
+################ LinkG_at  (1 match(es); showing up to 8)
+
+## Formalism.MainNotions.LinkG_at
+kind: def   module: Formalism.SharpRestriction.GlobalTheoremInputs
+type:
+{D : Formalism.BasicNotions.D7} →
+  {L : Formalism.BasicNotions.SizeData₂ D} →
+    Formalism.MainNotions.G.Inst D L → Formalism.MainNotions.G.Consts → ℝ → ℝ → Prop
+value:
+fun {D} {L} X K C bo =>
+  (∀ (u : D.what₂.Word) (w : D.what₂.places.Pl),
+      D.what₂.places.resChar w ≠ (D.mem u).A.T →
+        Formalism.BasicNotions.DV.LocLe (D.plEq w) ⌊Formalism.BasicNotions.DV.ur D w (L.tau w)⌋₊ (L.NuLat u)
+            (Formalism.BasicNotions.DV.MramL D u) ∧
+          ↑(L.lenMN u w) ≤ ↑(D.duS u) * (L.tau w + L.io w) ∧
+            (Formalism.MainNotions.G.VV X K (Formalism.MainNotions.G.aL L) (Formalism.MainNotions.G.bL L)
+                  (D.what₂.places.resChar w) =
+                ∅ →
+              L.tau w = 0 ∧ L.io w = 0 ∧ L.lenMN u w = 0)) ∧
+    (∀ (p : ℕ),
+        ∀ t0 ∈ Formalism.MainNotions.G.VV X K (Formalism.MainNotions.G.aL L) (Formalism.MainNotions.G.bL L) p,
+          Formalism.MainNotions.G.Sv X K (Formalism.MainNotions.G.aL L) (Formalism.MainNotions.G.bL L) p t0 ≤
+            2 * ↑D.R.m * ↑(Formalism.MainNotions.G.Nv X p t0) * L.sc.a / ↑p) ∧
+      (∀ (w : D.what₂.places.Pl),
+          Formalism.MainNotions.InertK D (D.what₂.places.resChar w) →
+            ↑(D.what₂.places.resChar w) ≤ L.sc.X'' D.R.n →
+              (∀ j ∈ Formalism.BasicNotions.SizeData₂.lifts D,
+                  0 ≤ L.gain j w ∧ L.gain j w ≤ 4 * ↑D.host.TT.card * L.sc.a / ↑(D.what₂.places.resChar w)) ∧
+                ∑ j ∈ Formalism.BasicNotions.SizeData₂.lifts D,
+                      ∑ t ∈ L.TTw w,
+                        (L.vonMangoldtClassSum j t (D.what₂.places.resChar w) -
+                          Formalism.MainNotions.loG L C bo (D.what₂.places.resChar w)) -
+                    ↑D.R.m * Formalism.MainNotions.flG L C (D.what₂.places.resChar w) ≤
+                  ∑ j ∈ Formalism.BasicNotions.SizeData₂.lifts D, L.gain j w - L.tau w) ∧
+        Formalism.MainNotions.G.ServedOrbitsContained X K (Formalism.MainNotions.G.aL L)
+            (Formalism.MainNotions.G.bL L) ∧
+          Formalism.MainNotions.G.MeanKappaBound X K
+
+################ LinkN_at  (1 match(es); showing up to 8)
+
+## Formalism.MainNotions.LinkN_at
+kind: def   module: Formalism.SharpRestriction.GlobalTheoremInputs
+type:
+{D : Formalism.BasicNotions.D7} → Formalism.BasicNotions.SizeData₂ D → ℕ → ℝ → Prop
+value:
+fun {D} L j C =>
+  Summable (Formalism.MainNotions.vvTerm D) →
+    Formalism.MainNotions.etaSum L j ≤
+      ↑(L.dZ0 j) *
+        (C * (↑D.R.f * ↑D.R.m * L.sc.b * L.sc.L ^ 2 + Real.log L.sc.x ^ 2 * L.Nc) +
+          ∑' (l : ℕ), Formalism.MainNotions.vvTerm D l)
+
+################ LinkS  (1 match(es); showing up to 8)
+
+## Formalism.MainNotions.LinkS
+kind: def   module: Formalism.SharpRestriction.GlobalTheoremInputs
+type:
+{eps : ℝ} → Formalism.MainNotions.FamP eps → ℝ → Prop
+value:
+fun {eps} Fm C0 =>
+  ∃ x0,
+    ∀ x ≥ x0,
+      ∀ (i : Fm.Ix x),
+        ∃ eta0 eta1 e0,
+          0 ≤ e0 ∧
+            eta0 ≤ Real.exp (-x ^ (eps / 8)) ∧
+              eta1 ≤ Real.exp (-x ^ (eps / 8)) ∧
+                √e0 ≤ Real.exp (-x ^ (eps / 8)) ∧
+                  Formalism.MainNotions.LinkS_at (Fm.L x i) C0 (Formalism.MainNotions.GamOf (Fm.L x i)) eta0 eta1 e0
+
+################ HostGood  (1 match(es); showing up to 8)
+
+## GlobalTheory.EX.HostGood
+kind: def   module: Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+type:
+{R : Formalism.BasicNotions.Ranks} →
+  Formalism.BasicNotions.Scale → ℝ → ℝ → ℝ → ℝ → Formalism.BasicNotions.Host R → ℕ → Prop
+value:
+fun {R} s C8 C5 c6 Cb H q0 =>
+  GlobalTheory.EX.HostVal s C8 H ∧
+    GlobalTheory.EX.HostArith H ∧
+      H.secondSet_card_lower_bound ∧
+        4 * H.Lw * H.T2.card ≤ R.n0 ∧
+          Formalism.MainNotions.Inhab.QDq s.x s.eps C5 H.q H.d ∧
+            GlobalTheory.EX.BoxW s H ∧
+              |GlobalTheory.EX.dlogH H| ≤ s.x ^ s.eps ∧
+                GlobalTheory.EX.ThinOK s c6 H ∧
+                  GlobalTheory.EX.BadOK s Cb H ∧
+                    Disjoint (Formalism.CyclotomicNorms.BB R.r (H.g 0)) (Formalism.CyclotomicNorms.BB R.r (H.g 1)) ∧
+                      (∀ (i : Fin 2),
+                          ∃ π, ↑π ∈ H.K ∧ ↑π * H.conj ↑π = ↑(H.g i) ∧ π - 1 ∈ Ideal.span {↑(H.QS * H.q * H.d)}) ∧
+                        (H.pde % Nat.lcm 15 (H.QS * H.q * H.d) = 1 ∧ H.pde' % Nat.lcm 15 (H.QS * H.q * H.d) = 1) ∧
+                          (Nat.Prime q0 ∧
+                              q0 % (H.QS * H.q * H.d) = 1 ∧
+                                ↑q0 ≤ (↑H.QS * ↑H.q * ↑H.d) ^ C8 ∧ q0 ≠ H.pde ∧ q0 ≠ H.pde') ∧
+                            H.levelPrimes = {H.g 0, H.g 1, H.pde, H.pde', q0}
+
+################ ThinOK  (1 match(es); showing up to 8)
+
+## GlobalTheory.EX.ThinOK
+kind: def   module: Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+type:
+{R : Formalism.BasicNotions.Ranks} → Formalism.BasicNotions.Scale → ℝ → Formalism.BasicNotions.Host R → Prop
+value:
+fun {R} s c H =>
+  ∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+    GlobalTheory.EX.IsCharH H χ →
+      ∀ (y : ℝ),
+        Real.exp (s.x ^ (s.eps / 3)) / 3 ≤ y →
+          ‖Formalism.MainNotions.GlobalTheoryTheory.gChi χ y‖ ≤ y * Real.exp (-(c * s.x ^ (s.eps / 8)))
+
+################ BoxH  (1 match(es); showing up to 8)
+
+## GlobalTheory.EX.BoxH
+kind: def   module: Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+type:
+{R : Formalism.BasicNotions.Ranks} → Formalism.BasicNotions.Host R → ℝ → ℝ → Prop
+value:
+fun {R} H Y eps =>
+  ∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+    GlobalTheory.EX.IsCharH H χ →
+      Formalism.MainNotions.GlobalTheoryTheory.IsRealChar χ →
+        (H.d ∣ N →
+            Formalism.MainNotions.GlobalTheoryTheory.GoodFor
+              (8 * ↑(H.QS / 2 ^ H.QS.factorization 2) * Formalism.MainNotions.GlobalTheoryTheory.X1 Y eps *
+                Formalism.MainNotions.GlobalTheoryTheory.X2 Y eps)
+              χ) ∧
+          (H.q ∣ N →
+            ¬H.d ∣ N →
+              Formalism.MainNotions.GlobalTheoryTheory.GoodFor
+                (8 * ↑(H.QS / 2 ^ H.QS.factorization 2) * Formalism.MainNotions.GlobalTheoryTheory.X1 Y eps) χ)
+
+################ HostExW  (1 match(es); showing up to 8)
+
+## GlobalTheory.EX.HostExW
+kind: def   module: Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
+type:
+ℝ → GlobalTheory.EX.HostReq → Prop
+value:
+fun la P =>
+  ∀ (eps : ℝ),
+    0 < eps →
+      eps < 1 / 52 →
+        ∃ CT2 C8 C5 c6 Cb x0,
+          1 ≤ C8 ∧
+            0 < C5 ∧
+              0 < c6 ∧
+                0 < Cb ∧
+                  ∃ S,
+                    ∀ (s : Formalism.BasicNotions.Scale),
+                      s.eps = eps →
+                        x0 ≤ s.x →
+                          S.Mem s →
+                            ∃ R H q0,
+                              GlobalTheory.EX.RankVal s R ∧
+                                H.CT2 = CT2 ∧ GlobalTheory.EX.HostGood s C8 C5 c6 Cb H q0 ∧ P C5 s R H q0
+
+################ GChi  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.GChi
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.Supply
+type:
+Formalism.HC.PChar → UpperTheory.Top.FReq
+value:
+fun ψ s x H TT t =>
+  Formalism.HC.EAtH (Formalism.HC.Level.cyc ψ) H.toHostRaw TT s.x s.eps 4 ∧ UpperTheory.Top.VVle H.E t √s.b
+
+################ HypV  (2 match(es); showing up to 8)
+
+## UpperTheory.Top.HypV
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV
+type:
+{eps : ℝ} → Formalism.MainNotions.FamCore eps → Prop
+value:
+fun {eps} Fm => ∃ x0, ∀ x ≥ x0, ∀ (i : Fm.Ix x), UpperTheory.Top.VVle (Fm.D x i).host.E (Fm.D x i).R.t √(Fm.L x i).sc.b
+
+## Formalism.FourierDecayAlt.P.MAx3.K.HypV
+kind: inductive   module: Formalism.HermitianCurvature.HermitianCurvatureProofs.IsAdmissibleSplittingCharPairMulTwist
+type:
+{A : Type} →
+  [inst : Ring A] → [inst_1 : Algebra ℂ A] → {r : ℕ} → Formalism.FourierDecayAlt.R.LevelData A r → Submonoid A → Prop
+constructor Formalism.FourierDecayAlt.P.MAx3.K.HypV.mk:
+∀ {A : Type} [inst : Ring A] [inst_1 : Algebra ℂ A] {r : ℕ} {L : Formalism.FourierDecayAlt.R.LevelData A r}
+  {S : Submonoid A},
+  (∀ b ∈ S, ∃ t, ∀ (Y : ℂ), L.Ahatv Y * b = b * L.Ahatv (Y + t)) →
+    (∀ b ∈ S,
+        ∀ (Y : ℂ),
+          ∃ t ts,
+            (∀ x ∈ ts, x.2.1 ∈ S) ∧
+              L.R0v Y * b = b * L.R0v (Y + t) + (List.map (fun x => x.1 • (x.2.1 * L.Ahatv x.2.2)) ts).sum) →
+      L.Dr * L.Dbi ∈ S → Formalism.FourierDecayAlt.P.MAx3.K.HypV L S
+
+################ FamilyClassConnected  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.FamilyClassConnected
+kind: def   module: Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV
+type:
+Formalism.MainNotions.FamClass → Prop
+value:
+fun ℰ =>
+  ∃ eD eL ε₁,
+    0 < ε₁ ∧
+      ∀ (eps : ℝ),
+        0 < eps →
+          eps < ε₁ →
+            ∃ Fm, ℰ Fm ∧ ∃ K cHH eK CL x0, ∀ x ≥ x0, x ∈ Fm.Win → Formalism.MainNotions.ChainTied Fm eD eL K cHH eK CL x
+
+################ UpperTheory.GalStar.Row0b  (1 match(es); showing up to 8)
+
+## UpperTheory.GalStar.Row0b
+kind: def   module: Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConjBis
+type:
+UpperTheory.GalStar.RecNotion → Prop
+value:
+fun Rc =>
+  ∀ (E Ω : Type) [inst : Field E] [inst_1 : NumberField E] [inst_2 : NumberField.IsCMField E] [inst_3 : Field Ω]
+    [inst_4 : Algebra E Ω] [inst_5 : IsAlgClosure E Ω] (l : ℕ) [inst_6 : Fact (Nat.Prime l)]
+    (ι : Formalism.ConjugateSelfDual.Qbar l ≃+* ℂ) (a : ℕ),
+    1 ≤ a →
+      ∀ (π : GlobalTheory.CuspRep.CuspSub E a) (χ : Formalism.L2.Host.HChar ↥(NumberField.maximalRealSubfield E)),
+        (GlobalTheory.CuspRep.CG.mk π).IsRegAlg →
+          GlobalTheory.ContraPair.PolarizedPair π χ →
+            ∃ r wt HT,
+              UpperTheory.GalStar.PropsB
+                (fun {E Ω} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] {A} {w} => Rc) π ι r wt
+                HT
+
+################ UpperTheory.Zero.LLC.IsRecT  (1 match(es); showing up to 8)
+
+## UpperTheory.Zero.LLC.IsRecT
+kind: def   module: Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
+type:
+{E Ω : Type} →
+  [inst : Field E] →
+    [inst_1 : NumberField E] →
+      [inst_2 : Field Ω] →
+        [inst_3 : Algebra E Ω] →
+          [inst_4 : IsAlgClosure E Ω] →
+            {A : ValuationSubring Ω} →
+              {w : IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers E)} →
+                (h : Formalism.ConjugateSelfDual.IsPlaceOver A w) →
+                  (GlobalTheory.LocGL.IrrGL (IsDedekindDomain.HeightOneSpectrum.adicCompletion E w) →
+                      GlobalTheory.WeilDeligne.WD h) →
+                    Prop
+value:
+fun {E Ω} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] {A} {w} h rc =>
+  ∃ a, ∃ (ha : GlobalTheory.LocLanglands.IsLocalArtin h a), UpperTheory.Zero.LLC.LawsT a ha rc
+
+################ Formalism.GaloisCohomology.shaLen  (1 match(es); showing up to 8)
+
+## Formalism.GaloisCohomology.shaLen
+kind: def   module: Formalism.GaloisCohomology.Statement
+type:
+{F Ω : Type} →
+  [inst : Field F] →
+    [NumberField F] →
+      [inst_2 : Field Ω] →
+        [inst_3 : Algebra F Ω] →
+          [IsAlgClosure F Ω] → {l : ℕ} → [inst_5 : Fact (Nat.Prime l)] → Formalism.GaloisCohomology.LData F Ω l → ℤ → ℕ∞
+value:
+fun {F Ω} [Field F] [NumberField F] [Field Ω] [Algebra F Ω] [IsAlgClosure F Ω] {l} [Fact (Nat.Prime l)] D e =>
+  Module.length ℤ_[l] ↥(Formalism.GaloisCohomology.Sha D e)
+
+################ Formalism.GaloisCohomology.LData  (1 match(es); showing up to 8)
+
+## Formalism.GaloisCohomology.LData
+kind: inductive   module: Formalism.GaloisCohomology.Statement
+type:
+(F Ω : Type) → [inst : Field F] → [inst_1 : Field Ω] → [Algebra F Ω] → (l : ℕ) → [Fact (Nat.Prime l)] → Type
+constructor Formalism.GaloisCohomology.LData.mk:
+{F Ω : Type} →
+  [inst : Field F] →
+    [inst_1 : Field Ω] →
+      [inst_2 : Algebra F Ω] →
+        {l : ℕ} →
+          [inst_3 : Fact (Nat.Prime l)] →
+            (S : Finset (IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers F))) →
+              ↑S = Formalism.GaloisCohomology.Above F l →
+                (A : ↥S → ValuationSubring Ω) →
+                  (∀ (v : ↥S), Formalism.ConjugateSelfDual.IsPlaceOver (A v) ↑v) →
+                    (chi : ReciprocityTheory.Gal.GS Ω ↑S →* ℤ_[l]ˣ) →
+                      chi.comp (ReciprocityTheory.Gal.toGS Ω ↑S) = ReciprocityTheory.Gal.cycZ F Ω l →
+                        Formalism.GaloisCohomology.LData F Ω l
+
+################ UpperTheory.FinalTheorems.everyCharacter  (1 match(es); showing up to 8)
+
+## UpperTheory.FinalTheorems.everyCharacter
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion
+type:
+UpperTheory.EveryCharacter
+
+################ UpperTheory.Top.zeroFreeAll_of_topG  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.zeroFreeAll_of_topG
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG
+type:
+∀ {la : ℝ},
+  1 < la →
+    UpperTheory.Top.TopG →
+      (∀ (ψ : Formalism.HC.PChar), GlobalTheory.EX.HostExW la (UpperTheory.Top.GChi ψ).req) → Formalism.HC.ZeroFreeAll
+
+################ UpperTheory.Top.supplyChi  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.supplyChi
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi
+type:
+∀ (ψ : Formalism.HC.PChar), UpperTheory.Top.VWinAt ψ 401 → GlobalTheory.EX.HostExW (3 / 2) (UpperTheory.Top.GChi ψ).req
+
+################ UpperTheory.Top.shapeWin  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.shapeWin
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.ShapeWin
+type:
+GlobalTheory.GLq.Green →
+  GlobalTheory.Fc.TopShape True True
+    (fun 𝒞 => Formalism.MainNotions.Closed (fun {eps} => 𝒞) fun {eps} Fm x => Formalism.MainNotions.LinkN Fm)
+    UpperTheory.Top.TopG
+
+################ UpperTheory.Top.every_character_of_green_v_win  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.every_character_of_green_v_win
+kind: theorem   module: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopPlug
+type:
+GlobalTheory.GLq.Green →
+  UpperTheory.Top.VWin →
+    Nonempty
+        (GlobalTheory.Fc.HypsAlt
+          (fun 𝒞 => Formalism.MainNotions.Closed (fun {eps} => 𝒞) fun {eps} Fm x => Formalism.MainNotions.LinkN Fm)
+          GlobalTheory.Fc.DefiniteSideCondition) →
+      UpperTheory.EveryCharacter
+
+################ UpperTheory.Lit.every_character_of_theta_integrals_local_matching  (1 match(es); showing up to 8)
+
+## UpperTheory.Lit.every_character_of_theta_integrals_local_matching
+kind: theorem   module: Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SiegelEisensteinSecondTermHypotheses
+type:
+GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses →
+  GlobalTheory.FunPr.ThetaLocalInputs →
+    GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree →
+      GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching →
+        GlobalTheory.CovTop.CovolumeBoundOfX →
+          UpperTheory.Zero.LLC.RecTExists → UpperTheory.Top.VWin → UpperTheory.EveryCharacter
+
+################ UpperTheory.One.vwin_of_row  (1 match(es); showing up to 8)
+
+## UpperTheory.One.vwin_of_row
+kind: theorem   module: Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow
+type:
+(UpperTheory.GalStar.Row0b
+    fun {E Ω} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] {A} {w} h rc =>
+    UpperTheory.Zero.LLC.IsRecT h rc) →
+  UpperTheory.Top.VWin
+
+################ UpperTheory.Zero.LLC.recTExists  (1 match(es); showing up to 8)
+
+## UpperTheory.Zero.LLC.recTExists
+kind: theorem   module: Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists
+type:
+UpperTheory.Zero.LLC.RecTExists
+
+################ UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter  (1 match(es); showing up to 8)
+
+## UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+kind: theorem   module: Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc
+type:
+UpperTheory.GalStar.Row0b fun {E Ω} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] {A} {w} =>
+  UpperTheory.Gal.Int.recT
+
+################ Formalism.HC.zeroFreeOn_of_tiedWin_cyc  (1 match(es); showing up to 8)
+
+## Formalism.HC.zeroFreeOn_of_tiedWin_cyc
+kind: theorem   module: Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin
+type:
+∀ {Fam : ℝ → Type 1} {core : {eps : ℝ} → Fam eps → Formalism.MainNotions.FamCore eps}
+  {Tied : {eps : ℝ} → Fam eps → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → Prop} {Q : Formalism.HC.PChar → Prop} {la : ℝ},
+  1 < la →
+    (∀ (ψ : Formalism.HC.PChar), Q ψ → Formalism.HC.ChebyshevInequalityOnWindows core Tied (Formalism.HC.Level.cyc ψ)) →
+      (∀ (ψ : Formalism.HC.PChar), Q ψ → (Formalism.HC.Level.cyc ψ).FormB) →
+        (∀ (ψ : Formalism.HC.PChar),
+            Q ψ → Formalism.HC.ChebyshevInequalityAtWindowScale core Tied la (Formalism.HC.Level.cyc ψ)) →
+          Formalism.HC.ZeroFreeOn Q
+
+################ formB  (10 match(es); showing up to 8)
+
+## UpperTheory.Comparison₂.formB
+kind: theorem   module: Development.AutomorphicArithmetic.PrimitiveCosets.Imports
+type:
+∀ (Λ : Formalism.HC.Level), Λ.FormB
+
+## Formalism.CohomologicalDescent.LR.formB
+kind: def   module: Formalism.PieriBlockIdeals.StatementLR
+type:
+(p q w : ℕ) → (lam2 : Fin q → ℕ) → LinearMap.BilinForm ℚ (Formalism.CohomologicalDescent.LR.VQ p q w lam2)
+value:
+fun p q w lam2 =>
+  LinearMap.mk₂ ℚ
+    (fun x y =>
+      Formalism.GradedWeylDivisibility.fockQ ↑x ↑y /
+        Formalism.GradedWeylDivisibility.fockQ
+          (Formalism.GradedWeylDivisibility.hw ℚ ⋯ (Formalism.CohomologicalDescent.LD.blockWt p q w lam2))
+          (Formalism.GradedWeylDivisibility.hw ℚ ⋯ (Formalism.CohomologicalDescent.LD.blockWt p q w lam2)))
+    ⋯ ⋯ ⋯ ⋯
+
+## GlobalTheory.CompanionTheory.NonEll.formB
+kind: def   module: Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfRight
+type:
+{n : ℕ} → GL (Fin n) ℂ → (Fin n → ℂ) → (Fin n → ℂ) → ℂ
+value:
+fun {n} D x y => Star.star x ⬝ᵥ (↑D⁻¹).mulVec y
+
+## ReciprocityTheory.ChartRestriction.DS.formB
+kind: def   module: ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TraceFormula
+type:
+{n : ℕ} →
+  {H : Type u_1} →
+    [inst : NormedAddCommGroup H] →
+      [inst_1 : InnerProductSpace ℂ H] → {D : Submodule ℂ H} → (Fin n → Bool) → (Fin n → ↥D) → (Fin n → ↥D) → ℂ
+value:
+fun {n} {H} [NormedAddCommGroup H] [InnerProductSpace ℂ H] {D} ε f g =>
+  ∑ c, (if ε c = Bool.true then 1 else -1) * Inner.inner ℂ ↑(f c) ↑(g c)
+
+## UpperTheory.Gal.W2.formB
+kind: def   module: Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.IsCoordA
+type:
+{p : ℕ} →
+  [inst : Fact (Nat.Prime p)] →
+    {D : GlobalTheory.UPel.HT.Datum p} →
+      {G : GlobalTheory.LKTrip.HTGroup p} →
+        GlobalTheory.LKGeo.Link D G → G.Cˣ → GlobalTheory.LKGeo.VQ D → GlobalTheory.LKGeo.VQ D → ℚ
+value:
+fun {p} [Fact (Nat.Prime p)] {D} {G} L β u w => ((LinearMap.BilinForm.baseChange ℚ D.EF) ((L.rep ↑β⁻¹) u)) w
+
+## Formalism.MainNotions.FormalGroupSystem.Pf.formB
+kind: theorem   module: Formalism.SharpRestriction.GrowthBounds.MultisetValuation.SmulUpdate
+type:
+∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (D : Formalism.BasicNotions.D7)
+  (X : Formalism.MainNotions.FormalGroupSystem.Sys p) (Y : Formalism.MainNotions.FormalGroupSystem.Pend X),
+  Formalism.MainNotions.FormalGroupSystem.admitted D X Y → Formalism.MainNotions.FormalGroupSystem.Pf.FormB X Y
+
+## GlobalTheory.CompanionTheory.SW.HermSd.formB
+kind: def   module: CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsUnitScalingSelfdualHermMeasures
+type:
+{F E : Type} →
+  [inst : Field F] →
+    [inst_1 : Field E] →
+      [inst_2 : Algebra F E] →
+        (E →ₐ[F] E) →
+          {d : ℕ} →
+            Module.Basis (Fin d) F E →
+              (n : ℕ) →
+                Matrix (GlobalTheory.CompanionTheory.SW.HermSd.Idx n d) (GlobalTheory.CompanionTheory.SW.HermSd.Idx n d)
+                  F
+value:
+fun {F E} [Field F] [Field E] [Algebra F E] σ {d} b n =>
+  Matrix.fromBlocks 1 0 0
+    (Matrix.kroneckerMap (fun x1 x2 => x1 * x2) 1 (GlobalTheory.CompanionTheory.SW.HermSd.gramB σ b))
+
+## GlobalTheory.CompanionTheory.SW.WittE.formB
+kind: def   module: CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WittExtensionGlobal
+type:
+{E : Type} →
+  [inst : Field E] → (s : E →+* E) → {M : ℕ} → Matrix (Fin M) (Fin M) E → (Fin M → E) →ₛₗ[s] (Fin M → E) →ₗ[E] E
+value:
+fun {E} [Field E] s {M} J =>
+  LinearMap.mk₂'ₛₗ s (RingHom.id E) (fun x y => HeckeCharacterZeroLocus.SiegelWeilU.hform s J x y) ⋯ ⋯ ⋯ ⋯
+
+################ level_gm_le_on_family_scales  (1 match(es); showing up to 8)
+
+## UpperTheory.Comparison₂.level_gm_le_on_family_scales
+kind: theorem   module: Development.AutomorphicArithmetic.PrimitiveCosets.LevelGmLeOnFamilyScales
+type:
+∀ (Λ : Formalism.HC.Level),
+  Formalism.HC.ChebyshevInequalityOnWindows (fun {eps} Fm => Fm.toFamCore)
+    (fun {eps} Fm => Formalism.MainNotions.ChainTied Fm) Λ
+
+################ core_gm  (1 match(es); showing up to 8)
+
+## UpperTheory.Comparison₂.core_gm
+kind: theorem   module: Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm
+type:
+∀ (Λ : Formalism.HC.Level) (eD eL K cHH eK C eps : ℝ),
+  0 < eps →
+    ∃ x1,
+      ∀ x ≥ x1,
+        ∀ (φ : Formalism.HC.Frame) (H : Formalism.HC.HostAx φ) (TT : Finset φ.A),
+          Formalism.HC.EAtH Λ H.toHostRaw TT x eps C →
+            UpperTheory.Comparison₂.CoreAtH H.toHostRaw TT eD eL K cHH eK eps x →
+              Λ.Gm x ≤ x ^ (1 / 2 + (eD + eL + 7) * eps)
+
+################ ch_top  (2 match(es); showing up to 8)
+
+## Deduction.ch_top
+kind: theorem   module: Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChTop
+type:
+∀ {H : Type} [inst : AddCommGroup H] [inst_1 : Fintype H] [inst_2 : DecidableEq H] {U0 : Type} [Fintype U0]
+  {W : U0 → Type} [inst_4 : (u0 : U0) → Fintype (W u0)] [inst_5 : ∀ (u0 : U0), Nonempty (W u0)] {Top : Type}
+  [inst_6 : Fintype Top] {m f : ℕ} (Dd : Formalism.RankGapBounds.WeightedMeanData.Data U0 W Top m f) (tr : U0 → H)
+  (C : Formalism.RankGapBounds.WeightedMeanData.Consts) (Xpp eK K : ℝ)
+  (D : Formalism.LFunctionChainParameters.characterSumData.ArithData H) (ell : AddChar (Formalism.D5.E0 × H) ℂ → ℂ)
+  (N : ℕ) (TT T2 : Finset H) (a : H → ℝ) (w : H → Fin m → Formalism.D5.E0 × H → ℝ) (eT : Top ≃ ↥TT)
+  (eP : Fin f ≃ ↥Formalism.D5.PhiSet),
+  Deduction.CH.IdentU Dd tr D N ell TT a w eT eP →
+    Formalism.LFunctionChainParameters.LChain.SizeData₂ Dd C Xpp →
+      Formalism.LFunctionChainParameters.LErr.ErrWindows Dd C Xpp eK K →
+        Deduction.CH.BNBoundsU Dd T2 →
+          Formalism.LFunctionChainParameters.LErr.LargeX Dd.x Dd.ε K C.cHH eK →
+            ∀ (u : U0),
+              Deduction.CH.gapA D N ell TT a w (tr u) ≤
+                Dd.x ^ (Formalism.LFunctionChainParameters.LErr.CErr C * Dd.ε) *
+                  Formalism.LFunctionChainParameters.LErr.errorBracketSizeWindows Dd.x Dd.ε (Fintype.card H) TT.card
+                    T2.card m Dd.b Dd.k Dd.a
+
+## GlobalTheory.ThFamRead.ch_top
+kind: theorem   module: Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEvenCubicIntegralReadingOfTrivialisations
+type:
+∀ {R : Type} [inst : CommRing R] [inst_1 : IsDomain R] [inst_2 : IsLocalRing R]
+  (D : ReciprocityTheory.ChartRestriction.G.Out.DegPre R) (χ : D.X),
+  D.P.L.wchart (fun x => GlobalTheory.ThFam.ptR D χ) (GlobalTheory.ThFamRead.ch D χ) = ⊤
+
+################ ch_balance  (1 match(es); showing up to 8)
+
+## Deduction.ch_balance
+kind: theorem   module: Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChBalance
+type:
+∀ {H : Type} [inst : AddCommGroup H] [inst_1 : Fintype H] [inst_2 : DecidableEq H]
+  (D : Formalism.LFunctionChainParameters.characterSumData.ArithData H) (S : Finset ℕ),
+  Deduction.CH.HostFactsS D S →
+    ∀ (ell : AddChar (Formalism.D5.E0 × H) ℂ → ℂ) (a : ℝ) (t : H) (w : Formalism.D5.E0 × H → ℝ),
+      0 < a →
+        (∀ (ρ : Formalism.D5.E0 × H), Formalism.D5.InPhi ρ → 0 < w ρ) →
+          ∀ (N : ℕ),
+            (∀ (ρ : Formalism.D5.E0 × H), Formalism.D5.InPhi ρ → a / w ρ ≤ ↑N) →
+              ↑(Formalism.LFunctionChainParameters.characterSumData.ASK D N a t w) -
+                  Formalism.LFunctionChainParameters.characterSumData.MAIN ell a w =
+                Formalism.LFunctionChainParameters.characterSumData.De D ell a t w
+
+################ ch_core  (1 match(es); showing up to 8)
+
+## Deduction.ch_core
+kind: theorem   module: Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChCore
+type:
+∀ (C ε CE Ko c M : ℝ),
+  0 ≤ C →
+    0 < ε →
+      |c| ≤ 1 →
+        ∃ x1,
+          ∀ x ≥ x1,
+            ∀ (H : Type) [inst : AddCommGroup H] [inst_1 : Fintype H] [inst_2 : DecidableEq H] (m : ℕ)
+              (D : Formalism.LFunctionChainParameters.characterSumData.ArithData H) (S : Finset ℕ)
+              (ell : AddChar (Formalism.D5.E0 × H) ℂ → ℂ) (N : ℕ) (TT T2 : Finset H) (a : H → ℝ)
+              (w : H → Fin m → Formalism.D5.E0 × H → ℝ) (b b' k aE η X' θ : ℝ) (A0 : AddSubgroup H)
+              (Kp : Finset (AddChar (Formalism.D5.E0 × H) ℂ)),
+              Deduction.CH.HostFactsS D S →
+                0 < b →
+                  0 ≤ aE →
+                    0 < k →
+                      ↑m ≤ x ^ (1 / 2 + ε / 2) →
+                        x * ↑m ≤ k →
+                          Deduction.CH.SizesA A0 TT T2 a w N x b b' η X' θ →
+                            Formalism.LFunctionChainParameters.ThickSetMeanBounds.ThinScales D ell X' θ →
+                              Formalism.LFunctionChainParameters.LChain.CostWindows x
+                                  (Formalism.LFunctionChainParameters.ThickSetMeanBounds.fPl H) b η θ →
+                                Formalism.LFunctionChainParameters.LChain.RestSize ε x (Fintype.card H) TT.card T2.card
+                                    m b k aE →
+                                  (∀ s ∈ T2, s ∈ A0) →
+                                    Deduction.CH.CharsA ell A0 Kp TT c M Ko CE ε x →
+                                      (∀ u ∈ A0,
+                                          Deduction.CH.gapA D N ell TT a w u ≤
+                                            x ^ (C * ε) *
+                                              Formalism.LFunctionChainParameters.LErr.errorBracketSizeWindows x ε
+                                                (Fintype.card H) TT.card T2.card m b k aE) →
+                                        Deduction.CH.GmA D ell Kp c x ≤
+                                          x ^ (1 / 2 + (C + 3) * ε) + Deduction.CH.SigA D ell A0 Kp x
+
+################ landau_window  (1 match(es); showing up to 8)
+
+## Deduction.landau_window
+kind: theorem   module: Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow
+type:
+∀ {g : ℝ → ℝ} {Φ : ℂ → ℂ} {Z : Set ℂ},
+  Deduction.PoleData g Φ Z → ∀ {θ δ : ℝ}, 0 < θ → θ < 1 → 0 < δ → Deduction.WindowHypU g θ δ → ∀ ρ ∈ Z, ρ.re ≤ θ
+
+################ boundedTw  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.boundedTw
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.BoundedTw
+type:
+∀ (ψ : Formalism.HC.PChar) (φ : Formalism.HC.Frame) (H : Formalism.HC.HostRaw φ) (eps Y x : ℝ),
+  0 < eps →
+    1 ≤ x →
+      Y ≤ x →
+        UpperTheory.Top.TwistForm ψ H →
+          ψ.N ∣ H.QS →
+            (∀ (l : ℕ), Nat.Prime l → l ∣ H.QS → l ∣ 2 * ψ.N) →
+              UpperTheory.Top.PairGood ψ.N eps Y x H.q H.d →
+                H.BoundedCharsPointwise (Formalism.HC.Level.cyc ψ).KEPT x eps ∧
+                  ∀ θ ∈ H.Bounded (Formalism.HC.Level.cyc ψ).KEPT,
+                    ∀ (N : ℕ) [inst : NeZero N] (χ : DirichletCharacter ℂ N),
+                      H.IsPrimOf θ χ → ‖Formalism.HC.An.logDerivativeAtOne χ‖ ≤ 4 * Real.log x
+
+################ hostOfField  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.hostOfField
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.HostOfField
+type:
+∀ (eps C0 : ℝ),
+  0 < eps →
+    eps < 1 / 52 →
+      1 ≤ C0 →
+        ∃ CT2 C8 c6 Cb x0,
+          C0 ≤ C8 ∧
+            0 < c6 ∧
+              0 < Cb ∧
+                ∀ (s : Formalism.BasicNotions.Scale) (R : Formalism.BasicNotions.Ranks)
+                  (H0 : Formalism.HC.HostAx R.toFrame) (M : ℕ) (Y : ℝ),
+                  s.eps = eps →
+                    x0 ≤ s.x →
+                      GlobalTheory.EX.RankVal s R →
+                        s.J ≤ C0 →
+                          ↑R.o ≤ C0 →
+                            ↑H0.QS ≤ C0 * ↑R.n →
+                              0 < M →
+                                ↑M ≤ C0 →
+                                  H0.QS ∣ (2 ^ (R.e + 2)).lcm M →
+                                    GlobalTheory.EX.PairWin s Y →
+                                      UpperTheory.Top.PairGood M eps Y s.x H0.q H0.d →
+                                        HostParam.Seam.FieldRows H0.toHostRaw ⌊Y ^ (eps / 5)⌋₊ →
+                                          UpperTheory.Top.admitted R H0 →
+                                            ∃ H q0,
+                                              H.toHostAx = H0 ∧
+                                                H.CT2 = CT2 ∧
+                                                  GlobalTheory.EX.HostGood s C8 4 c6 Cb H q0 ∧
+                                                    R.Shares H.TT (s.x ^ (-1 + s.eps))
+
+################ divinN_of_hypV  (1 match(es); showing up to 8)
+
+## UpperTheory.Top.divinN_of_hypV
+kind: theorem   module: Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV
+type:
+∀ {eps : ℝ} (Fm : Formalism.MainNotions.FamP eps),
+  0 < eps →
+    UpperTheory.Top.HypV Fm.toFamCore →
+      Formalism.MainNotions.LinkN Fm → Formalism.MainNotions.SmallLevelRankEq Fm → Formalism.MainNotions.DIVinN Fm
+
+################ link_gl  (1 match(es); showing up to 8)
+
+## GlobalTheory.Top.link_gl
+kind: theorem   module: Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LinkGl
+type:
+∀ (𝒜 : Formalism.MainNotions.FamClass),
+  (∀ {eps : ℝ} (Fm : Formalism.MainNotions.FamP eps), 𝒜 Fm → Formalism.L2.Top3.Duty Fm) →
+    (Formalism.MainNotions.Closed (fun {eps} => Formalism.L2.Top3.D3 3 fun {eps} => 𝒜) fun {eps} Fm x =>
+        Formalism.MainNotions.RealPlaceSecondLayerConditions Fm) →
+      (∀ (D : Formalism.BasicNotions.D7), Formalism.MainNotions.RT.MassRatioUnderVolume D) →
+        (∀ (D : Formalism.BasicNotions.D7), Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.GenusMassAt D 2) →
+          (Formalism.MainNotions.Closed (fun {eps} => Formalism.L2.Top3.D3 3 fun {eps} => 𝒜) fun {eps} Fm CH =>
+              Formalism.MainNotions.ChosenE Fm 3 CH →
+                Formalism.MainNotions.NuFullF Fm ∧ Formalism.MainNotions.J.MuRank Fm) ∧
+            Formalism.MainNotions.Closed (fun {eps} => Formalism.L2.Top3.D3 3 fun {eps} => 𝒜) fun {eps} Fm CH =>
+              Formalism.MainNotions.TuSize Fm →
+                Formalism.MainNotions.DGamSize Fm → Formalism.MainNotions.LinkGLOBAL Fm 2 CH 3 2 0
+
+################ galoisRepresentations_of_thetaLift  (1 match(es); showing up to 8)
+
+## UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift
+kind: theorem   module: Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GaloisRepresentationsOfThetaLift
+type:
+UpperTheory.TP.TLiftK →
+  UpperTheory.GalStar.Row0b fun {E Ω} [Field E] [NumberField E] [Field Ω] [Algebra E Ω] [IsAlgClosure E Ω] {A} {w} =>
+    UpperTheory.Gal.Int.recT
+
