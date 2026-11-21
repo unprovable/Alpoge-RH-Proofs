@@ -1,0 +1,87 @@
+modules built this run: 2572
+last progress counter: 12181/12723
+total CPU-seconds in built modules: 24822
+
+slowest 40 modules:
+      189.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.IsAdmissibleSplittingCharPairMulTwist
+      153.0s  Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
+      123.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.EtaleIntegralityFacts
+       79.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.CoordinateCommuteRaisingConstant
+       73.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.QxChain
+       69.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
+       69.0s  Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickExists
+       65.0s  Formalism.SharpRestriction.LevelLetterCocycles.DataN
+       60.0s  Formalism.LocalRingCardinality.DataLevel
+       60.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.SquareIntegrableGammaZetabarInv
+       58.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator
+       55.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.NormDiagonalEntryDilationGeneratorLeOne
+       52.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.Block3MulBlocks
+       48.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.NormalFormOrderZeroOfParts
+       46.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.ConnectionRaisingConstantEq
+       43.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.ActualAdjointnessFromHermitian
+       43.0s  Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
+       42.0s  Formalism.GL3MeanSquares.HookFormulaTorsion.GlobalBoundRefinements
+       41.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferRtt
+       41.0s  Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
+       36.0s  Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeylCellRange.ReflectionMultiplicationOnBigCell
+       36.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.CmRingIdempotentUnitRatioIdentity
+       35.0s  GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PArchimedeanUnitaryEquiv
+       35.0s  Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCongr
+       35.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceLastLevel
+       35.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.RttUpperRelationsFromDescent
+       34.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralAeConvergenceContinuity
+       33.0s  ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.SmoothA
+       33.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelCoordinatesCommute
+       33.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.ChainRecursionFromSingleDescent
+       32.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.InterpolationInverseMatrixSumIdentity
+       32.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
+       32.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.CriticalThresholdLowerBound
+       30.0s  Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
+       30.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.LUFactorOrbitBounds
+       30.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.InnerDensityThreshold
+       29.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.GammaFamilyCommuteGenerators
+       29.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaSesquilinearity
+       29.0s  Development.AbelianVarietyTheory.BlockTheory.HeightDefect.AdelicUnitaryGroups
+       29.0s  CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalDensityBlockOneProduct
+
+largest peak memory (sampled every 20s), top 40:
+    11.50 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/EtaleIntegralityFacts.lean
+     8.79 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/IsAdmissibleSplittingCharPairMulTwist.lean
+     8.17 GB  Formalism/SharpRestriction/LevelLetterCocycles/DataNLoc.lean
+     8.15 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/CoordinateCommuteRaisingConstant.lean
+     7.96 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/UnipotentCoordinatesMeasurePreserving.lean
+     7.75 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/ConnectionRaisingConstantEq.lean
+     7.55 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/SquareIntegrableGammaZetabarInv.lean
+     7.54 GB  Formalism/SharpRestriction/GlobalSchurBounds/ThickPlacesCorollaryOfAnyTranslate.lean
+     7.50 GB  Formalism/SharpRestriction/GlobalSchurBounds/QuadraticLogDerivCongr.lean
+     7.44 GB  Formalism/LocalRingCardinality/DataLevel.lean
+     7.43 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilOrbitalMeasure.lean
+     7.43 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ThetaIntegralOverCoordinates.lean
+     7.43 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/NormDiagonalEntryDilationGeneratorLeOne.lean
+     7.43 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/NormalFormOrderZeroOfParts.lean
+     7.43 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/LevelsOfBuiltSetting.lean
+     7.40 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TraceFormRationalThetaIdentityStatement.lean
+     7.39 GB  Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIsLatticeFrameIsMajorantFrame.lean
+     7.39 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/WeilRepresentationQuadraticDatum.lean
+     7.37 GB  Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LocalDensityOfSelfDualLatticeLemmas.lean
+     7.36 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/RestrictionIrrelevantDoubleLevelOperator.lean
+     7.36 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/IsCompactZetaLe.lean
+     7.36 GB  CompanionTheory/AutomorphicTheory/NumberFieldModels/TransferGaugeGeneratorZbarInv.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/RankOneEmbeddings.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/TransferRtt.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/CompactCoefficientAppend.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/ParametersUPrimeForULower.lean
+     7.35 GB  Development/AbelianVarietyTheory/Definitions/Foundations/EventuallyNormFinLeOne.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/IntegrableUnipotentNormRpowNeg.lean
+     7.35 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/BlockRelationTwistedHeight.lean
+     7.34 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/SliceLastLevel.lean
+     7.34 GB  Formalism/LocalToGlobal/GlobalTheory/GL5/TheoremThreeAllUnitary.lean
+     7.33 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/RttUpperRelationsFromDescent.lean
+     7.33 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/DwPt.lean
+     7.33 GB  ReciprocityTheory/ReductiveGroups/DiscreteSeries/TailIntegrals/DetEqMulMinorOfColZero.lean
+     7.33 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/OpLEqZeroOfEventually.lean
+     7.32 GB  CompanionTheory/AutomorphicTheory/ThetaDilations/ContinuousPm.lean
+     7.32 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/CutGaugeVLem.lean
+     7.32 GB  Development/AbelianVarietyTheory/Definitions/Foundations/OfInfProjInfMulOfFinProjFin.lean
+     7.32 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalDensitiesBlockOneAlmostAll.lean
+     7.32 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/HeadCorrespondenceOfParts.lean

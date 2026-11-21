@@ -1,0 +1,87 @@
+modules built this run: 904
+last progress counter: 9609/11335
+total CPU-seconds in built modules: 7233
+
+slowest 40 modules:
+       42.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.StationaryPhaseModel
+       30.0s  Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ZIterB
+       28.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.MassRatioFormula
+       27.0s  Formalism.WeaklyAdmissibleFiltrations.Statement
+       25.0s  Formalism.LogVandermondeBounds.LogVandermondeProofs.UpperPlaceHolds
+       25.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.StationaryPhaseEstimates
+       24.0s  Formalism.LogVandermondeBounds.LogVandermondeProofs.LogRatioUpperBoundOfUpperPlace
+       23.0s  Formalism.LogVandermondeBounds.LogVandermondeProofs.LogRatioLowerBoundOfLogVandermondeGap
+       22.0s  Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemIffForallMemLocalizeRingOfIntegers
+       21.0s  GroundTheory.LocalFields.CompleteTrivialLocal
+       21.0s  GroundTheory.AutomorphicForms.RealGroupsIwasawa
+       21.0s  Formalism.GL3MeanSquares.HookFormulaTorsion.PrimesInProgressionCountLowerBound
+       21.0s  Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.TruncLogEqOfPowEqZero
+       20.0s  GroundTheory.AutomorphicForms.GKModules.SmoothVectors
+       20.0s  Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv
+       20.0s  Development.AbelianVarietyTheory.Proofs.CovolumeBounds.LatticeFourierOfContDiffFiniteDimensional
+       20.0s  Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
+       19.0s  Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
+       19.0s  Formalism.LatticeRigidity.HeightMinimum.SqrtAbsNormLeProd
+       19.0s  Formalism.CorankShare.CorankShareProofs.SumNormSqLeHilbertSchmidt
+       19.0s  Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.MemSaturatedOrderIsoSubspaceSpanSymmApply
+       18.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.OneLevelCoefficients
+       17.0s  ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.VolumeUnivFinZero
+       17.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.WirtingerIntegrationByParts
+       17.0s  Formalism.HermitianCurvature.HermitianCurvatureProofs.BudgetLiftSquareRoot
+       16.0s  ReciprocityTheory.GaloisValuations.GlobalB
+       16.0s  GroundTheory.AutomorphicForms.RealGroupsPolar
+       16.0s  Formalism.YangianSpanCharacter.YangianRTTProofs.RttRelation
+       16.0s  Formalism.LogVandermondeBounds.LogVandermondeProofs.LogVandermondeVariationUnbounded
+       16.0s  Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.EqZeroOfPMulEqZero
+       15.0s  ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.PolynomialGrowthIntegrals
+       15.0s  GroundTheory.LocalFields.Uniqueness
+       15.0s  GroundTheory.LocalFields.Integers
+       15.0s  GroundTheory.GlobalFields.TateThesis.TraceFourier
+       15.0s  GroundTheory.GlobalFields.HerbrandQuotients.CycTateNegOneOrbitEquivSymmMk
+       15.0s  Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex
+       15.0s  Formalism.SizeWindowBrackets.ChainSlopeWindows.TraceConjTransposeMulSelf
+       15.0s  Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsLinearIndependentNormLeSuccMin
+       14.0s  ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem
+       14.0s  ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient
+
+largest peak memory (sampled every 20s), top 40:
+     7.39 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/StationaryPhaseModel.lean
+     7.07 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/StationaryPhaseEstimates.lean
+     7.05 GB  ReciprocityTheory/ReductiveGroups/DiscreteSeries/TailIntegrals/PolynomialGrowthIntegrals.lean
+     7.03 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/OrbitalIntegralConvergesAbs.lean
+     7.03 GB  Formalism/SizeWindowBrackets/ChainSlopeWindows/TraceConjTransposeMulSelf.lean
+     7.02 GB  Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelaf.lean
+     7.01 GB  Formalism/LogVandermondeBounds/LogVandermondeProofs/UpperPlaceHolds.lean
+     7.01 GB  Formalism/YangianSpanCharacter/YangianRTTProofs/MinusFrameIdentity.lean
+     6.99 GB  Formalism/LogVandermondeBounds/LogVandermondeProofs/LogVandermondeVariationUnbounded.lean
+     6.98 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/MassRatioFormula.lean
+     6.98 GB  Formalism/SatakeDualWeyl/AdelicIwasawaHecke/Levelv.lean
+     6.98 GB  Formalism/PeriodIntegrals/UnitaryGroupMassFormula/UnipotentCost/ZIterB.lean
+     6.97 GB  Development/AbelianVarietyTheory/Proofs/HomogeneousIdeals/ExistsAbsoluteValueOfIsDiscreteValuationRing.lean
+     6.97 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/OffDiagonalSchurComplement.lean
+     6.96 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/OneLevelCoefficients.lean
+     6.96 GB  Formalism/LatticeRigidity/HeightMinimum/SqrtAbsNormLeProd.lean
+     6.96 GB  Formalism/WeaklyAdmissibleFiltrations/Statement.lean
+     6.96 GB  GroundTheory/AutomorphicForms/RealGroupsIwasawa.lean
+     6.96 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/BudgetLiftSquareRoot.lean
+     6.96 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/FrameIntegralJacobian.lean
+     6.95 GB  Formalism/FrobeniusOrbits/FrobeniusOrbitsProofs/RealCyclotomicSubfield.lean
+     6.95 GB  Development/AbelianVarietyTheory/Proofs/HomogeneousIdeals/ExistsVariableChangeEqLatticeCurve.lean
+     6.95 GB  Formalism/LogVandermondeBounds/LogVandermondeProofs/LogRatioUpperBoundOfUpperPlace.lean
+     6.95 GB  GroundTheory/AutomorphicForms/GKModules/SmoothVectors.lean
+     6.95 GB  Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/EqZeroOfPMulEqZero.lean
+     6.95 GB  Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/Kernel.lean
+     6.94 GB  ReciprocityTheory/GaloisValuations/SeparatedDvrSecondCohomologyMem.lean
+     6.94 GB  GroundTheory/GlobalFields/CompletionAtPlace/Integers.lean
+     6.94 GB  Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/DeRhamMap.lean
+     6.94 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramMatrixLocalGlobal.lean
+     6.94 GB  GroundTheory/HeightsAndTheta/Heights/HeightsOfSets/Slopes.lean
+     6.93 GB  GroundTheory/GlobalFields/IdeleGroups/ClassGroup.lean
+     6.93 GB  Formalism/CoboundaryTransfers/Statement.lean
+     6.93 GB  GroundTheory/AutomorphicForms/DefiniteClassNumber/Reduction.lean
+     6.93 GB  Development/AutomorphicArithmetic/IntegralCasts/CrystallinePeriods/UniformContinuousConstSMulOfIsIsometricSMul.lean
+     6.93 GB  GroundTheory/LocalFields/CompleteTrivialLocal.lean
+     6.92 GB  Formalism/HermitianCurvature/StatementLE.lean
+     6.92 GB  Formalism/HermitianCurvature/HermitianCurvatureProofs/WordMonicExtraction.lean
+     6.92 GB  GroundTheory/HeightsAndTheta/Heights/FiniteCovolume/PStabilizerLeviMatrices.lean
+     6.92 GB  CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DenominatorPowerSummable.lean

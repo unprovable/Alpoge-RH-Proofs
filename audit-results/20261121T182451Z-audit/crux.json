@@ -1,0 +1,438 @@
+{"unresolved": [],
+ "root": "riemannHypothesis",
+ "lemmas":
+ [{"suffix": "UpperTheory.FinalTheorems.everyCharacter",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.FinalTheorems.everyCharacter",
+     "module":
+     "Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Top.zeroFreeAll_of_topG",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.zeroFreeAll_of_topG",
+     "module":
+     "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Top.supplyChi",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.supplyChi",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Top.shapeWin",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.shapeWin",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.ShapeWin",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Top.every_character_of_green_v_win",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.every_character_of_green_v_win",
+     "module":
+     "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopPlug",
+     "kind": "theorem"}]},
+  {"suffix":
+   "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name":
+     "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+     "module":
+     "Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SiegelEisensteinSecondTermHypotheses",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.One.vwin_of_row",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.One.vwin_of_row",
+     "module":
+     "Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.VwinOfRow",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Zero.LLC.recTExists",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Zero.LLC.recTExists",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.RecTExists",
+     "kind": "theorem"}]},
+  {"suffix": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.RowSrc",
+     "kind": "theorem"}]},
+  {"suffix": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+     "module":
+     "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin",
+     "kind": "theorem"}]},
+  {"suffix": "formB",
+   "role": "lemma",
+   "matches": 10,
+   "constants":
+   [{"name": "UpperTheory.Comparison₂.formB",
+     "module": "Development.AutomorphicArithmetic.PrimitiveCosets.Imports",
+     "kind": "theorem"},
+    {"name": "Formalism.CohomologicalDescent.LR.formB",
+     "module": "Formalism.PieriBlockIdeals.StatementLR",
+     "kind": "def"},
+    {"name": "GlobalTheory.CompanionTheory.NonEll.formB",
+     "module":
+     "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfRight",
+     "kind": "def"},
+    {"name": "ReciprocityTheory.ChartRestriction.DS.formB",
+     "module":
+     "ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TraceFormula",
+     "kind": "def"},
+    {"name": "UpperTheory.Gal.W2.formB",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.IsCoordA",
+     "kind": "def"},
+    {"name": "Formalism.MainNotions.FormalGroupSystem.Pf.formB",
+     "module":
+     "Formalism.SharpRestriction.GrowthBounds.MultisetValuation.SmulUpdate",
+     "kind": "theorem"},
+    {"name": "GlobalTheory.CompanionTheory.SW.HermSd.formB",
+     "module":
+     "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsUnitScalingSelfdualHermMeasures",
+     "kind": "def"},
+    {"name": "GlobalTheory.CompanionTheory.SW.WittE.formB",
+     "module":
+     "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WittExtensionGlobal",
+     "kind": "def"},
+    {"name": "ReciprocityTheory.ChartRestriction.DS.G2.formB",
+     "module":
+     "ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.TensorProductsG2.TraceFormula",
+     "kind": "def"},
+    {"name": "Formalism.L2.SG.RealObj.InfCut.PtRepPf.formB",
+     "module":
+     "Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.StepPtRepPfA",
+     "kind": "def"}]},
+  {"suffix": "level_gm_le_on_family_scales",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+     "module":
+     "Development.AutomorphicArithmetic.PrimitiveCosets.LevelGmLeOnFamilyScales",
+     "kind": "theorem"}]},
+  {"suffix": "core_gm",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Comparison₂.core_gm",
+     "module": "Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm",
+     "kind": "theorem"}]},
+  {"suffix": "ch_top",
+   "role": "lemma",
+   "matches": 2,
+   "constants":
+   [{"name": "Deduction.ch_top",
+     "module":
+     "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChTop",
+     "kind": "theorem"},
+    {"name": "GlobalTheory.ThFamRead.ch_top",
+     "module":
+     "Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEvenCubicIntegralReadingOfTrivialisations",
+     "kind": "theorem"}]},
+  {"suffix": "ch_balance",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "Deduction.ch_balance",
+     "module":
+     "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChBalance",
+     "kind": "theorem"}]},
+  {"suffix": "ch_core",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "Deduction.ch_core",
+     "module":
+     "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChCore",
+     "kind": "theorem"}]},
+  {"suffix": "landau_window",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "Deduction.landau_window",
+     "module":
+     "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+     "kind": "theorem"}]},
+  {"suffix": "boundedTw",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.boundedTw",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.BoundedTw",
+     "kind": "theorem"}]},
+  {"suffix": "hostOfField",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.hostOfField",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.HostOfField",
+     "kind": "theorem"}]},
+  {"suffix": "divinN_of_hypV",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.divinN_of_hypV",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV",
+     "kind": "theorem"}]},
+  {"suffix": "link_gl",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "GlobalTheory.Top.link_gl",
+     "module":
+     "Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LinkGl",
+     "kind": "theorem"}]},
+  {"suffix": "galoisRepresentations_of_thetaLift",
+   "role": "lemma",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GaloisRepresentationsOfThetaLift",
+     "kind": "theorem"}]}],
+ "definitions":
+ [{"suffix": "UpperTheory.EveryCharacter",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.EveryCharacter",
+     "module":
+     "Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Top.VWin",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.VWin",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Top.VWinAt",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.VWinAt",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Top.VVle",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.VVle",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Top.VAt",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.VAt",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Top.TopG",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.TopG",
+     "module":
+     "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+     "kind": "def"}]},
+  {"suffix": "Formalism.HC.Level.Gm",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.HC.Level.Gm",
+     "module":
+     "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+     "kind": "def"}]},
+  {"suffix": "Formalism.HC.EAtH",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.HC.EAtH",
+     "module":
+     "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+     "kind": "inductive"}]},
+  {"suffix": "FormBAt",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.HC.Level.FormBAt",
+     "module":
+     "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Window",
+     "kind": "def"}]},
+  {"suffix": "ChainTied",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.MainNotions.ChainTied",
+     "module": "Formalism.SharpRestriction.GlobalSchurBounds.TieGlobal",
+     "kind": "def"}]},
+  {"suffix": "SizeData₂",
+   "role": "definition",
+   "matches": 4,
+   "constants":
+   [{"name": "Formalism.BasicNotions.SizeData₂",
+     "module": "Formalism.LocalRingCardinality.DataParams₂",
+     "kind": "inductive"},
+    {"name": "Formalism.CohomologicalDescent.LogSmallConstantBounds.SizeData₂",
+     "module": "Formalism.PieriBlockIdeals.MertensReciprocalElementary",
+     "kind": "inductive"},
+    {"name": "Formalism.LFunctionChainParameters.DeficitSplitLemmas.SizeData₂",
+     "module": "Formalism.SizeWindowBrackets.SecondKindBucket",
+     "kind": "def"},
+    {"name": "Formalism.LFunctionChainParameters.LChain.SizeData₂",
+     "module": "Formalism.SizeWindowBrackets.SChain",
+     "kind": "def"}]},
+  {"suffix": "ErrWindows",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.LFunctionChainParameters.LErr.ErrWindows",
+     "module": "Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse",
+     "kind": "def"}]},
+  {"suffix": "RestSize",
+   "role": "definition",
+   "matches": 2,
+   "constants":
+   [{"name": "Formalism.LFunctionChainParameters.LChain.RestSize",
+     "module": "Formalism.SizeWindowBrackets.SChain",
+     "kind": "def"},
+    {"name": "Formalism.MainNotions.TestSideCounting.RestSize",
+     "module":
+     "Formalism.SharpRestriction.GrowthBounds.DualFockLinear.RestCloudBOfThree",
+     "kind": "def"}]},
+  {"suffix": "LinkDIV_at",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.MainNotions.LinkDIV_at",
+     "module": "Formalism.SharpRestriction.GlobalTheoremInputs",
+     "kind": "def"}]},
+  {"suffix": "LinkG_at",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.MainNotions.LinkG_at",
+     "module": "Formalism.SharpRestriction.GlobalTheoremInputs",
+     "kind": "def"}]},
+  {"suffix": "LinkN_at",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.MainNotions.LinkN_at",
+     "module": "Formalism.SharpRestriction.GlobalTheoremInputs",
+     "kind": "def"}]},
+  {"suffix": "LinkS",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.MainNotions.LinkS",
+     "module": "Formalism.SharpRestriction.GlobalTheoremInputs",
+     "kind": "def"}]},
+  {"suffix": "HostGood",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "GlobalTheory.EX.HostGood",
+     "module":
+     "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+     "kind": "def"}]},
+  {"suffix": "ThinOK",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "GlobalTheory.EX.ThinOK",
+     "module":
+     "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+     "kind": "def"}]},
+  {"suffix": "BoxH",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "GlobalTheory.EX.BoxH",
+     "module":
+     "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+     "kind": "def"}]},
+  {"suffix": "HostExW",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "GlobalTheory.EX.HostExW",
+     "module":
+     "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+     "kind": "def"}]},
+  {"suffix": "GChi",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.GChi",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.Supply",
+     "kind": "def"}]},
+  {"suffix": "HypV",
+   "role": "definition",
+   "matches": 2,
+   "constants":
+   [{"name": "UpperTheory.Top.HypV",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV",
+     "kind": "def"},
+    {"name": "Formalism.FourierDecayAlt.P.MAx3.K.HypV",
+     "module":
+     "Formalism.HermitianCurvature.HermitianCurvatureProofs.IsAdmissibleSplittingCharPairMulTwist",
+     "kind": "inductive"}]},
+  {"suffix": "FamilyClassConnected",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Top.FamilyClassConnected",
+     "module": "Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.GalStar.Row0b",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.GalStar.Row0b",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConjBis",
+     "kind": "def"}]},
+  {"suffix": "UpperTheory.Zero.LLC.IsRecT",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "UpperTheory.Zero.LLC.IsRecT",
+     "module":
+     "Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec",
+     "kind": "def"}]},
+  {"suffix": "Formalism.GaloisCohomology.shaLen",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.GaloisCohomology.shaLen",
+     "module": "Formalism.GaloisCohomology.Statement",
+     "kind": "def"}]},
+  {"suffix": "Formalism.GaloisCohomology.LData",
+   "role": "definition",
+   "matches": 1,
+   "constants":
+   [{"name": "Formalism.GaloisCohomology.LData",
+     "module": "Formalism.GaloisCohomology.Statement",
+     "kind": "inductive"}]}]}

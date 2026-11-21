@@ -1,0 +1,967 @@
+113810:warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/ExistsIdPowEqOneOfIsFiniteOfFlat.lean:32:8: automatically included section variable(s) unused in theorem `GlobalTheory.FiniteFlatKilled.postcomp_apply`:
+113824:warning: src/Development/AbelianVarietyTheory/Proofs/AbelianSchemeLawProofs/ExistsIdPowEqOneOfIsFiniteOfFlat.lean:141:0: automatically included section variable(s) unused in theorem `GlobalTheory.FiniteFlatKilled.comp_convPow`:
+192974:ℹ [20268/20472] Replayed Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ModuliUnivEtaKilled
+206917:ℹ [20941/21219] Replayed ReciprocityTheory.DualLattices.KilledGen
+221647:ℹ [22227/22235] Replayed Development.AbelianVarietyTheory.Proofs.HeightProofs.MemOfIsKilledByOperatorProductsVacuumCreation
+221648:⚠ [22228/22235] Replayed Development.AbelianVarietyTheory.Proofs.HeightProofs.MemOfIsKilledByOperatorProductsVacuumCreationStatement
+221649:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/MemOfIsKilledByOperatorProductsVacuumCreationStatement.lean:10:69: this tactic is never executed
+221652:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/MemOfIsKilledByOperatorProductsVacuumCreationStatement.lean:10:127: this tactic is never executed
+221655:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/MemOfIsKilledByOperatorProductsVacuumCreationStatement.lean:10:69: Unused tactic linter: `exact GlobalTheory.FockCompare.WeylInduct.mem_of_killed` does nothing
+221658:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/MemOfIsKilledByOperatorProductsVacuumCreationStatement.lean:10:127: Unused tactic linter: `(intros; apply GlobalTheory.FockCompare.WeylInduct.mem_of_killed <;> assumption)` does nothing
+221661:ℹ [22229/22235] Replayed Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKilledByOperatorProductsSuccCreationApply
+221662:⚠ [22230/22235] Replayed Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKilledByOperatorProductsSuccCreationApplyStatement
+221663:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/IsKilledByOperatorProductsSuccCreationApplyStatement.lean:10:69: this tactic is never executed
+221666:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/IsKilledByOperatorProductsSuccCreationApplyStatement.lean:10:127: this tactic is never executed
+221669:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/IsKilledByOperatorProductsSuccCreationApplyStatement.lean:10:69: Unused tactic linter: `exact GlobalTheory.FockCompare.WeylCreate.killed_create` does nothing
+221672:warning: src/Development/AbelianVarietyTheory/Proofs/HeightProofs/IsKilledByOperatorProductsSuccCreationApplyStatement.lean:10:127: Unused tactic linter: `(intros; apply GlobalTheory.FockCompare.WeylCreate.killed_create <;> assumption)` does nothing
+350400:⚠ [31126/31482] Replayed CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HarrisTaylorCardKilledByIdealEqAbsNormPow
+350401:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:14:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.SW.FourierPi.psi_ne`:
+350407:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:57:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.SW.FourierPi.integral_subgroup_eq_zero`:
+350415:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:80:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.SW.FourierPi.integral_subgroup_eq_real`:
+350427:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:92:2: Try this: 
+350435:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:115:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+350442:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:85:20: Variable name `hc` is not explicitly referenced.
+350448:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:176:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+350455:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:199:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+350462:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:204:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.SW.FourierPi.continuous_psi_dot`:
+350472:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:213:2: Try this: 
+350480:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:260:0: automatically included section variable(s) unused in theorem `GlobalTheory.CompanionTheory.SW.FourierPi.mean_close`:
+350491:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:261:5: Variable name `hAm` is not explicitly referenced.
+350497:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:270:39: This simp argument is unused:
+350504:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:295:2: Try this: 
+360415:ℹ [31829/31964] Replayed Formalism.SharpRestriction.GrowthBounds.RootWeights.NontrivialIsotypicWeightZeroKilled
+383183:ℹ [33607/33664] Replayed Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FunKilled
+408378:ℹ [35249/35425] Replayed Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SqDvdSumAlternatingFormsOfKilledLattice
+408379:⚠ [35250/35425] Replayed Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SqDvdSumAlternatingFormsOfKilledLatticeStatement
+408380:warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/SqDvdSumAlternatingFormsOfKilledLatticeStatement.lean:12:56: this tactic is never executed
+408383:warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/SqDvdSumAlternatingFormsOfKilledLatticeStatement.lean:12:101: this tactic is never executed
+408386:warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/SqDvdSumAlternatingFormsOfKilledLatticeStatement.lean:12:56: Unused tactic linter: `exact GlobalTheory.sq_dvd_sum_EF_of_killed` does nothing
+408389:warning: src/Development/AbelianVarietyTheory/Proofs/CuspFormEvaluations/SqDvdSumAlternatingFormsOfKilledLatticeStatement.lean:12:101: Unused tactic linter: `(intros; apply GlobalTheory.sq_dvd_sum_EF_of_killed <;> assumption)` does nothing
+425800:ℹ [35969/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualSelmerClassFromCoeffsKilledByMul
+425801:⚠ [35970/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualSelmerClassFromCoeffsKilledByMulStatement
+425802:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DualSelmerClassFromCoeffsKilledByMulStatement.lean:7:60: this tactic is never executed
+425805:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DualSelmerClassFromCoeffsKilledByMulStatement.lean:7:109: this tactic is never executed
+425808:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DualSelmerClassFromCoeffsKilledByMulStatement.lean:7:60: Unused tactic linter: `exact GlobalTheory.DualSub.dualSel_of_smul_cob` does nothing
+425811:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DualSelmerClassFromCoeffsKilledByMulStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.DualSub.dualSel_of_smul_cob <;> assumption)` does nothing
+425814:⚠ [35971/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualSelmerClassNotKilled
+425815:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilled.lean:174:2: Try this: 
+425823:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilled.lean:175:2: Try this: 
+425831:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilled.lean:176:2: Try this: 
+425839:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilled.lean:177:2: Try this: 
+425847:⚠ [35972/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDualSelmerClassNotKilledStatement
+425848:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilledStatement.lean:7:66: this tactic is never executed
+425851:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilledStatement.lean:7:121: this tactic is never executed
+425854:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilledStatement.lean:7:66: Unused tactic linter: `exact GlobalTheory.NewPrime.DualClass.exists_not_cob` does nothing
+425857:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsDualSelmerClassNotKilledStatement.lean:7:121: Unused tactic linter: `(intros; apply GlobalTheory.NewPrime.DualClass.exists_not_cob <;> assumption)` does nothing
+426043:⚠ [35983/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalInvariantsKilled
+426044:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalInvariantsKilled.lean:69:4: Try this: 
+426052:⚠ [35984/36163] Replayed Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalInvariantsKilledStatement
+426053:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalInvariantsKilledStatement.lean:7:72: this tactic is never executed
+426056:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalInvariantsKilledStatement.lean:7:133: this tactic is never executed
+426059:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalInvariantsKilledStatement.lean:7:72: Unused tactic linter: `exact GlobalTheory.NewPrime.LocInv.local_invariants_killed` does nothing
+426062:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LocalInvariantsKilledStatement.lean:7:133: Unused tactic linter: `(intros; apply GlobalTheory.NewPrime.LocInv.local_invariants_killed <;> assumption)` does nothing
+476111:ℹ [39801/40152] Replayed CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightVectorKilledByRaising
+476112:⚠ [39802/40152] Replayed CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightVectorKilledByRaisingStatement
+476113:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HighestWeightVectorKilledByRaisingStatement.lean:15:68: this tactic is never executed
+476116:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HighestWeightVectorKilledByRaisingStatement.lean:15:125: this tactic is never executed
+476119:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HighestWeightVectorKilledByRaisingStatement.lean:15:68: Unused tactic linter: `exact GlobalTheory.CompanionTheory.RgExh.lF_single_omU` does nothing
+476122:warning: src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/StableLattices/HighestWeightVectorKilledByRaisingStatement.lean:15:125: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.RgExh.lF_single_omU <;> assumption)` does nothing
+491617:⚠ [41085/41115] Replayed Development.AbelianVarietyTheory.Proofs.FlagMeasures.KHighestEqSmulOfMinusKilled
+491618:warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/KHighestEqSmulOfMinusKilled.lean:27:2: Try this: 
+491626:warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/KHighestEqSmulOfMinusKilled.lean:28:2: Try this: 
+491634:warning: src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/KHighestEqSmulOfMinusKilled.lean:41:2: Try this: 
+503088:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteDimensionalCentreAnnihilatorCompatibleMapsStatement.lean:7:76: Unused tactic linter: `exact GlobalTheory.AutGrowth.KilledFin.finiteDimensional_mapsJ` does nothing
+503092:  apply GlobalTheory.AutGrowth.KilledFin.finiteDimensional_mapsJ <;> assumption)` does nothing
+572329:⚠ [47081/47149] Replayed Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockPolynomialSchwartzKilledByLongAnnihilation
+572330:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FockPolynomialSchwartzKilledByLongAnnihilation.lean:41:14: This simp argument is unused:
+572337:⚠ [47082/47149] Replayed Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockPolynomialSchwartzKilledByLongAnnihilationStatement
+572338:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FockPolynomialSchwartzKilledByLongAnnihilationStatement.lean:17:65: this tactic is never executed
+572341:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FockPolynomialSchwartzKilledByLongAnnihilationStatement.lean:17:119: this tactic is never executed
+572344:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FockPolynomialSchwartzKilledByLongAnnihilationStatement.lean:17:65: Unused tactic linter: `exact GlobalTheory.FockAnnKill.fockA_killed_by_annS` does nothing
+572347:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/FockPolynomialSchwartzKilledByLongAnnihilationStatement.lean:17:119: Unused tactic linter: `(intros; apply GlobalTheory.FockAnnKill.fockA_killed_by_annS <;> assumption)` does nothing
+612508:⚠ [49737/49768] Replayed Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedSystemKilledByIdeal
+612509:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictedSystemKilledByIdeal.lean:24:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+612512:⚠ [49738/49768] Replayed Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedSystemKilledByIdealStatement
+612513:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictedSystemKilledByIdealStatement.lean:7:70: this tactic is never executed
+612516:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictedSystemKilledByIdealStatement.lean:7:129: this tactic is never executed
+612519:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictedSystemKilledByIdealStatement.lean:7:70: Unused tactic linter: `exact GlobalTheory.CompanionTheory.GE.killed_restrictSys` does nothing
+612522:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/RestrictedSystemKilledByIdealStatement.lean:7:129: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.GE.killed_restrictSys <;> assumption)` does nothing
+674169:⚠ [56241/56393] Replayed Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KilledByPolynomialSmoothing
+674170:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KilledByPolynomialSmoothing.lean:66:33: `MeasureTheory.integral_finset_sum` has been deprecated: Use `MeasureTheory.integral_finsetSum` instead
+674171:⚠ [56242/56393] Replayed Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KilledByPolynomialSmoothingStatement
+674172:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KilledByPolynomialSmoothingStatement.lean:12:61: this tactic is never executed
+674175:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KilledByPolynomialSmoothingStatement.lean:12:111: this tactic is never executed
+674178:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KilledByPolynomialSmoothingStatement.lean:12:61: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Conc.kill_sm` does nothing
+674181:warning: src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/KilledByPolynomialSmoothingStatement.lean:12:111: Unused tactic linter: `(intros; apply GlobalTheory.CompanionTheory.Conc.kill_sm <;> assumption)` does nothing
+747036:ℹ [62874/63207] Replayed Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AbelianFunctorNilChartNsmulAndKilledByPPow
+747037:⚠ [62875/63207] Replayed Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AbelianFunctorNilChartNsmulAndKilledByPPowStatement
+747038:warning: src/Development/AbelianVarietyTheory/Proofs/UnramifiedDepth/AbelianFunctorNilChartNsmulAndKilledByPPowStatement.lean:21:61: this tactic is never executed
+747041:warning: src/Development/AbelianVarietyTheory/Proofs/UnramifiedDepth/AbelianFunctorNilChartNsmulAndKilledByPPowStatement.lean:21:111: this tactic is never executed
+747044:warning: src/Development/AbelianVarietyTheory/Proofs/UnramifiedDepth/AbelianFunctorNilChartNsmulAndKilledByPPowStatement.lean:21:61: Unused tactic linter: `exact GlobalTheory.ChF.bxChart_nsmul_and_killed` does nothing
+747047:warning: src/Development/AbelianVarietyTheory/Proofs/UnramifiedDepth/AbelianFunctorNilChartNsmulAndKilledByPPowStatement.lean:21:111: Unused tactic linter: `(intros; apply GlobalTheory.ChF.bxChart_nsmul_and_killed <;> assumption)` does nothing
+781402:⚠ [65793/65920] Replayed Development.AutomorphicSpectrum.Proofs.GeometryProofs.SurjectiveOfDualHomomorphismKernelKilled
+781403:warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/SurjectiveOfDualHomomorphismKernelKilled.lean:39:2: Try this: 
+790868:warning: src/Development/AutomorphicSpectrum/Proofs/GeometryProofs/TorsionAlongOrderDividesStatement.lean:14:79: Unused tactic linter: `exact GlobalTheory.CompanionTheory.Ar.BT.TorsionKilled.pow_eq_one` does nothing
+790872:  apply GlobalTheory.CompanionTheory.Ar.BT.TorsionKilled.pow_eq_one <;> assumption)` does nothing
+797792:ℹ [66997/67199] Replayed Formalism.CoboundaryTransfers.GammaStableTransfers.TorsionKilledCriterionHolds
+881012:ℹ [72684/72746] Replayed Formalism.WachLatticeTwists.HodgeTateChains.H2KilledByTateDuality
+931926:ℹ [77584/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFiniteFormsGLSpanKilledScalarDeriva
+931927:⚠ [77585/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraFiniteFormsGLSpanKilledScalarDerivaStatement
+931928:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraFiniteFormsGLSpanKilledScalarDerivaStatement.lean:10:62: this tactic is never executed
+931931:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraFiniteFormsGLSpanKilledScalarDerivaStatement.lean:10:113: this tactic is never executed
+931934:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraFiniteFormsGLSpanKilledScalarDerivaStatement.lean:10:62: Unused tactic linter: `exact GlobalTheory.HCF.span_formsGL_killed_scalD` does nothing
+931937:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarishChandraFiniteFormsGLSpanKilledScalarDerivaStatement.lean:10:113: Unused tactic linter: `(intros; apply GlobalTheory.HCF.span_formsGL_killed_scalD <;> assumption)` does nothing
+933583:ℹ [77694/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemKilled
+933584:ℹ [77695/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameInvariantKilledSmoothSpaceCentreMem
+933585:⚠ [77696/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameInvariantKilledSmoothSpaceCentreMemStatement
+933586:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameInvariantKilledSmoothSpaceCentreMemStatement.lean:10:57: this tactic is never executed
+933589:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameInvariantKilledSmoothSpaceCentreMemStatement.lean:10:103: this tactic is never executed
+933592:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameInvariantKilledSmoothSpaceCentreMemStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.CapKilled.zalg_mem_space` does nothing
+933595:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameInvariantKilledSmoothSpaceCentreMemStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.CapKilled.zalg_mem_space <;> assumption)` does nothing
+933612:⚠ [77699/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKilledCapelliSpaceFiniteDimensionalOfFiniten
+933613:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFiniten.lean:92:8: Try this: 
+933621:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFiniten.lean:115:4: Try this: 
+933629:⚠ [77700/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameKilledCapelliSpaceFiniteDimensionalOfFinitenStatement
+933630:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFinitenStatement.lean:12:66: this tactic is never executed
+933633:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFinitenStatement.lean:12:121: this tactic is never executed
+933636:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFinitenStatement.lean:12:66: Unused tactic linter: `exact GlobalTheory.CapKilled.finiteDimensional_space` does nothing
+933639:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TameKilledCapelliSpaceFiniteDimensionalOfFinitenStatement.lean:12:121: Unused tactic linter: `(intros; apply GlobalTheory.CapKilled.finiteDimensional_space <;> assumption)` does nothing
+933642:ℹ [77701/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliKilledSlowlyIncreasingSmoothingMem
+933643:⚠ [77702/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliKilledSlowlyIncreasingSmoothingMemStatement
+933644:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSlowlyIncreasingSmoothingMemStatement.lean:14:68: this tactic is never executed
+933647:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSlowlyIncreasingSmoothingMemStatement.lean:14:125: this tactic is never executed
+933650:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSlowlyIncreasingSmoothingMemStatement.lean:14:68: Unused tactic linter: `exact GlobalTheory.CapKilledSmooth.smoothing_mem_space` does nothing
+933653:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSlowlyIncreasingSmoothingMemStatement.lean:14:125: Unused tactic linter: `(intros; apply GlobalTheory.CapKilledSmooth.smoothing_mem_space <;> assumption)` does nothing
+933656:ℹ [77703/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSlowlyIncreasingKilledCapelliPo
+933657:⚠ [77704/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement
+933658:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement.lean:9:63: this tactic is never executed
+933661:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement.lean:9:115: this tactic is never executed
+933664:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.CapKilled.finite_of_finiteness` does nothing
+933667:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteDimensionalSlowlyIncreasingKilledCapelliPoStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.CapKilled.finite_of_finiteness <;> assumption)` does nothing
+933905:ℹ [77726/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliKilledSmoothFunctionCentreOrbitFiniteDime
+933906:⚠ [77727/77851] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliKilledSmoothFunctionCentreOrbitFiniteDimeStatement
+933907:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSmoothFunctionCentreOrbitFiniteDimeStatement.lean:8:68: this tactic is never executed
+933910:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSmoothFunctionCentreOrbitFiniteDimeStatement.lean:8:125: this tactic is never executed
+933913:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSmoothFunctionCentreOrbitFiniteDimeStatement.lean:8:68: Unused tactic linter: `exact GlobalTheory.KilledFinCentre.centre_orbit_finite` does nothing
+933916:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CapelliKilledSmoothFunctionCentreOrbitFiniteDimeStatement.lean:8:125: Unused tactic linter: `(intros; apply GlobalTheory.KilledFinCentre.centre_orbit_finite <;> assumption)` does nothing
+949194:⚠ [78977/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmFnAndKilledFnOfHolFn
+949195:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:17:2: Try this: 
+949203:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:18:2: Try this: 
+949211:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:19:2: Try this: 
+949219:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:33:2: Try this: 
+949227:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:34:2: Try this: 
+949235:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:35:2: Try this: 
+949243:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:45:22: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+949244:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:56:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+949245:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.HolDict.HolTo.isOpen_frDoms`:
+949251:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:96:57: `Fin.coe_castLE` has been deprecated: Use `Fin.val_castLE` instead
+949252:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:96:34: This simp argument is unused:
+949259:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:96:48: This simp argument is unused:
+949266:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:130:2: Try this: 
+949274:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:131:2: Try this: 
+949282:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:132:2: Try this: 
+949290:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:156:0: automatically included section variable(s) unused in theorem `GlobalTheory.HolDict.HolTo.single_mem_UG`:
+949296:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:166:0: automatically included section variable(s) unused in theorem `GlobalTheory.HolDict.HolTo.mul_mem_UG`:
+949303:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:189:0: automatically included section variable(s) unused in theorem `GlobalTheory.HolDict.HolTo.SmE.mul`:
+949310:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:317:10: This simp argument is unused:
+949317:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:317:44: This simp argument is unused:
+949324:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:418:18: This simp argument is unused:
+949331:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:419:16: This simp argument is unused:
+949338:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:422:16: This simp argument is unused:
+949345:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SmFnAndKilledFnOfHolFn.lean:437:38: This simp argument is unused:
+949352:⚠ [78978/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLawOfKilled
+949353:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TorusLawOfKilled.lean:199:8: automatically included section variable(s) unused in theorem `_private.Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLawOfKilled.0.GlobalTheory.HolDict.TorusLaw.der_zero'`:
+949380:⚠ [78982/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicTypeOfSmoothBorelKilled
+949381:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilled.lean:223:2: Try this: 
+949389:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilled.lean:238:6: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+949390:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilled.lean:263:0: automatically included section variable(s) unused in theorem `GlobalTheory.HolDict.HolOf.curve_deriv`:
+949396:⚠ [78983/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicTypeOfSmoothBorelKilledStatement
+949397:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilledStatement.lean:9:56: this tactic is never executed
+949400:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilledStatement.lean:9:101: this tactic is never executed
+949403:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilledStatement.lean:9:56: Unused tactic linter: `exact GlobalTheory.HolDict.holFn_of_killed` does nothing
+949406:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HolomorphicTypeOfSmoothBorelKilledStatement.lean:9:101: Unused tactic linter: `(intros; apply GlobalTheory.HolDict.holFn_of_killed <;> assumption)` does nothing
+949422:⚠ [78985/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalLowestKtypeKilledByCompactRoots
+949423:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:84:4: Try this: 
+949431:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:226:20: Variable name `hσ` is not explicitly referenced.
+949437:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:18: This simp argument is unused:
+949445:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:28: This simp argument is unused:
+949453:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:38: This simp argument is unused:
+949461:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:59: This simp argument is unused:
+949469:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:69: This simp argument is unused:
+949477:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:281:87: This simp argument is unused:
+949485:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:282:28: This simp argument is unused:
+949493:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:282:48: This simp argument is unused:
+949501:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:255:65: this tactic is never executed
+949504:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:255:65: Unused tactic linter: `ring` does nothing
+949507:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:343:2: Try this: 
+949515:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:355:31: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
+949521:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRoots.lean:358:31: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
+949527:⚠ [78986/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalLowestKtypeKilledByCompactRootsStatement
+949528:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRootsStatement.lean:9:63: this tactic is never executed
+949531:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRootsStatement.lean:9:115: this tactic is never executed
+949534:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRootsStatement.lean:9:63: Unused tactic linter: `exact GlobalTheory.HolDict.BorelK.extremal_killed` does nothing
+949537:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKtypeKilledByCompactRootsStatement.lean:9:115: Unused tactic linter: `(intros; apply GlobalTheory.HolDict.BorelK.extremal_killed <;> assumption)` does nothing
+949568:⚠ [78990/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKtypeHolomorphicKilledByLoweringRoots
+949569:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRoots.lean:97:18: This simp argument is unused:
+949576:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRoots.lean:192:2: Try this: 
+949584:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRoots.lean:304:4: Try this: 
+949592:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRoots.lean:350:2: Try this: 
+949600:⚠ [78991/79369] Replayed Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKtypeHolomorphicKilledByLoweringRootsStatement
+949601:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRootsStatement.lean:9:61: this tactic is never executed
+949604:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRootsStatement.lean:9:111: this tactic is never executed
+949607:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRootsStatement.lean:9:61: Unused tactic linter: `exact GlobalTheory.HolDict.Lowering.lowK_killed` does nothing
+949610:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKtypeHolomorphicKilledByLoweringRootsStatement.lean:9:111: Unused tactic linter: `(intros; apply GlobalTheory.HolDict.Lowering.lowK_killed <;> assumption)` does nothing
+966374:ℹ [80144/80398] Replayed Development.WeilBound.ThetaLifts.SphericalLattices.ProperKilled
+997897:⚠ [82593/82820] Replayed Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CardPrimaryTorsionTuplesKilledByMatrix
+997898:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrix.lean:13:2: Try this: 
+997906:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrix.lean:33:40: Variable name `hk0` is not explicitly referenced.
+997912:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrix.lean:118:93: This simp argument is unused:
+997920:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrix.lean:224:2: Try this: 
+997928:⚠ [82594/82820] Replayed Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CardPrimaryTorsionTuplesKilledByMatrixStatement
+997929:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrixStatement.lean:12:51: this tactic is never executed
+997932:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrixStatement.lean:12:91: this tactic is never executed
+997935:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrixStatement.lean:12:51: Unused tactic linter: `exact GlobalTheory.card_kills_primary` does nothing
+997938:warning: src/Development/AbelianVarietyTheory/Proofs/RingsOfIntegers/CardPrimaryTorsionTuplesKilledByMatrixStatement.lean:12:91: Unused tactic linter: `(intros; apply GlobalTheory.card_kills_primary <;> assumption)` does nothing
+1042136:ℹ [85639/85812] Replayed Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLevelPointEqOfKilledByHalfLevel
+1042137:⚠ [85640/85812] Replayed Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLevelPointEqOfKilledByHalfLevelStatement
+1042138:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsLevelPointEqOfKilledByHalfLevelStatement.lean:19:60: this tactic is never executed
+1042141:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsLevelPointEqOfKilledByHalfLevelStatement.lean:19:109: this tactic is never executed
+1042144:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsLevelPointEqOfKilledByHalfLevelStatement.lean:19:60: Unused tactic linter: `exact GlobalTheory.exists_levPt_eq_of_killedBy` does nothing
+1042147:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsLevelPointEqOfKilledByHalfLevelStatement.lean:19:109: Unused tactic linter: `(intros; apply GlobalTheory.exists_levPt_eq_of_killedBy <;> assumption)` does nothing
+1074462:ℹ [88094/88231] Replayed Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.RatioOneKilled
+1110540:⚠ [91045/93339] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankKilledEqOfEqualMultiplicities (9.2s)
+1110541:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:30:9: Variable name `a` is not explicitly referenced.
+1110547:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:30:11: Variable name `b` is not explicitly referenced.
+1110553:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:41:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+1110554:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:44:4: Try this: 
+1110562:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:85:2: Try this: 
+1110570:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:140:2: Try this: 
+1110578:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicities.lean:142:2: Try this: 
+1117188:⚠ [91747/93990] Built Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.KilledAnyOf (12s)
+1117189:warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KilledAnyOf.lean:120:2: Try this: 
+1117197:warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KilledAnyOf.lean:148:2: Try this: 
+1117205:warning: src/Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/KilledAnyOf.lean:149:2: Try this: 
+1121452:ℹ [92196/94035] Built Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.SubstEqOfCoeffEqOfKilled (6.8s)
+1136564:ℹ [93762/94055] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmallTorsionKilledByPrimePowers (8.3s)
+1137389:⚠ [93800/94055] Built Development.AbelianVarietyTheory.Proofs.JetHarmonics.SmallTorsionKilledByPrimePowersStatement (6.4s)
+1137390:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SmallTorsionKilledByPrimePowersStatement.lean:8:49: this tactic is never executed
+1137393:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SmallTorsionKilledByPrimePowersStatement.lean:8:87: this tactic is never executed
+1137396:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SmallTorsionKilledByPrimePowersStatement.lean:8:49: Unused tactic linter: `exact GlobalTheory.MomOne.smallTors` does nothing
+1137399:warning: src/Development/AbelianVarietyTheory/Proofs/JetHarmonics/SmallTorsionKilledByPrimePowersStatement.lean:8:87: Unused tactic linter: `(intros; apply GlobalTheory.MomOne.smallTors <;> assumption)` does nothing
+1166712:ℹ [96850/97313] Built Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkKilledA (8.4s)
+1166814:⚠ [96871/97313] Built Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkKilledC (16s)
+1166815:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:54:4: Try this: 
+1166823:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:63:4: Try this: 
+1166831:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:138:2: Try this: 
+1166839:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:179:2: Try this: 
+1166847:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:189:5: Variable name `ιr` is not explicitly referenced.
+1166853:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledC.lean:233:2: Try this: 
+1167644:⚠ [96959/97313] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankKilledEqOfEqualMultiplicitiesStatement (7.8s)
+1167645:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicitiesStatement.lean:14:63: this tactic is never executed
+1167648:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicitiesStatement.lean:14:115: this tactic is never executed
+1167651:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicitiesStatement.lean:14:63: Unused tactic linter: `exact GlobalTheory.RepCount.finrank_inf_killed_eq` does nothing
+1167654:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankKilledEqOfEqualMultiplicitiesStatement.lean:14:115: Unused tactic linter: `(intros; apply GlobalTheory.RepCount.finrank_inf_killed_eq <;> assumption)` does nothing
+1167687:⚠ [96961/97313] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodFormsEqKilledByGroupAlgebra (9.8s)
+1167688:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GoodFormsEqKilledByGroupAlgebra.lean:106:6: `MultilinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+1167879:ℹ [96972/97384] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelTypeHeckeKilledCorrespondMatchingIso (11s)
+1168718:ℹ [97055/97385] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPartFullEqKilled (7.6s)
+1168719:⚠ [97056/97385] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodFormsEqKilledByGroupAlgebraStatement (7.7s)
+1168720:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GoodFormsEqKilledByGroupAlgebraStatement.lean:14:68: this tactic is never executed
+1168723:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GoodFormsEqKilledByGroupAlgebraStatement.lean:14:125: this tactic is never executed
+1168726:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GoodFormsEqKilledByGroupAlgebraStatement.lean:14:68: Unused tactic linter: `exact GlobalTheory.CuspMult.EqCut.good_hecke_eq_killed` does nothing
+1168729:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GoodFormsEqKilledByGroupAlgebraStatement.lean:14:125: Unused tactic linter: `(intros; apply GlobalTheory.CuspMult.EqCut.good_hecke_eq_killed <;> assumption)` does nothing
+1168968:⚠ [97093/97593] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelTypeHeckeKilledCorrespondMatchingIsoStatement (7.3s)
+1168969:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelTypeHeckeKilledCorrespondMatchingIsoStatement.lean:14:67: this tactic is never executed
+1168972:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelTypeHeckeKilledCorrespondMatchingIsoStatement.lean:14:123: this tactic is never executed
+1168975:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelTypeHeckeKilledCorrespondMatchingIsoStatement.lean:14:67: Unused tactic linter: `exact GlobalTheory.CuspMult.EqTrans.killed_eqSet_comp` does nothing
+1168978:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelTypeHeckeKilledCorrespondMatchingIsoStatement.lean:14:123: Unused tactic linter: `(intros; apply GlobalTheory.CuspMult.EqTrans.killed_eqSet_comp <;> assumption)` does nothing
+1169708:⚠ [97183/97594] Built Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkKilledB (20s)
+1169709:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:30:2: Try this: 
+1169717:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:31:2: Try this: 
+1169725:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:33:2: Try this: 
+1169733:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:37:2: Try this: 
+1169741:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:38:2: Try this: 
+1169749:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:39:2: Try this: 
+1169757:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:114:4: Try this: 
+1169765:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:226:2: Try this: 
+1169773:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:229:2: Try this: 
+1169781:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:230:2: Try this: 
+1169789:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:243:4: Try this: 
+1169797:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:313:2: Try this: 
+1169805:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:317:2: Try this: 
+1169813:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:318:2: Try this: 
+1169821:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:319:2: Try this: 
+1169829:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:329:4: Try this: 
+1169837:warning: src/Development/WeilBound/CoreStatements/PublishedTheorems/GlobalEulerCharacteristic/WorkKilledB.lean:298:31: Variable name `htriv` is not explicitly referenced.
+1172865:⚠ [97491/97664] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleNotKilledByGoodProjectorSatisfiesH (14s)
+1172866:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:75:2: Try this: 
+1172874:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:76:2: Try this: 
+1172882:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:77:2: Try this: 
+1172890:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:93:2: Try this: 
+1172898:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:114:6: Try this: 
+1172906:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:184:6: Try this: 
+1172914:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:202:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+1172921:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:215:2: Try this: 
+1172929:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:216:2: Try this: 
+1172937:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:217:2: Try this: 
+1172945:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:255:4: Try this: 
+1172953:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:268:2: Try this: 
+1172961:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesH.lean:269:2: Try this: 
+1173139:⚠ [97519/97687] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleNotKilledByGoodProjectorSatisfiesHStatement (7.7s)
+1173140:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesHStatement.lean:20:62: this tactic is never executed
+1173143:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesHStatement.lean:20:113: this tactic is never executed
+1173146:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesHStatement.lean:20:62: Unused tactic linter: `exact GlobalTheory.GoodProjHypH.hypH_of_goodProj` does nothing
+1173149:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleNotKilledByGoodProjectorSatisfiesHStatement.lean:20:113: Unused tactic linter: `(intros; apply GlobalTheory.GoodProjHypH.hypH_of_goodProj <;> assumption)` does nothing
+1174501:⚠ [97661/97997] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftLevelFormOrthogonalKilledByThetaMap (66s)
+1174502:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMap.lean:76:350: Variable name `Z` is not explicitly referenced.
+1175415:⚠ [97764/98096] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftLevelFormOrthogonalKilledByThetaMapStatement (14s)
+1175416:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMapStatement.lean:9:396: Variable name `Z` is not explicitly referenced.
+1175422:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMapStatement.lean:10:63: this tactic is never executed
+1175425:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMapStatement.lean:10:115: this tactic is never executed
+1175428:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMapStatement.lean:10:63: Unused tactic linter: `exact GlobalTheory.Mem.ThOrth.thG_eq_zero_of_orth` does nothing
+1175431:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LiftLevelFormOrthogonalKilledByThetaMapStatement.lean:10:115: Unused tactic linter: `(intros; apply GlobalTheory.Mem.ThOrth.thG_eq_zero_of_orth <;> assumption)` does nothing
+1225713:ℹ [100722/101693] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropic (16s)
+1227974:ℹ [100958/101693] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeValuesKilledByLoweringPart (9.8s)
+1228109:⚠ [100972/101693] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorsKilledHeisenbergAverageIsotropicStatement (6.9s)
+1228110:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorsKilledHeisenbergAverageIsotropicStatement.lean:11:69: this tactic is never executed
+1228113:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorsKilledHeisenbergAverageIsotropicStatement.lean:11:127: this tactic is never executed
+1228116:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorsKilledHeisenbergAverageIsotropicStatement.lean:11:69: Unused tactic linter: `exact GlobalTheory.ThetaSupport.sum_heisO_along_eq_zero` does nothing
+1228119:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorsKilledHeisenbergAverageIsotropicStatement.lean:11:127: Unused tactic linter: `(intros; apply GlobalTheory.ThetaSupport.sum_heisO_along_eq_zero <;> assumption)` does nothing
+1228208:ℹ [100981/101693] Built Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.PowSqEqOneOfKilledBy (7.4s)
+1229793:⚠ [101119/101695] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowestKTypeValuesKilledByLoweringPartStatement (7.7s)
+1229794:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LowestKTypeValuesKilledByLoweringPartStatement.lean:11:64: this tactic is never executed
+1229797:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LowestKTypeValuesKilledByLoweringPartStatement.lean:11:117: this tactic is never executed
+1229800:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LowestKTypeValuesKilledByLoweringPartStatement.lean:11:64: Unused tactic linter: `exact GlobalTheory.DefLift.LowerKill.values_killed` does nothing
+1229803:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LowestKTypeValuesKilledByLoweringPartStatement.lean:11:117: Unused tactic linter: `(intros; apply GlobalTheory.DefLift.LowerKill.values_killed <;> assumption)` does nothing
+1230028:ℹ [101143/101697] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChartsRebasedOneOffLevelPrimeKilled (21s)
+1231486:⚠ [101252/101699] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChartsRebasedOneOffLevelPrimeKilledStatement (13s)
+1231487:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartsRebasedOneOffLevelPrimeKilledStatement.lean:10:64: this tactic is never executed
+1231490:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartsRebasedOneOffLevelPrimeKilledStatement.lean:10:117: this tactic is never executed
+1231493:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartsRebasedOneOffLevelPrimeKilledStatement.lean:10:64: Unused tactic linter: `exact GlobalTheory.TwU.AtTrue.charts_funKilled_one` does nothing
+1231496:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartsRebasedOneOffLevelPrimeKilledStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.TwU.AtTrue.charts_funKilled_one <;> assumption)` does nothing
+1233415:ℹ [101440/101915] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorMixedLaplacianKilledLoweringKilled (12s)
+1234462:⚠ [101537/101915] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockVectorMixedLaplacianKilledLoweringKilledStatement (7.1s)
+1234463:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorMixedLaplacianKilledLoweringKilledStatement.lean:11:61: this tactic is never executed
+1234466:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorMixedLaplacianKilledLoweringKilledStatement.lean:11:111: this tactic is never executed
+1234469:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorMixedLaplacianKilledLoweringKilledStatement.lean:11:61: Unused tactic linter: `exact GlobalTheory.FockKill.rderC_theta_eq_zero` does nothing
+1234472:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FockVectorMixedLaplacianKilledLoweringKilledStatement.lean:11:111: Unused tactic linter: `(intros; apply GlobalTheory.FockKill.rderC_theta_eq_zero <;> assumption)` does nothing
+1283552:⚠ [105665/105896] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotypicSumInfGroupAlgebraKilledEqBot (9.8s)
+1283553:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBot.lean:26:2: Try this: 
+1283561:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBot.lean:35:2: Try this: 
+1283569:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBot.lean:63:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+1284021:⚠ [105715/105919] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotypicSumInfGroupAlgebraKilledEqBotStatement (6.7s)
+1284022:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBotStatement.lean:23:78: this tactic is never executed
+1284025:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBotStatement.lean:23:145: this tactic is never executed
+1284028:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBotStatement.lean:23:78: Unused tactic linter: `exact GlobalTheory.RepCount.iSup_range_homInto_inf_killed_eq_bot` does nothing
+1284031:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsotypicSumInfGroupAlgebraKilledEqBotStatement.lean:23:145: Unused tactic linter: `(intros;
+1299012:ℹ [106972/107627] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WildInertiaKilledByAdditiveLocallyConstant (8.5s)
+1300409:⚠ [107090/107662] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WildInertiaKilledByAdditiveLocallyConstantStatement (6.7s)
+1300410:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WildInertiaKilledByAdditiveLocallyConstantStatement.lean:7:50: this tactic is never executed
+1300413:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WildInertiaKilledByAdditiveLocallyConstantStatement.lean:7:89: this tactic is never executed
+1300416:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WildInertiaKilledByAdditiveLocallyConstantStatement.lean:7:50: Unused tactic linter: `exact GlobalTheory.WildAdditive.main` does nothing
+1300419:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WildInertiaKilledByAdditiveLocallyConstantStatement.lean:7:89: Unused tactic linter: `(intros; apply GlobalTheory.WildAdditive.main <;> assumption)` does nothing
+1312160:⚠ [107937/108212] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachNCokernelKilledByPower (28s)
+1312161:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:23:2: Try this: 
+1312169:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:24:2: Try this: 
+1312177:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:25:2: Try this: 
+1312185:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:26:2: Try this: 
+1312193:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:19:247: Variable name `E` is not explicitly referenced.
+1312199:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPower.lean:19:280: Variable name `C` is not explicitly referenced.
+1312660:⚠ [107984/108279] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachNCokernelKilledByPowerStatement (17s)
+1312661:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:7:287: Variable name `E` is not explicitly referenced.
+1312667:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:7:320: Variable name `C` is not explicitly referenced.
+1312673:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:8:57: this tactic is never executed
+1312676:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:8:103: this tactic is never executed
+1312679:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:8:57: Unused tactic linter: `exact GlobalTheory.NL.CokerFin.coker_killed` does nothing
+1312682:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachNCokernelKilledByPowerStatement.lean:8:103: Unused tactic linter: `(intros; apply GlobalTheory.NL.CokerFin.coker_killed <;> assumption)` does nothing
+1316469:⚠ [108274/108669] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokernelLatticeMapKilledByPrimePow (6.9s)
+1316470:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePow.lean:11:2: Try this: 
+1316478:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePow.lean:12:2: Try this: 
+1317959:⚠ [108356/108695] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokernelLatticeMapKilledByPrimePowStatement (7.1s)
+1317960:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePowStatement.lean:7:83: this tactic is never executed
+1317963:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePowStatement.lean:7:155: this tactic is never executed
+1317966:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePowStatement.lean:7:83: Unused tactic linter: `exact GlobalTheory.Proof.cokernel_latticeMap_killed_by_prime_pow.main` does nothing
+1317969:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelLatticeMapKilledByPrimePowStatement.lean:7:155: Unused tactic linter: `(intros;
+1325926:⚠ [108912/109495] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokernelCrystallineSurjectionKilledByXPow (16s)
+1325927:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:129:2: Try this: 
+1325935:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:130:2: Try this: 
+1325943:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:143:2: Try this: 
+1325951:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:144:2: Try this: 
+1325959:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:151:2: Try this: 
+1325967:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:152:2: Try this: 
+1325975:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:153:2: Try this: 
+1325983:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:154:2: Try this: 
+1325991:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:155:2: Try this: 
+1325999:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:402:2: Try this: 
+1326007:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:416:4: Try this: 
+1326015:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:417:4: Try this: 
+1326023:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:415:2: Try this: 
+1326031:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPow.lean:411:135: Variable name `Cm` is not explicitly referenced.
+1327806:⚠ [109048/109495] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CokernelCrystallineSurjectionKilledByXPowStatement (6.3s)
+1327807:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPowStatement.lean:7:161: Variable name `Cm` is not explicitly referenced.
+1327813:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPowStatement.lean:8:63: this tactic is never executed
+1327816:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPowStatement.lean:8:115: this tactic is never executed
+1327819:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPowStatement.lean:8:63: Unused tactic linter: `exact GlobalTheory.NL.CokerKill.X_pow_kills_coker` does nothing
+1327822:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CokernelCrystallineSurjectionKilledByXPowStatement.lean:8:115: Unused tactic linter: `(intros; apply GlobalTheory.NL.CokerKill.X_pow_kills_coker <;> assumption)` does nothing
+1329583:⚠ [109155/109496] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FractionRingQuotKilledByPowUniformizer (7.3s)
+1329584:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizer.lean:10:8: Overlapping instance parameters in `ko_killed_by_pow_uniformizer`:
+1330951:⚠ [109243/109499] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FractionRingQuotKilledByPowUniformizerStatement (5.9s)
+1330952:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizerStatement.lean:12:70: this tactic is never executed
+1330955:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizerStatement.lean:12:129: this tactic is never executed
+1330958:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizerStatement.lean:10:8: Overlapping instance parameters in `GlobalTheory.T.fractionRingQuot_killed_by_pow_uniformizer`:
+1330964:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizerStatement.lean:12:70: Unused tactic linter: `exact GlobalTheory.ShapeNeg.ko_killed_by_pow_uniformizer` does nothing
+1330967:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FractionRingQuotKilledByPowUniformizerStatement.lean:12:129: Unused tactic linter: `(intros; apply GlobalTheory.ShapeNeg.ko_killed_by_pow_uniformizer <;> assumption)` does nothing
+1332166:ℹ [109332/109539] Built ReciprocityTheory.GroupCohomology.KilledHolds (5.4s)
+1333673:⚠ [109434/109600] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBlockVectorNotKilled (12s)
+1333674:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilled.lean:28:4: Try this: 
+1334095:⚠ [109470/109672] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBlockVectorNotKilledStatement (10s)
+1334096:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:46: this tactic is never executed
+1334099:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:81: this tactic is never executed
+1334102:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:46: Unused tactic linter: `exact GlobalTheory.DzVecLoc.main` does nothing
+1334105:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ExistsBlockVectorNotKilledStatement.lean:11:81: Unused tactic linter: `(intros; apply GlobalTheory.DzVecLoc.main <;> assumption)` does nothing
+1335052:ℹ [109587/109913] Built Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.H2KilledByTateDuality (9.3s)
+1337168:ℹ [109829/110236] Built Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.HZeroInvariantsKilled (7.9s)
+1342683:ℹ [110254/110825] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CutCocyclesLocallyConstantKilledByUniformiserPow (28s)
+1346878:ℹ [110454/110895] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteModuleKilledByPowOfNotIsUnit (7.7s)
+1347171:⚠ [110469/110911] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteModuleKilledByPowOfNotIsUnitStatement (6.7s)
+1347172:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteModuleKilledByPowOfNotIsUnitStatement.lean:23:74: this tactic is never executed
+1347175:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteModuleKilledByPowOfNotIsUnitStatement.lean:23:137: this tactic is never executed
+1347178:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteModuleKilledByPowOfNotIsUnitStatement.lean:23:74: Unused tactic linter: `exact GlobalTheory.finite_module_killed_by_pow_of_not_isUnit` does nothing
+1347181:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteModuleKilledByPowOfNotIsUnitStatement.lean:23:137: Unused tactic linter: `(intros;
+1361256:ℹ [111056/111802] Built Development.AutomorphicArithmetic.ResidueCharacters.InvariantsKilledOverCyclotomicAlt (10s)
+1363721:ℹ [111321/113260] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAverages (7.1s)
+1367879:ℹ [111705/113763] Built Development.AutomorphicArithmetic.ResidueCharacters.InvariantsKilledOverCyclotomic (23s)
+1368510:⚠ [111752/113763] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAveragesStatement (7.3s)
+1368511:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanKilledUnionAveragesStatement.lean:13:63: this tactic is never executed
+1368514:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanKilledUnionAveragesStatement.lean:13:115: this tactic is never executed
+1368517:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanKilledUnionAveragesStatement.lean:13:63: Unused tactic linter: `exact GlobalTheory.mem_span_killed_union_averages` does nothing
+1368520:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanKilledUnionAveragesStatement.lean:13:115: Unused tactic linter: `(intros; apply GlobalTheory.mem_span_killed_union_averages <;> assumption)` does nothing
+1372391:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/InvariantsVanishAtPrimeOfAdmissibleStatement.lean:10:64: Unused tactic linter: `exact GlobalTheory.Cyc.InvKilled.invariants_killed` does nothing
+1372394:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/InvariantsVanishAtPrimeOfAdmissibleStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.Cyc.InvKilled.invariants_killed <;> assumption)` does nothing
+1384955:ℹ [113199/115164] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvdAllPowOfFrobeniusEqKilledByPerfectPoints (9.1s)
+1388653:ℹ [113487/115891] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalLowestKTypeKilledCompactRoots (9.1s)
+1388764:⚠ [113502/115891] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypeKilledByNegativeNoncompactRoots (12s)
+1388765:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeKilledByNegativeNoncompactRoots.lean:81:2: Try this: 
+1389970:⚠ [113641/115891] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvdAllPowOfFrobeniusEqKilledByPerfectPointsStatement (6.3s)
+1389971:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DvdAllPowOfFrobeniusEqKilledByPerfectPointsStatement.lean:6:46: this tactic is never executed
+1389974:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DvdAllPowOfFrobeniusEqKilledByPerfectPointsStatement.lean:6:81: this tactic is never executed
+1389977:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DvdAllPowOfFrobeniusEqKilledByPerfectPointsStatement.lean:6:46: Unused tactic linter: `exact GlobalTheory.PointsKey.key` does nothing
+1389980:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DvdAllPowOfFrobeniusEqKilledByPerfectPointsStatement.lean:6:81: Unused tactic linter: `(intros; apply GlobalTheory.PointsKey.key <;> assumption)` does nothing
+1395811:⚠ [114106/115891] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalLowestKTypeKilledCompactRootsStatement (6.8s)
+1395812:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKTypeKilledCompactRootsStatement.lean:9:69: this tactic is never executed
+1395815:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKTypeKilledCompactRootsStatement.lean:9:127: this tactic is never executed
+1395818:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKTypeKilledCompactRootsStatement.lean:9:69: Unused tactic linter: `exact GlobalTheory.HolRead.KCpt.extremal_killed_compact` does nothing
+1395821:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExtremalLowestKTypeKilledCompactRootsStatement.lean:9:127: Unused tactic linter: `(intros; apply GlobalTheory.HolRead.KCpt.extremal_killed_compact <;> assumption)` does nothing
+1395921:⚠ [114119/115891] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypeKilledByNegativeNoncompactRootsStatement (6.2s)
+1395922:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeKilledByNegativeNoncompactRootsStatement.lean:9:57: this tactic is never executed
+1395925:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeKilledByNegativeNoncompactRootsStatement.lean:9:103: this tactic is never executed
+1395928:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeKilledByNegativeNoncompactRootsStatement.lean:9:57: Unused tactic linter: `exact GlobalTheory.LowestKilled.lowK_killed` does nothing
+1395931:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeKilledByNegativeNoncompactRootsStatement.lean:9:103: Unused tactic linter: `(intros; apply GlobalTheory.LowestKilled.lowK_killed <;> assumption)` does nothing
+1397697:ℹ [114246/115891] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DescentOfPointsKilled (9.3s)
+1400956:⚠ [114475/115894] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOnFramesOfKilledNilpotentDerivativ (13s)
+1400957:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativ.lean:230:5: `HasFDerivAt.finset_prod` has been deprecated: Use `HasFDerivAt.finsetProd` instead
+1400958:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativ.lean:284:15: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+1400961:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativ.lean:284:46: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+1400964:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativ.lean:302:2: Try this: 
+1403835:⚠ [114654/115894] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DescentOfPointsKilledStatement (6.3s)
+1403836:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DescentOfPointsKilledStatement.lean:6:57: this tactic is never executed
+1403839:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DescentOfPointsKilledStatement.lean:6:103: this tactic is never executed
+1403842:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DescentOfPointsKilledStatement.lean:6:57: Unused tactic linter: `exact GlobalTheory.descent_of_points_killed` does nothing
+1403845:warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/DescentOfPointsKilledStatement.lean:6:103: Unused tactic linter: `(intros; apply GlobalTheory.descent_of_points_killed <;> assumption)` does nothing
+1405578:⚠ [114768/115896] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOnFramesOfKilledNilpotentDerivativStatement (7.6s)
+1405579:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativStatement.lean:9:72: this tactic is never executed
+1405582:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativStatement.lean:9:133: this tactic is never executed
+1405585:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativStatement.lean:9:72: Unused tactic linter: `exact GlobalTheory.HolRead.Holo.differentiableOn_of_killed` does nothing
+1405588:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentiableOnFramesOfKilledNilpotentDerivativStatement.lean:9:133: Unused tactic linter: `(intros; apply GlobalTheory.HolRead.Holo.differentiableOn_of_killed <;> assumption)` does nothing
+1415198:ℹ [115415/115911] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HolomorphicUpToFactorOfLoweringKilledTorusWeight (10s)
+1416524:⚠ [115487/115912] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HolomorphicUpToFactorOfLoweringKilledTorusWeightStatement (7.8s)
+1416525:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HolomorphicUpToFactorOfLoweringKilledTorusWeightStatement.lean:12:68: this tactic is never executed
+1416528:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HolomorphicUpToFactorOfLoweringKilledTorusWeightStatement.lean:12:125: this tactic is never executed
+1416531:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HolomorphicUpToFactorOfLoweringKilledTorusWeightStatement.lean:12:68: Unused tactic linter: `exact GlobalTheory.AdSpan.ConjHol.holUpTo_of_lowKilled` does nothing
+1416534:warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HolomorphicUpToFactorOfLoweringKilledTorusWeightStatement.lean:12:125: Unused tactic linter: `(intros; apply GlobalTheory.AdSpan.ConjHol.holUpTo_of_lowKilled <;> assumption)` does nothing
+1467829:⚠ [119500/120347] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HarmonicFockVectorsKilledByLoweringAdaptedBasis (10s)
+1467830:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasis.lean:62:34: This simp argument is unused:
+1467837:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasis.lean:183:2: Try this: intro D ψ θ S T χS χT om hθ hom Sp M kS kT BS hBS p hp BT hBT f hf hv P hP τ Z hZ h w
+1471198:⚠ [119787/121524] Built Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HarmonicFockVectorsKilledByLoweringAdaptedBasisStatement (6.3s)
+1471199:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasisStatement.lean:13:75: this tactic is never executed
+1471202:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasisStatement.lean:13:139: this tactic is never executed
+1471205:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasisStatement.lean:13:75: Unused tactic linter: `exact GlobalTheory.FockKillAdapted.killed_of_harmonic_adapted` does nothing
+1471208:warning: src/Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/HarmonicFockVectorsKilledByLoweringAdaptedBasisStatement.lean:13:139: Unused tactic linter: `(intros;
+1509122:⚠ [122938/123530] Built Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardKilledByInType (8.1s)
+1509123:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:60:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+1509124:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:56:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertDivUniq.card_killedBy_congr`:
+1509130:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:69:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+1509131:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:64:0: automatically included section variable(s) unused in theorem `GlobalTheory.InertDivUniq.card_killedBy_inType`:
+1509137:warning: src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CardKilledByInType.lean:103:25: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+1523027:ℹ [124051/125490] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsKilledByLowerNilradicalActBlockDiagonal (7.6s)
+1523038:ℹ [124054/125490] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CasimirScalarOnModuleGeneratedKilledByLower (8.2s)
+1527688:⚠ [124502/125490] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsKilledByLowerNilradicalActBlockDiagonalStatement (6.2s)
+1527689:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsKilledByLowerNilradicalActBlockDiagonalStatement.lean:12:70: this tactic is never executed
+1527692:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsKilledByLowerNilradicalActBlockDiagonalStatement.lean:12:129: this tactic is never executed
+1527695:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsKilledByLowerNilradicalActBlockDiagonalStatement.lean:12:70: Unused tactic linter: `exact GlobalTheory.KilledByLowerStable.killedByLower_act` does nothing
+1527698:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsKilledByLowerNilradicalActBlockDiagonalStatement.lean:12:129: Unused tactic linter: `(intros; apply GlobalTheory.KilledByLowerStable.killedByLower_act <;> assumption)` does nothing
+1527791:⚠ [124509/125490] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CasimirScalarOnModuleGeneratedKilledByLowerStatement (6.8s)
+1527792:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CasimirScalarOnModuleGeneratedKilledByLowerStatement.lean:12:67: this tactic is never executed
+1527795:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CasimirScalarOnModuleGeneratedKilledByLowerStatement.lean:12:123: this tactic is never executed
+1527798:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CasimirScalarOnModuleGeneratedKilledByLowerStatement.lean:12:67: Unused tactic linter: `exact GlobalTheory.CasimirLowest.casimir_on_generated` does nothing
+1527801:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CasimirScalarOnModuleGeneratedKilledByLowerStatement.lean:12:123: Unused tactic linter: `(intros; apply GlobalTheory.CasimirLowest.casimir_on_generated <;> assumption)` does nothing
+1571529:ℹ [127732/130116] Built Development.AbelianVarietyTheory.Counterexamples.TwistSurvey.CarriesOfKilled (69s)
+1592472:⚠ [129337/130122] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedCompNormOfKilledInertiaFixing (7.9s)
+1592473:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixing.lean:13:341: Variable name `h'` is not explicitly referenced.
+1603674:⚠ [130116/131359] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEqZeroOfDualKilledByTensor (9.2s)
+1603675:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:85:2: Try this: 
+1603683:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:87:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+1603690:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:99:51: `Finsupp.finset_sum_apply` has been deprecated: Use `Finsupp.finsetSum_apply` instead
+1603691:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:102:4: Try this: 
+1603699:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:103:4: Try this: 
+1603707:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:104:4: Try this: 
+1603715:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:106:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+1603722:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:126:4: Try this: 
+1603730:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:128:4: Try this: 
+1603738:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:130:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+1603745:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:99:19: This simp argument is unused:
+1603752:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensor.lean:119:12: This simp argument is unused:
+1607041:⚠ [130342/131677] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEqZeroOfDualKilledByTensorStatement (7.1s)
+1607042:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensorStatement.lean:7:63: this tactic is never executed
+1607045:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensorStatement.lean:7:115: this tactic is never executed
+1607048:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensorStatement.lean:7:63: Unused tactic linter: `exact GlobalTheory.finrank_eq_zero_of_dual_killed` does nothing
+1607051:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FinrankEqZeroOfDualKilledByTensorStatement.lean:7:115: Unused tactic linter: `(intros; apply GlobalTheory.finrank_eq_zero_of_dual_killed <;> assumption)` does nothing
+1626925:ℹ [131712/135041] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealKilledByRingMapsWithPropertyLeKerApp (7.5s)
+1627037:⚠ [131728/135041] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSubgroupKilledNearPointOfFibre (10s)
+1627038:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:48:17: This simp argument is unused:
+1627045:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:233:4: Try this: 
+1627053:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:239:2: Try this: 
+1627061:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:248:2: Try this: 
+1627069:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:250:2: Try this: 
+1627077:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:299:2: Try this: 
+1627085:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibre.lean:327:2: Try this: 
+1631726:⚠ [132046/136023] Built Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedCompNormOfKilledInertiaFixingStatement (8.0s)
+1631727:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean:9:385: Variable name `h'` is not explicitly referenced.
+1631733:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean:10:64: this tactic is never executed
+1631736:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean:10:117: this tactic is never executed
+1631739:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean:10:64: Unused tactic linter: `(exact GlobalTheory.RoadU.unram_comp_normU_of_fix)` does nothing
+1631742:warning: src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/UnramifiedCompNormOfKilledInertiaFixingStatement.lean:10:117: Unused tactic linter: `(intros; apply GlobalTheory.RoadU.unram_comp_normU_of_fix <;> assumption)` does nothing
+1632621:ℹ [132099/136023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSquareBundleDescentOfDefectKilled (11s)
+1636497:⚠ [132368/136023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealKilledByRingMapsWithPropertyLeKerAppStatement (5.9s)
+1636498:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealKilledByRingMapsWithPropertyLeKerAppStatement.lean:13:62: this tactic is never executed
+1636501:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealKilledByRingMapsWithPropertyLeKerAppStatement.lean:13:113: this tactic is never executed
+1636504:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealKilledByRingMapsWithPropertyLeKerAppStatement.lean:13:62: Unused tactic linter: `exact GlobalTheory.PtClosed.killIdeal_le_ker_app` does nothing
+1636507:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IdealKilledByRingMapsWithPropertyLeKerAppStatement.lean:13:113: Unused tactic linter: `(intros; apply GlobalTheory.PtClosed.killIdeal_le_ker_app; all_goals assumption)` does nothing
+1636843:⚠ [132386/136023] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSubgroupKilledNearPointOfFibreStatement (6.8s)
+1636844:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibreStatement.lean:9:59: this tactic is never executed
+1636847:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibreStatement.lean:9:107: this tactic is never executed
+1636850:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibreStatement.lean:9:59: Unused tactic linter: `(exact GlobalTheory.FiniteKilled.killed_near)` does nothing
+1636853:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FiniteSubgroupKilledNearPointOfFibreStatement.lean:9:107: Unused tactic linter: `(intros; apply GlobalTheory.FiniteKilled.killed_near <;> assumption)` does nothing
+1643577:⚠ [132841/136759] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSquareBundleDescentOfDefectKilledStatement (9.1s)
+1643578:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSquareBundleDescentOfDefectKilledStatement.lean:12:58: this tactic is never executed
+1643581:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSquareBundleDescentOfDefectKilledStatement.lean:12:105: this tactic is never executed
+1643584:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSquareBundleDescentOfDefectKilledStatement.lean:12:58: Unused tactic linter: `exact GlobalTheory.SqDatum.exists_sq_descent` does nothing
+1643587:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsSquareBundleDescentOfDefectKilledStatement.lean:12:105: Unused tactic linter: `(intros; apply GlobalTheory.SqDatum.exists_sq_descent <;> assumption)` does nothing
+1647127:⚠ [133056/136759] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorSiegelObjectPolarisationKernelKilled (10s)
+1647128:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorSiegelObjectPolarisationKernelKilled.lean:86:39: `Nat.Coprime.mul` has been deprecated: Use `Nat.Coprime.mul_left` instead
+1648103:ℹ [133140/136759] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.DerivationOnVanishingOnSubalgebraKilledSq (6.0s)
+1655412:⚠ [133635/137191] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorSiegelObjectPolarisationKernelKilledStatement (8.4s)
+1655413:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorSiegelObjectPolarisationKernelKilledStatement.lean:8:65: this tactic is never executed
+1655416:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorSiegelObjectPolarisationKernelKilledStatement.lean:8:119: this tactic is never executed
+1655419:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorSiegelObjectPolarisationKernelKilledStatement.lean:8:65: Unused tactic linter: `(exact GlobalTheory.UPel.HT.KerBy.siegKerBy_toSieg)` does nothing
+1655422:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorSiegelObjectPolarisationKernelKilledStatement.lean:8:119: Unused tactic linter: `(intros; apply GlobalTheory.UPel.HT.KerBy.siegKerBy_toSieg <;> assumption)` does nothing
+1656602:⚠ [133727/137191] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.DerivationOnVanishingOnSubalgebraKilledSqStatement (6.8s)
+1656603:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DerivationOnVanishingOnSubalgebraKilledSqStatement.lean:7:57: this tactic is never executed
+1656606:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DerivationOnVanishingOnSubalgebraKilledSqStatement.lean:7:103: this tactic is never executed
+1656609:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DerivationOnVanishingOnSubalgebraKilledSqStatement.lean:7:57: Unused tactic linter: `exact GlobalTheory.AlmostEt.derOn_killed_sq` does nothing
+1656612:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/DerivationOnVanishingOnSubalgebraKilledSqStatement.lean:7:103: Unused tactic linter: `(intros; apply GlobalTheory.AlmostEt.derOn_killed_sq <;> assumption)` does nothing
+1667647:ℹ [134523/137191] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousFormKilledByPowerOfTripleChartProduct (10s)
+1670396:⚠ [134683/137193] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyFiniteHomKernelKilledByNat (9.2s)
+1670397:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNat.lean:21:2: Try this: 
+1670405:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNat.lean:24:2: Try this: 
+1670413:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNat.lean:29:2: Try this: 
+1673248:⚠ [134881/137451] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousFormKilledByPowerOfTripleChartProductStatement (9.8s)
+1673249:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormKilledByPowerOfTripleChartProductStatement.lean:10:68: this tactic is never executed
+1673252:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormKilledByPowerOfTripleChartProductStatement.lean:10:125: this tactic is never executed
+1673255:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormKilledByPowerOfTripleChartProductStatement.lean:10:68: Unused tactic linter: `exact GlobalTheory.FormalAlg.TripleKill.ev_triple_kill` does nothing
+1673258:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HomogeneousFormKilledByPowerOfTripleChartProductStatement.lean:10:125: Unused tactic linter: `(intros; apply GlobalTheory.FormalAlg.TripleKill.ev_triple_kill <;> assumption)` does nothing
+1674167:⚠ [134943/137451] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationKernelKilledOverDvrOfGeneric (11s)
+1674168:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGeneric.lean:29:4: Try this: 
+1674176:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGeneric.lean:30:4: Try this: 
+1674184:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGeneric.lean:31:4: Try this: 
+1674192:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGeneric.lean:24:8: Overlapping instance parameters in `kernel_killed`:
+1674615:⚠ [134970/137451] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyFiniteHomKernelKilledByNatStatement (8.5s)
+1674616:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNatStatement.lean:11:57: this tactic is never executed
+1674619:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNatStatement.lean:11:103: this tactic is never executed
+1674622:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNatStatement.lean:11:57: Unused tactic linter: `exact GlobalTheory.AV.KerKill.kernel_killed` does nothing
+1674625:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianVarietyFiniteHomKernelKilledByNatStatement.lean:11:103: Unused tactic linter: `(intros; apply GlobalTheory.AV.KerKill.kernel_killed <;> assumption)` does nothing
+1678353:ℹ [135224/137452] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNontrivialAdditiveFamilyKilledByIsogeny (8.2s)
+1678498:⚠ [135241/137452] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationKernelKilledOverDvrOfGenericStatement (9.7s)
+1678499:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGenericStatement.lean:16:53: this tactic is never executed
+1678502:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGenericStatement.lean:16:95: this tactic is never executed
+1678505:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGenericStatement.lean:15:8: Overlapping instance parameters in `T.polarisation_kernel_killed_over_dvr_of_generic`:
+1678511:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGenericStatement.lean:16:53: Unused tactic linter: `exact GlobalTheory.KerExt.kernel_killed` does nothing
+1678514:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PolarisationKernelKilledOverDvrOfGenericStatement.lean:16:95: Unused tactic linter: `(intros; apply GlobalTheory.KerExt.kernel_killed <;> assumption)` does nothing
+1680046:ℹ [135320/137452] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedPolarisationKernelKilledSameInteger (9.1s)
+1682739:⚠ [135514/137453] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNontrivialAdditiveFamilyKilledByIsogenyStatement (8.9s)
+1682740:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNontrivialAdditiveFamilyKilledByIsogenyStatement.lean:12:62: this tactic is never executed
+1682743:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNontrivialAdditiveFamilyKilledByIsogenyStatement.lean:12:113: this tactic is never executed
+1682746:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNontrivialAdditiveFamilyKilledByIsogenyStatement.lean:12:62: Unused tactic linter: `exact GlobalTheory.CharKer.exists_nontriv_family` does nothing
+1682749:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNontrivialAdditiveFamilyKilledByIsogenyStatement.lean:12:113: Unused tactic linter: `(intros; apply GlobalTheory.CharKer.exists_nontriv_family <;> assumption)` does nothing
+1683192:⚠ [135554/137453] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedPolarisationKernelKilledSameIntegerStatement (8.2s)
+1683193:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedPolarisationKernelKilledSameIntegerStatement.lean:16:67: this tactic is never executed
+1683196:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedPolarisationKernelKilledSameIntegerStatement.lean:16:123: this tactic is never executed
+1683199:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedPolarisationKernelKilledSameIntegerStatement.lean:16:67: Unused tactic linter: `(exact GlobalTheory.DescPolKer.pow_eq_one_of_descent)` does nothing
+1683202:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedPolarisationKernelKilledSameIntegerStatement.lean:16:123: Unused tactic linter: `(intros; apply GlobalTheory.DescPolKer.pow_eq_one_of_descent <;> assumption)` does nothing
+1688457:ℹ [135943/137459] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CohomologyKernelModPrimePowerKilledByFixedPow (13s)
+1690720:ℹ [136096/137462] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyDegreeEqCardKernelOfKilledByInvertible (10s)
+1690827:⚠ [136105/137462] Built Development.AbelianVarietyTheory.Proofs.FoundationProofs.CohomologyKernelModPrimePowerKilledByFixedPowStatement (10s)
+1690828:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CohomologyKernelModPrimePowerKilledByFixedPowStatement.lean:9:72: this tactic is never executed
+1690831:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CohomologyKernelModPrimePowerKilledByFixedPowStatement.lean:9:133: this tactic is never executed
+1690834:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CohomologyKernelModPrimePowerKilledByFixedPowStatement.lean:9:72: Unused tactic linter: `exact GlobalTheory.Ord2.exists_pow_smul_cob1_of_cv_mod_pow` does nothing
+1690837:warning: src/Development/AbelianVarietyTheory/Proofs/FoundationProofs/CohomologyKernelModPrimePowerKilledByFixedPowStatement.lean:9:133: Unused tactic linter: `(intros; apply GlobalTheory.Ord2.exists_pow_smul_cob1_of_cv_mod_pow <;> assumption)` does nothing
+1692108:⚠ [136223/137464] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyDegreeEqCardKernelOfKilledByInvertibleStatement (8.2s)
+1692109:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsogenyDegreeEqCardKernelOfKilledByInvertibleStatement.lean:11:68: this tactic is never executed
+1692112:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsogenyDegreeEqCardKernelOfKilledByInvertibleStatement.lean:11:125: this tactic is never executed
+1692115:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsogenyDegreeEqCardKernelOfKilledByInvertibleStatement.lean:11:68: Unused tactic linter: `exact GlobalTheory.AV.DegSep.deg_eq_card_ker_of_killed` does nothing
+1692118:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsogenyDegreeEqCardKernelOfKilledByInvertibleStatement.lean:11:125: Unused tactic linter: `(intros; apply GlobalTheory.AV.DegSep.deg_eq_card_ker_of_killed <;> assumption)` does nothing
+1694600:⚠ [136434/137469] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelKilledOfDegNeZero (9.9s)
+1694601:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOfDegNeZero.lean:102:4: Try this: 
+1695968:⚠ [136544/138485] Built Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Killed (6.5s)
+1695969:warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Killed.lean:4:15: Variable name `inst` is not explicitly referenced.
+1695975:warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Killed.lean:5:5: Variable name `inst_1` is not explicitly referenced.
+1695981:warning: src/Development/AutomorphicArithmetic/IntegralCasts/CapelliIdentities/Killed.lean:5:31: Variable name `inst_2` is not explicitly referenced.
+1730207:⚠ [139004/140546] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeExistsCompEqNsmulOfKernelKilled (10s)
+1730208:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilled.lean:39:2: Try this: 
+1730216:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilled.lean:46:2: Try this: 
+1730224:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilled.lean:69:2: Try this: 
+1730232:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilled.lean:80:4: Try this: 
+1730240:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilled.lean:113:6: Try this: 
+1733154:⚠ [139233/140547] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeExistsCompEqNsmulOfKernelKilledStatement (8.5s)
+1733155:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilledStatement.lean:10:68: this tactic is never executed
+1733158:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilledStatement.lean:10:125: this tactic is never executed
+1733161:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilledStatement.lean:10:68: Unused tactic linter: `exact GlobalTheory.AV.exists_comp_eq_pow_of_ker_killed` does nothing
+1733164:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AbelianSchemeExistsCompEqNsmulOfKernelKilledStatement.lean:10:125: Unused tactic linter: `(intros; apply GlobalTheory.AV.exists_comp_eq_pow_of_ker_killed <;> assumption)` does nothing
+1739620:ℹ [139718/140664] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MaxCuspKilledCoefficientEqZero (8.0s)
+1740566:ℹ [139807/140682] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MaxCuspMemCuspFormsOfKilledCoefZero (7.4s)
+1740567:⚠ [139808/140682] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MaxCuspKilledCoefficientEqZeroStatement (5.9s)
+1740568:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspKilledCoefficientEqZeroStatement.lean:10:71: this tactic is never executed
+1740571:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspKilledCoefficientEqZeroStatement.lean:10:131: this tactic is never executed
+1740574:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspKilledCoefficientEqZeroStatement.lean:10:71: Unused tactic linter: `exact GlobalTheory.MaxCuspKilled.coefFn_eq_zero_of_killed` does nothing
+1740577:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspKilledCoefficientEqZeroStatement.lean:10:131: Unused tactic linter: `(intros; apply GlobalTheory.MaxCuspKilled.coefFn_eq_zero_of_killed <;> assumption)` does nothing
+1740759:ℹ [139819/140682] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerKilledOn (7.1s)
+1741987:⚠ [139902/140682] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MaxCuspMemCuspFormsOfKilledCoefZeroStatement (7.3s)
+1741988:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspMemCuspFormsOfKilledCoefZeroStatement.lean:10:66: this tactic is never executed
+1741991:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspMemCuspFormsOfKilledCoefZeroStatement.lean:10:121: this tactic is never executed
+1741994:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspMemCuspFormsOfKilledCoefZeroStatement.lean:10:66: Unused tactic linter: `exact GlobalTheory.maxCusps_mem_SSgt_of_coef_eq_zero` does nothing
+1741997:warning: src/Development/AbelianVarietyTheory/Proofs/ThetaShiftProofs/MaxCuspMemCuspFormsOfKilledCoefZeroStatement.lean:10:121: Unused tactic linter: `(intros; apply GlobalTheory.maxCusps_mem_SSgt_of_coef_eq_zero <;> assumption)` does nothing
+1742100:ℹ [139913/140682] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreKilled (9.3s)
+1742393:⚠ [139933/140701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelKilledOverOpenOfLocal (15s)
+1742394:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocal.lean:91:0: automatically included section variable(s) unused in theorem `GlobalTheory.KerKilledLocal.down_injective`:
+1742401:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocal.lean:111:0: automatically included section variable(s) unused in theorem `GlobalTheory.KerKilledLocal.comp_pow_pt`:
+1742583:⚠ [139940/140701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinLevelAdditiveKilledByLevel (10s)
+1742584:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:44:4: Try this: 
+1742592:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:53:0: automatically included section variable(s) unused in theorem `GlobalTheory.ZarhinFam.LevAlg.mkZ_pa`:
+1742601:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:59:0: automatically included section variable(s) unused in theorem `GlobalTheory.ZarhinFam.LevAlg.mkZ_pb`:
+1742610:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:65:0: automatically included section variable(s) unused in theorem `GlobalTheory.ZarhinFam.LevAlg.zob_ext`:
+1742619:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:86:6: Try this: 
+1742627:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:89:6: Try this: 
+1742635:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:109:4: Try this: 
+1742643:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:110:4: Try this: 
+1742651:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:116:4: Try this: 
+1742659:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:117:4: Try this: 
+1742667:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:128:2: Try this: 
+1742675:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:129:2: Try this: 
+1742683:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:131:4: Try this: 
+1742691:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:132:4: Try this: 
+1742699:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:139:4: Try this: 
+1742707:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:145:4: Try this: 
+1742715:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevel.lean:126:209: Variable name `hZ` is not explicitly referenced.
+1743504:ℹ [139991/140701] Built Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MaxCuspsIffKilledCoeffVanish (7.4s)
+1743848:ℹ [140018/140754] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreKernelKilledOfBaseFaithfullyFlat (11s)
+1743863:⚠ [140021/140754] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelKilledOverOpenOfLocalStatement (8.7s)
+1743864:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocalStatement.lean:10:70: this tactic is never executed
+1743867:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocalStatement.lean:10:129: this tactic is never executed
+1743870:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocalStatement.lean:10:70: Unused tactic linter: `(exact GlobalTheory.KerKilledLocal.kerKilledOn_of_local)` does nothing
+1743873:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenOfLocalStatement.lean:10:129: Unused tactic linter: `(intros; apply GlobalTheory.KerKilledLocal.kerKilledOn_of_local <;> assumption)` does nothing
+1743983:⚠ [140031/140754] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinLevelAdditiveKilledByLevelStatement (8.5s)
+1743984:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevelStatement.lean:8:254: Variable name `hZ` is not explicitly referenced.
+1743990:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevelStatement.lean:9:65: this tactic is never executed
+1743993:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevelStatement.lean:9:119: this tactic is never executed
+1743996:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevelStatement.lean:9:65: Unused tactic linter: `(exact GlobalTheory.ZarhinFam.LevAlg.levZ_add_tors)` does nothing
+1743999:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ZarhinLevelAdditiveKilledByLevelStatement.lean:9:119: Unused tactic linter: `(intros; apply GlobalTheory.ZarhinFam.LevAlg.levZ_add_tors <;> assumption)` does nothing
+1745197:⚠ [140128/140792] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreKernelKilledOfBaseFaithfullyFlatStatement (9.5s)
+1745198:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FibreKernelKilledOfBaseFaithfullyFlatStatement.lean:10:69: this tactic is never executed
+1745201:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FibreKernelKilledOfBaseFaithfullyFlatStatement.lean:10:127: this tactic is never executed
+1745204:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FibreKernelKilledOfBaseFaithfullyFlatStatement.lean:10:69: Unused tactic linter: `(exact GlobalTheory.KerKilledFibre.fibreKilled_of_base)` does nothing
+1745207:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FibreKernelKilledOfBaseFaithfullyFlatStatement.lean:10:127: Unused tactic linter: `(intros; apply GlobalTheory.KerKilledFibre.fibreKilled_of_base <;> assumption)` does nothing
+1760842:ℹ [141265/144701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalizationOfInjectiveCokernelKilled (7.9s)
+1761023:ℹ [141274/144701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraTraceMapOfCokernelKilledByScalar (7.6s)
+1761024:ℹ [141275/144701] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationTensorMapInjectiveCokerKilled (7.4s)
+1775307:⚠ [142060/144736] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalizationOfInjectiveCokernelKilledStatement (7.1s)
+1775308:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleLocalizationOfInjectiveCokernelKilledStatement.lean:8:70: this tactic is never executed
+1775311:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleLocalizationOfInjectiveCokernelKilledStatement.lean:8:129: this tactic is never executed
+1775314:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleLocalizationOfInjectiveCokernelKilledStatement.lean:8:70: Unused tactic linter: `exact GlobalTheory.etale_localization_of_cokernel_killed` does nothing
+1775317:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleLocalizationOfInjectiveCokernelKilledStatement.lean:8:129: Unused tactic linter: `(intros; apply GlobalTheory.etale_localization_of_cokernel_killed <;> assumption)` does nothing
+1775343:⚠ [142063/144736] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationTensorMapInjectiveCokerKilledStatement (7.2s)
+1775344:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationTensorMapInjectiveCokerKilledStatement.lean:7:72: this tactic is never executed
+1775347:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationTensorMapInjectiveCokerKilledStatement.lean:7:133: this tactic is never executed
+1775350:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationTensorMapInjectiveCokerKilledStatement.lean:7:72: Unused tactic linter: `exact GlobalTheory.localization_map_injective_coker_killed` does nothing
+1775353:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LocalizationTensorMapInjectiveCokerKilledStatement.lean:7:133: Unused tactic linter: `(intros; apply GlobalTheory.localization_map_injective_coker_killed <;> assumption)` does nothing
+1775415:⚠ [142068/144736] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraTraceMapOfCokernelKilledByScalarStatement (6.6s)
+1775416:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AlgebraTraceMapOfCokernelKilledByScalarStatement.lean:7:68: this tactic is never executed
+1775419:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AlgebraTraceMapOfCokernelKilledByScalarStatement.lean:7:125: this tactic is never executed
+1775422:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AlgebraTraceMapOfCokernelKilledByScalarStatement.lean:7:68: Unused tactic linter: `exact GlobalTheory.algebraTrace_map_of_cokernel_killed` does nothing
+1775425:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/AlgebraTraceMapOfCokernelKilledByScalarStatement.lean:7:125: Unused tactic linter: `(intros; apply GlobalTheory.algebraTrace_map_of_cokernel_killed <;> assumption)` does nothing
+1817193:ℹ [144371/145264] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelKilledOverOpenNearOfFibre (12s)
+1821157:⚠ [144468/145264] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelKilledOverOpenNearOfFibreStatement (8.8s)
+1821158:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenNearOfFibreStatement.lean:10:79: this tactic is never executed
+1821161:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenNearOfFibreStatement.lean:10:147: this tactic is never executed
+1821164:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenNearOfFibreStatement.lean:10:79: Unused tactic linter: `(exact GlobalTheory.KerKilledFibreOpen.kerKilledOn_near_of_fibre)` does nothing
+1821167:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelKilledOverOpenNearOfFibreStatement.lean:10:147: Unused tactic linter: `(intros;
+1821168:  apply GlobalTheory.KerKilledFibreOpen.kerKilledOn_near_of_fibre <;> assumption)` does nothing
+1822658:ℹ [144548/145264] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenKernelKilledNearPoint (9.0s)
+1823966:⚠ [144623/145271] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenKernelKilledNearPointStatement (10s)
+1823967:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenKernelKilledNearPointStatement.lean:10:65: this tactic is never executed
+1823970:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenKernelKilledNearPointStatement.lean:10:119: this tactic is never executed
+1823973:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenKernelKilledNearPointStatement.lean:10:65: Unused tactic linter: `(exact GlobalTheory.KerKilledNear.kerKilledOn_near)` does nothing
+1823976:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenKernelKilledNearPointStatement.lean:10:119: Unused tactic linter: `(intros; apply GlobalTheory.KerKilledNear.kerKilledOn_near <;> assumption)` does nothing
+1824125:⚠ [144631/145271] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatOfDualHomomorphismKernelKilled (11s)
+1824126:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilled.lean:24:2: Try this: 
+1824134:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilled.lean:25:2: Try this: 
+1824161:⚠ [144635/145271] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveOfDualHomomorphismKernelKilled (14s)
+1824162:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SurjectiveOfDualHomomorphismKernelKilled.lean:34:2: Try this: 
+1824170:⚠ [144636/145271] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftedPolarisationKernelKilledOfUnit (10s)
+1824171:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftedPolarisationKernelKilledOfUnit.lean:34:2: Try this: 
+1825477:⚠ [144697/145277] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatOfDualHomomorphismKernelKilledStatement (8.6s)
+1825478:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilledStatement.lean:8:51: this tactic is never executed
+1825481:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilledStatement.lean:8:91: this tactic is never executed
+1825484:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilledStatement.lean:8:51: Unused tactic linter: `(exact GlobalTheory.DualHomFlat.main)` does nothing
+1825487:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatOfDualHomomorphismKernelKilledStatement.lean:8:91: Unused tactic linter: `(intros; apply GlobalTheory.DualHomFlat.main <;> assumption)` does nothing
+1825559:ℹ [144703/145277] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenLocusKernelKilledSymmetricBundle (12s)
+1825743:⚠ [144711/145279] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.SurjectiveOfDualHomomorphismKernelKilledStatement (11s)
+1825744:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SurjectiveOfDualHomomorphismKernelKilledStatement.lean:8:71: this tactic is never executed
+1825747:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SurjectiveOfDualHomomorphismKernelKilledStatement.lean:8:131: this tactic is never executed
+1825750:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SurjectiveOfDualHomomorphismKernelKilledStatement.lean:8:71: Unused tactic linter: `(exact GlobalTheory.DualHomSurj.surjective_of_ker_killed)` does nothing
+1825753:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SurjectiveOfDualHomomorphismKernelKilledStatement.lean:8:131: Unused tactic linter: `(intros; apply GlobalTheory.DualHomSurj.surjective_of_ker_killed <;> assumption)` does nothing
+1825756:⚠ [144712/145279] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftedPolarisationKernelKilledOfUnitStatement (11s)
+1825757:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftedPolarisationKernelKilledOfUnitStatement.lean:13:67: this tactic is never executed
+1825760:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftedPolarisationKernelKilledOfUnitStatement.lean:13:123: this tactic is never executed
+1825763:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftedPolarisationKernelKilledOfUnitStatement.lean:13:67: Unused tactic linter: `exact GlobalTheory.KerLiftUnit.ker_pow_eq_one_of_lift` does nothing
+1825766:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LiftedPolarisationKernelKilledOfUnitStatement.lean:13:123: Unused tactic linter: `(intros; apply GlobalTheory.KerLiftUnit.ker_pow_eq_one_of_lift <;> assumption)` does nothing
+1826507:⚠ [144760/145282] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenLocusKernelKilledSymmetricBundleStatement (8.8s)
+1826508:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenLocusKernelKilledSymmetricBundleStatement.lean:15:77: this tactic is never executed
+1826511:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenLocusKernelKilledSymmetricBundleStatement.lean:15:143: this tactic is never executed
+1826514:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenLocusKernelKilledSymmetricBundleStatement.lean:15:77: Unused tactic linter: `(exact GlobalTheory.KerKilledLocus.exists_open_kerKilled_locus)` does nothing
+1826517:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOpenLocusKernelKilledSymmetricBundleStatement.lean:15:143: Unused tactic linter: `(intros;
+1826518:  apply GlobalTheory.KerKilledLocus.exists_open_kerKilled_locus <;> assumption)` does nothing
+1842331:⚠ [145954/146976] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByPrimeAtEtalePlace (14s)
+1842332:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:36:2: Try this: 
+1842340:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:51:8: Try this: 
+1842348:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:55:8: Try this: 
+1842356:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:41:2: Try this: 
+1842364:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:141:4: Try this: 
+1842372:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:154:2: Try this: 
+1842380:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlace.lean:155:2: Try this: 
+1845553:⚠ [146209/146999] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByPrimeAtEtalePlaceStatement (11s)
+1845554:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlaceStatement.lean:10:71: this tactic is never executed
+1845557:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlaceStatement.lean:10:131: this tactic is never executed
+1845560:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlaceStatement.lean:10:71: Unused tactic linter: `(exact GlobalTheory.UPel.HT.EtLev.GeoCard.card_ker_place)` does nothing
+1845563:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByPrimeAtEtalePlaceStatement.lean:10:131: Unused tactic linter: `(intros; apply GlobalTheory.UPel.HT.EtLev.GeoCard.card_ker_place <;> assumption)` does nothing
+1847890:ℹ [146350/147015] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinTrickFamilySiegelKernelKilled (10s)
+1849326:⚠ [146454/147017] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinTrickFamilySiegelKernelKilledStatement (11s)
+1849327:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinTrickFamilySiegelKernelKilledStatement.lean:8:71: this tactic is never executed
+1849330:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinTrickFamilySiegelKernelKilledStatement.lean:8:131: this tactic is never executed
+1849333:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinTrickFamilySiegelKernelKilledStatement.lean:8:71: Unused tactic linter: `(exact GlobalTheory.UPel.HT.exists_zarhin_data_siegKerBy)` does nothing
+1849336:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsZarhinTrickFamilySiegelKernelKilledStatement.lean:8:131: Unused tactic linter: `(intros; apply GlobalTheory.UPel.HT.exists_zarhin_data_siegKerBy <;> assumption)` does nothing
+1849659:ℹ [146476/147017] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BirigidifiedBundleKernelKilledOfComplexPoints (10s)
+1850775:⚠ [146553/148523] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.BirigidifiedBundleKernelKilledOfComplexPointsStatement (8.6s)
+1850776:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BirigidifiedBundleKernelKilledOfComplexPointsStatement.lean:10:57: this tactic is never executed
+1850779:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BirigidifiedBundleKernelKilledOfComplexPointsStatement.lean:10:103: this tactic is never executed
+1850782:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BirigidifiedBundleKernelKilledOfComplexPointsStatement.lean:10:57: Unused tactic linter: `exact GlobalTheory.BiKill.kernel_pow_eq_one` does nothing
+1850785:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BirigidifiedBundleKernelKilledOfComplexPointsStatement.lean:10:103: Unused tactic linter: `(intros; apply GlobalTheory.BiKill.kernel_pow_eq_one <;> assumption)` does nothing
+1879712:⚠ [148568/151565] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneCokernelKilled (15s)
+1879713:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilled.lean:295:8: Overlapping instance parameters in `LinePow.exists_frob_presentation`:
+1888450:⚠ [149129/151565] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KilledPresentationExtensionFrobenius (18s)
+1888451:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:22:2: Try this: 
+1888459:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:23:2: Try this: 
+1888467:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:49:2: Try this: 
+1888475:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:50:2: Try this: 
+1888483:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:51:2: Try this: 
+1888491:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:64:2: Try this: 
+1888499:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:140:2: Try this: 
+1888507:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:141:2: Try this: 
+1888515:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:159:2: Try this: 
+1888523:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:215:2: Try this: 
+1888531:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:246:2: Try this: 
+1888539:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:269:2: Try this: 
+1888547:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:270:2: Try this: 
+1888555:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:276:2: Try this: 
+1888563:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:278:2: Try this: 
+1888571:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:296:4: Try this: 
+1888579:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:297:4: Try this: 
+1888587:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:298:4: Try this: 
+1888595:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:299:4: Try this: 
+1888603:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:300:4: Try this: 
+1888611:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:301:4: Try this: 
+1888619:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:302:4: Try this: 
+1888627:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:348:4: Try this: 
+1888635:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:349:4: Try this: 
+1888643:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:350:4: Try this: 
+1888651:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:352:2: Try this: 
+1888659:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:353:2: Try this: 
+1888667:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:354:2: Try this: 
+1888675:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:355:2: Try this: 
+1888683:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:356:2: Try this: 
+1888691:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:373:2: Try this: 
+1888699:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:374:2: Try this: 
+1888707:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledPresentationExtensionFrobenius.lean:344:8: Overlapping instance parameters in `T.killed_presentation_extension_frobenius`:
+1892715:⚠ [149468/151565] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneCokernelKilledStatement (10s)
+1892716:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilledStatement.lean:12:65: this tactic is never executed
+1892719:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilledStatement.lean:12:119: this tactic is never executed
+1892722:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilledStatement.lean:11:8: Overlapping instance parameters in `T.rank_one_cokernel_killed`:
+1892728:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilledStatement.lean:12:65: Unused tactic linter: `exact GlobalTheory.LinePow.exists_frob_presentation` does nothing
+1892731:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/RankOneCokernelKilledStatement.lean:12:119: Unused tactic linter: `(intros; apply GlobalTheory.LinePow.exists_frob_presentation <;> assumption)` does nothing
+1901150:ℹ [150023/151568] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleHomotopyInvariantIntegralKilledOfLowerDim (23s)
+1905690:⚠ [150325/151688] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleHomotopyInvariantIntegralKilledOfLowerDimStatement (6.6s)
+1905691:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleHomotopyInvariantIntegralKilledOfLowerDimStatement.lean:11:67: this tactic is never executed
+1905694:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleHomotopyInvariantIntegralKilledOfLowerDimStatement.lean:11:123: this tactic is never executed
+1905697:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleHomotopyInvariantIntegralKilledOfLowerDimStatement.lean:11:67: Unused tactic linter: `(exact GlobalTheory.hInv_of_integral_killed_of_lower)` does nothing
+1905700:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/EtaleHomotopyInvariantIntegralKilledOfLowerDimStatement.lean:11:123: Unused tactic linter: `(intros; apply GlobalTheory.hInv_of_integral_killed_of_lower <;> assumption)` does nothing
+1942026:⚠ [152551/155399] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTensSpanOfKilled (13s)
+1942027:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:44:6: Try this: 
+1942035:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:82:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegKeep.atPl_tprod`:
+1942041:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:120:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegKeep.position_apply`:
+1942047:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:138:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegKeep.tensSpan_mono`:
+1942053:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:141:0: automatically included section variable(s) unused in theorem `GlobalTheory.DegKeep.tensSpan_fin`:
+1942059:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemTensSpanOfKilled.lean:196:20: This simp argument is unused:
+2057042:⚠ [159507/160070] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelKilledCharOfTorusLabel (9.8s)
+2057043:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabel.lean:18:8: Overlapping instance parameters in `exists_torus_char`:
+2058255:ℹ [159587/160071] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamHodgeTateDifferenceKilled (10s)
+2058290:⚠ [159592/160072] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelKilledCharOfTorusLabelStatement (9.4s)
+2058291:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabelStatement.lean:19:64: this tactic is never executed
+2058294:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabelStatement.lean:19:117: this tactic is never executed
+2058297:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabelStatement.lean:18:8: Overlapping instance parameters in `GlobalTheory.T.exists_level_killed_char_of_torus_label`:
+2058303:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabelStatement.lean:19:64: Unused tactic linter: `exact GlobalTheory.GSep.TorLabel.exists_torus_char` does nothing
+2058306:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLevelKilledCharOfTorusLabelStatement.lean:19:117: Unused tactic linter: `(intros; apply GlobalTheory.GSep.TorLabel.exists_torus_char <;> assumption)` does nothing
+2059275:⚠ [159656/160076] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamHodgeTateDifferenceKilledStatement (9.4s)
+2059276:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DeRhamHodgeTateDifferenceKilledStatement.lean:9:69: this tactic is never executed
+2059279:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DeRhamHodgeTateDifferenceKilledStatement.lean:9:127: this tactic is never executed
+2059282:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DeRhamHodgeTateDifferenceKilledStatement.lean:9:69: Unused tactic linter: `exact GlobalTheory.HTVert.onObj_aux1tAt_of_knownResults` does nothing
+2059285:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DeRhamHodgeTateDifferenceKilledStatement.lean:9:127: Unused tactic linter: `(intros; apply GlobalTheory.HTVert.onObj_aux1tAt_of_knownResults <;> assumption)` does nothing
+2067378:⚠ [160096/161934] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialSumInsertKilledCoordinateComp (9.0s)
+2067379:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateComp.lean:29:24: This simp argument is unused:
+2067386:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateComp.lean:29:41: This simp argument is unused:
+2067394:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateComp.lean:32:58: This simp argument is unused:
+2067402:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateComp.lean:32:86: This simp argument is unused:
+2076677:⚠ [160723/161936] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialSumInsertKilledCoordinateCompStatement (9.4s)
+2076678:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateCompStatement.lean:12:73: this tactic is never executed
+2076681:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateCompStatement.lean:12:135: this tactic is never executed
+2076684:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateCompStatement.lean:12:73: Unused tactic linter: `exact GlobalTheory.MumProd.PsumCancel.psum_insert_zero_comp` does nothing
+2076687:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PartialSumInsertKilledCoordinateCompStatement.lean:12:135: Unused tactic linter: `(intros;
+2101618:⚠ [162208/163887] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDualPartsKilledOfPerfectPairing (7.0s)
+2101619:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairing.lean:9:2: Try this: 
+2101627:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairing.lean:19:2: Try this: 
+2101635:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairing.lean:20:2: Try this: 
+2101643:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairing.lean:116:2: Try this: 
+2101651:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairing.lean:125:2: Try this: 
+2103557:⚠ [162317/163887] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardKilledByIdealModIntEqAbsNormPow (8.7s)
+2103558:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:23:2: Try this: 
+2103566:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:24:2: Try this: 
+2103574:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:26:45: try 'simp' instead of 'simpa'
+2103577:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:27:2: Try this: 
+2103585:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:29:2: Try this: 
+2103593:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:61:2: Try this: 
+2103601:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:62:2: Try this: 
+2103609:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:67:2: Try this: 
+2103617:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:68:2: Try this: 
+2103625:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPow.lean:72:2: Try this: 
+2111455:⚠ [162823/164355] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDualPartsKilledOfPerfectPairingStatement (6.8s)
+2111456:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairingStatement.lean:7:60: this tactic is never executed
+2111459:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairingStatement.lean:7:109: this tactic is never executed
+2111462:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairingStatement.lean:7:60: Unused tactic linter: `(exact GlobalTheory.DualParts.conj_dual_parts)` does nothing
+2111465:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ConjDualPartsKilledOfPerfectPairingStatement.lean:7:109: Unused tactic linter: `(intros; apply GlobalTheory.DualParts.conj_dual_parts <;> assumption)` does nothing
+2112349:⚠ [162893/164355] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardKilledByIdealModIntEqAbsNormPowStatement (7.1s)
+2112350:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPowStatement.lean:7:63: this tactic is never executed
+2112353:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPowStatement.lean:7:115: this tactic is never executed
+2112356:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPowStatement.lean:7:63: Unused tactic linter: `(exact GlobalTheory.TorsQuotCount.card_killed_eq)` does nothing
+2112359:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardKilledByIdealModIntEqAbsNormPowStatement.lean:7:115: Unused tactic linter: `(intros; apply GlobalTheory.TorsQuotCount.card_killed_eq <;> assumption)` does nothing
+2128994:ℹ [164019/165060] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedBundleKernelKilledByIntegerPrimeToP (11s)
+2129536:⚠ [164042/165060] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByIdealCharZero (13s)
+2129537:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:87:4: Try this: 
+2129545:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:98:2: Try this: 
+2129553:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:99:2: Try this: 
+2129561:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:197:2: Try this: 
+2129569:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:212:8: Try this: 
+2129577:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:216:8: Try this: 
+2129585:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZero.lean:202:2: Try this: 
+2134282:⚠ [164366/165060] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByIdealCharZeroStatement (11s)
+2134283:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZeroStatement.lean:9:80: this tactic is never executed
+2134286:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZeroStatement.lean:9:149: this tactic is never executed
+2134289:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZeroStatement.lean:9:80: Unused tactic linter: `exact GlobalTheory.UPel.HT.ES.CharZeroCount.card_killedBy_charZero` does nothing
+2134292:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CardTorsionKilledByIdealCharZeroStatement.lean:9:149: Unused tactic linter: `(intros;
+2138561:⚠ [164638/165060] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedBundleKernelKilledPrimeToP (12s)
+2138562:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToP.lean:44:2: Try this: 
+2138570:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToP.lean:110:2: Try this: 
+2139637:⚠ [164715/165069] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedBundleKernelKilledPrimeToPStatement (9.3s)
+2139638:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToPStatement.lean:10:85: this tactic is never executed
+2139641:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToPStatement.lean:10:159: this tactic is never executed
+2139644:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToPStatement.lean:10:85: Unused tactic linter: `(exact GlobalTheory.UPel.HT.ES.KerPowDescent.kernel_primePower_descent)` does nothing
+2139647:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledPrimeToPStatement.lean:10:159: Unused tactic linter: `(intros;
+2152612:⚠ [165701/166553] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedBundleKernelKilledByIntegerPrimeToPStatement (8.0s)
+2152613:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledByIntegerPrimeToPStatement.lean:8:61: this tactic is never executed
+2152616:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledByIntegerPrimeToPStatement.lean:8:111: this tactic is never executed
+2152619:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledByIntegerPrimeToPStatement.lean:8:61: Unused tactic linter: `exact GlobalTheory.UPel.HT.Hecke.kernel_descent` does nothing
+2152622:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DescendedBundleKernelKilledByIntegerPrimeToPStatement.lean:8:111: Unused tactic linter: `(intros; apply GlobalTheory.UPel.HT.Hecke.kernel_descent <;> assumption)` does nothing
+2154443:⚠ [165834/166553] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KilledByIdealFiniteEtale (7.2s)
+2154444:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledByIdealFiniteEtale.lean:12:72: this tactic is never executed
+2154447:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledByIdealFiniteEtale.lean:12:133: this tactic is never executed
+2154450:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledByIdealFiniteEtale.lean:12:72: Unused tactic linter: `(exact GlobalTheory.HTTorsRep.exists_finiteEtale_killedBy)` does nothing
+2154453:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/KilledByIdealFiniteEtale.lean:12:133: Unused tactic linter: `(intros; apply GlobalTheory.HTTorsRep.exists_finiteEtale_killedBy <;> assumption)` does nothing
+2154457:⚠ [165836/166553] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorCardKilledByIdealEqAbsNormPow (8.1s)
+2154458:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorCardKilledByIdealEqAbsNormPow.lean:51:2: Try this: 
+2158685:⚠ [166107/166562] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorCardKilledByIdealEqAbsNormPowStatement (7.3s)
+2158686:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorCardKilledByIdealEqAbsNormPowStatement.lean:12:75: this tactic is never executed
+2158689:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorCardKilledByIdealEqAbsNormPowStatement.lean:12:139: this tactic is never executed
+2158692:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorCardKilledByIdealEqAbsNormPowStatement.lean:12:75: Unused tactic linter: `(exact GlobalTheory.HTTorsCount.card_killedBy_eq_absNorm_pow)` does nothing
+2158695:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/HarrisTaylorCardKilledByIdealEqAbsNormPowStatement.lean:12:139: Unused tactic linter: `(intros;
+2160938:ℹ [166231/166564] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsogenyDegreeKilledByPrimeToPHarrisTaylor (6.0s)
+2161961:⚠ [166304/166566] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsogenyDegreeKilledByPrimeToPHarrisTaylorStatement (6.9s)
+2161962:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIsogenyDegreeKilledByPrimeToPHarrisTaylorStatement.lean:11:70: this tactic is never executed
+2161965:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIsogenyDegreeKilledByPrimeToPHarrisTaylorStatement.lean:11:129: this tactic is never executed
+2161968:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIsogenyDegreeKilledByPrimeToPHarrisTaylorStatement.lean:11:70: Unused tactic linter: `(exact GlobalTheory.IwLevel.PrimeToP.isIsogDeg_killedBy)` does nothing
+2161971:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsIsogenyDegreeKilledByPrimeToPHarrisTaylorStatement.lean:11:129: Unused tactic linter: `(intros; apply GlobalTheory.IwLevel.PrimeToP.isIsogDeg_killedBy <;> assumption)` does nothing
+2167145:ℹ [166696/167892] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.KilledOnGeometricTorsion (8.7s)
+2173354:⚠ [167183/167910] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypeSpaceHolomorphicKModuleKilled (7.4s)
+2173355:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeSpaceHolomorphicKModuleKilled.lean:61:8: Try this: 
+2175126:⚠ [167327/168145] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypeSpaceHolomorphicKModuleKilledStatement (6.3s)
+2175127:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeSpaceHolomorphicKModuleKilledStatement.lean:15:51: this tactic is never executed
+2175130:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeSpaceHolomorphicKModuleKilledStatement.lean:15:91: this tactic is never executed
+2175133:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeSpaceHolomorphicKModuleKilledStatement.lean:15:51: Unused tactic linter: `exact GlobalTheory.HolDS.lowKSub_kMod` does nothing
+2175136:warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LowestKTypeSpaceHolomorphicKModuleKilledStatement.lean:15:91: Unused tactic linter: `(intros; apply GlobalTheory.HolDS.lowKSub_kMod <;> assumption)` does nothing
+2178791:⚠ [167656/169131] Built Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomologyClassKilledOnNbhdPair (7.4s)
+2178792:warning: src/Development/AutomorphicArithmetic/CommutativeAlgebra/EtaleCohomologyClassKilledOnNbhdPair.lean:22:2: try 'simp' instead of 'simpa'
+2185957:ℹ [168033/169184] Built Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EtaleCohomologyClassKilledOnNeighborhood (8.3s)
+2192094:⚠ [168459/170456] Built Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.CurveCohomologyKilledByFiniteCover (9.5s)
+2192095:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:115:2: Try this: 
+2192103:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:116:2: Try this: 
+2192111:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:117:2: Try this: 
+2192119:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:151:6: Try this: 
+2192127:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:152:6: Try this: 
+2192135:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:156:6: Try this: 
+2192143:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:157:6: Try this: 
+2192151:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:181:8: Try this: 
+2192159:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:182:8: Try this: 
+2192167:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:190:8: Try this: 
+2192175:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:191:8: Try this: 
+2192183:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:208:2: Try this: 
+2192191:warning: src/Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/CurveCohomologyKilledByFiniteCover.lean:218:2: Try this: 
+2271605:warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/DoublingMethodOfEisensteinFacts.lean:8:50: Unused tactic linter: `exact _root_.ResidueKilled.dm_of_two` does nothing
+2271608:warning: src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/DoublingMethodOfEisensteinFacts.lean:8:89: Unused tactic linter: `(intros; apply _root_.ResidueKilled.dm_of_two <;> assumption)` does nothing
+2289841:⚠ [174754/176935] Built Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.KilledOps (8.1s)
+2289842:warning: src/Development/AutomorphicArithmetic/Foundations/Convolution/BlockHeckeSlices/CuspidalNormBounds/KilledOps.lean:18:2: Try this: 
+2317848:⚠ [177310/177836] Built Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.AdelicLiftMemSmoothKilledByLowering (13s)
+2317849:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:18:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.LiftSmooth.isOpen_PSet`:
+2317855:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:25:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.LiftSmooth.isUnit_of_mem_PSet`:
+2317862:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:28:0: automatically included section variable(s) unused in theorem `GlobalTheory.HilbertThetaSeries.LiftSmooth.pos_one`:
+2317869:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:55:78: Variable name `hΨ` is not explicitly referenced.
+2317875:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:56:5: Variable name `hL` is not explicitly referenced.
+2317881:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:133:72: this tactic is never executed
+2317884:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:133:133: this tactic is never executed
+2317887:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:133:72: Unused tactic linter: `exact GlobalTheory.HilbertThetaSeries.lift_smooth_lowering` does nothing
+2317890:warning: src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaussSumFiltrations/AdelicLiftMemSmoothKilledByLowering.lean:133:133: Unused tactic linter: `(intros; apply GlobalTheory.HilbertThetaSeries.lift_smooth_lowering <;> assumption)` does nothing

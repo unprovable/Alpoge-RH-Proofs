@@ -1,0 +1,10 @@
+[18:01:19] fetching Mathlib's prebuilt cache
+[18:01:23] starting memory sampler (every 20s)
+[18:01:23] lake build with 32 parallel jobs
+[18:06:23] progress 10522/12010 (87%), elapsed 0h05m, ~0h00m remaining (rough), RAM 20/121 GB
+[18:11:23] progress 11481/12227 (93%), elapsed 0h10m, ~0h00m remaining (rough), RAM 21/121 GB
+[18:14:41] lake build exited with code 130
+[18:14:41] 0 failure/error lines (see failures.txt)
+[18:14:42] wrote summary.txt and timings.tsv
+[18:14:42] done (exit 130). Results: /home/linuxuser/Alpoge-RH-Proofs/audit-results/20261120T180119Z-all
+[18:14:42] To publish: git add audit-results && git commit -m 'Audit results 20261120T180119Z-all' && git push
