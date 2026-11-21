@@ -4,3 +4,5 @@ lean/.lake/
 lean.tar.gz.part*
 .DS_Store
 the-music-of-the-primes.pdf
+# Build output of the audit checker
+audit/checker/.lake/

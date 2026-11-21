@@ -1,0 +1,7 @@
+name = "rhcheck"
+defaultTargets = ["rhcheck"]
+
+[[lean_exe]]
+name = "rhcheck"
+root = "RHCheck"
+supportInterpreter = true

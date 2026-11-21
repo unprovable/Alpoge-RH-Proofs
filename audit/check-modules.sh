@@ -1,72 +1,73 @@
 #!/usr/bin/env bash
-# Kernel re-check of every project module with leanchecker, in parallel.
+# Kernel re-check of every project module, in parallel.
 #
 # Usage, from the repository root, after a successful build (run inside tmux):
-#   bash audit/check-modules.sh
+#   bash audit/check-modules.sh             # JOBS=28 processes by default
+#   JOBS=16 bash audit/check-modules.sh
 #
-# `leanchecker Lib` checks every module whose name starts with `Lib`: for each one it loads that
-# module's imports and replays the module's own declarations through the kernel, running the
-# modules as parallel tasks inside one process. Checking every top-level library therefore
-# re-checks every declaration in the project. Mathlib itself is not re-checked (`bash
-# audit/run-build.sh check`, i.e. `leanchecker --fresh Main`, does that, on one core).
+# Builds audit/checker (a small program running leanchecker's own per-module replay, see
+# audit/checker/RHCheck.lean), splits the project's modules round-robin into JOBS lists and runs one
+# checker process per list. Each module's imports are loaded and every declaration of the module is
+# replayed through the kernel, so checking every module re-checks every declaration in the project.
+# Mathlib itself is not re-checked (`bash audit/run-build.sh check`, i.e. `leanchecker --fresh Main`,
+# does that, on one core).
 #
-# One leanchecker process per library, smallest first. A failing library is recorded and the
-# others still run. Resumable: libraries that already passed are skipped on a re-run.
-# Results in audit-results/leanchecker-modules/:
-#   <Lib>.log            leanchecker's output ("replaying <module>" per module, errors at the end)
-#   passed.txt / failed.txt   libraries
-#   run.log              progress every PROGRESS_EVERY seconds (default 300)
+# Resumable: modules that already passed (in any earlier run) are skipped.
+# Results in audit-results/kernel-recheck/:
+#   run.log                    progress every PROGRESS_EVERY seconds (default 300) and the summary
+#   out/<run>-<n>.txt          per process: "start <m>", then "ok <m> <seconds>" or "FAIL <m> <error>"
+#   passed.txt / failed.txt    modules;  crashed.txt  modules whose process died while checking them
 set -uo pipefail
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
-OUT="$REPO/audit-results/leanchecker-modules"
-mkdir -p "$OUT"
-cd "$REPO/lean"
+OUT="$REPO/audit-results/kernel-recheck"
+RUN="$(date -u +%Y%m%dT%H%M%SZ)"
+mkdir -p "$OUT/out" "$OUT/lists"
 [ -d "$HOME/.elan/bin" ] && export PATH="$HOME/.elan/bin:$PATH"
 
 log() { echo "[$(date -u +%H:%M:%S)] $*" | tee -a "$OUT/run.log"; }
 
+log "building audit/checker"
+( cd "$REPO/audit/checker" && lake build 2>&1 | tail -2 ) | tee -a "$OUT/run.log"
+BIN="$REPO/audit/checker/.lake/build/bin/rhcheck"
+[ -x "$BIN" ] || { log "checker did not build"; exit 1; }
+
+cd "$REPO/lean"
 LEAN_SYSROOT="$(lean --print-prefix)"
 LEAN_PATH="$(lake env printenv LEAN_PATH)"
-CHECKER="$LEAN_SYSROOT/bin/leanchecker"
-PATH="$LEAN_SYSROOT/bin:$PATH"
-export LEAN_SYSROOT LEAN_PATH PATH
-LINEBUF=(); command -v stdbuf >/dev/null && LINEBUF=(stdbuf -oL)
+export LEAN_SYSROOT LEAN_PATH
+JOBS="${JOBS:-28}"
 
 find .lake/build/lib/lean -name '*.olean' \
   | sed -e 's|^\.lake/build/lib/lean/||' -e 's|\.olean$||' -e 's|/|.|g' | sort > "$OUT/modules.txt"
 TOTAL=$(wc -l < "$OUT/modules.txt" | tr -d ' ')
-touch "$OUT/passed.txt"
-: > "$OUT/failed.txt"
-{ echo "date: $(date -u)"; echo "git: $(git -C "$REPO" rev-parse HEAD 2>/dev/null)"; lean --version; } >> "$OUT/run.log"
+cat "$OUT"/out/*.txt 2>/dev/null | awk -F'\t' '$1 == "ok" {print $2}' | sort -u > "$OUT/passed.txt"
+comm -23 "$OUT/modules.txt" "$OUT/passed.txt" > "$OUT/todo.txt"
+TODO=$(wc -l < "$OUT/todo.txt" | tr -d ' ')
+{ echo "run $RUN: $(date -u)"; echo "git: $(git -C "$REPO" rev-parse HEAD 2>/dev/null)"; lean --version; } >> "$OUT/run.log"
+log "$TOTAL project modules, $(wc -l < "$OUT/passed.txt" | tr -d ' ') already passed, $TODO to check with $JOBS processes"
 
-# Top-level libraries, smallest first.
-LIBS=$(cut -d. -f1 "$OUT/modules.txt" | sort | uniq -c | sort -n | awk '{print $2}')
-DONE=0
-for lib in $LIBS; do
-  n=$(grep -c "^$lib\(\.\|$\)" "$OUT/modules.txt")
-  if grep -qx "$lib" "$OUT/passed.txt"; then DONE=$((DONE + n)); continue; fi
-  log "checking $lib ($n modules; $DONE/$TOTAL done before it)"
-  start=$(date +%s)
-  ( while sleep "${PROGRESS_EVERY:-300}"; do
-      k=$(grep -c '^replaying ' "$OUT/$lib.log" 2>/dev/null); k=$(( k > 0 ? k - 1 : 0 ))
-      el=$(( $(date +%s) - start )); eta="?"
-      [ "$k" -gt 0 ] && eta="$(( el * (n - k) / k / 3600 ))h$(( el * (n - k) / k % 3600 / 60 ))m"
-      log "  $lib: $k/$n modules checked, ~$eta left for $lib (rough); RAM $(free -g 2>/dev/null | awk '/^Mem:/ {print $3 "/" $2 " GB"}')"
-    done ) &
-  MON=$!
-  "${LINEBUF[@]}" "$CHECKER" --verbose "$lib" > "$OUT/$lib.log" 2>&1
-  rc=$?
-  kill "$MON" 2>/dev/null; wait "$MON" 2>/dev/null
-  if [ "$rc" -eq 0 ]; then
-    echo "$lib" >> "$OUT/passed.txt"
-    log "$lib passed ($(( ($(date +%s) - start) / 60 )) min)"
-  else
-    echo "$lib" >> "$OUT/failed.txt"
-    log "$lib FAILED (exit $rc): $(grep -m1 'found a problem' "$OUT/$lib.log")"
-  fi
-  DONE=$((DONE + n))
+rm -f "$OUT"/lists/*
+awk -v n="$JOBS" -v d="$OUT/lists" '{ print > (d "/" (NR % n)) }' "$OUT/todo.txt"
+
+finished() { cat "$OUT"/out/"$RUN"-*.txt 2>/dev/null | grep -cE '^(ok|FAIL)'; }
+start=$(date +%s)
+( while sleep "${PROGRESS_EVERY:-300}"; do
+    k=$(finished); bad=$(cat "$OUT"/out/"$RUN"-*.txt 2>/dev/null | grep -c '^FAIL'); el=$(( $(date +%s) - start )); eta="?"
+    [ "$k" -gt 0 ] && eta="$(( el * (TODO - k) / k / 3600 ))h$(( el * (TODO - k) / k % 3600 / 60 ))m"
+    log "checked $k/$TODO this run ($bad failed), ~$eta remaining (rough); RAM $(free -g 2>/dev/null | awk '/^Mem:/ {print $3 "/" $2 " GB"}')"
+  done ) &
+MON=$!
+
+for list in "$OUT"/lists/*; do
+  "$BIN" --list "$list" > "$OUT/out/$RUN-$(basename "$list").txt" 2>&1 &
 done
+wait $(jobs -p | grep -vx "$MON")
+kill "$MON" 2>/dev/null; wait "$MON" 2>/dev/null
 
-log "finished: passed: $(tr '\n' ' ' < "$OUT/passed.txt"); failed: $(tr '\n' ' ' < "$OUT/failed.txt")"
-[ ! -s "$OUT/failed.txt" ]
+cat "$OUT"/out/*.txt | awk -F'\t' '$1 == "ok" {print $2}' | sort -u > "$OUT/passed.txt"
+cat "$OUT"/out/*.txt | awk -F'\t' '$1 == "FAIL" {print $2}' | sort -u > "$OUT/failed.txt"
+# A process that died (e.g. out of memory) leaves "start <m>" as its last line.
+for f in "$OUT"/out/"$RUN"-*.txt; do tail -n 1 "$f" | awk -F'\t' '$1 == "start" {print $2}'; done > "$OUT/crashed.txt"
+log "finished: $(wc -l < "$OUT/passed.txt" | tr -d ' ')/$TOTAL modules passed, $(wc -l < "$OUT/failed.txt" | tr -d ' ') failed (failed.txt), $(wc -l < "$OUT/crashed.txt" | tr -d ' ') crashed (crashed.txt)"
+[ ! -s "$OUT/failed.txt" ] && [ ! -s "$OUT/crashed.txt" ]
